@@ -938,7 +938,7 @@
 
 
 <h1 id="recoveryplansbasicinfo">recoveryPlansBasicInfo</h1>
-<p>Retrieves basic information for recovery plans with pagination support. RSC prioritizes recovery_plan_ids if they are passed in the filter. All filters are combined using AND logic.</p>
+<p>Lists basic information for recovery plans that match every given filter, with pagination. When recoveryPlanIds is set, it takes priority over the other filters.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -987,7 +987,7 @@
 <tr>
 <td>workloadTypes</td>
 <td>[<a href="../../types/enums/ManagedObjectType/">ManagedObjectType</a>!]</td>
-<td>Filter for workload types.</td>
+<td>Workload types to return. Defaults to VSPHERE_VIRTUAL_MACHINE, so set it to see plans for other workload types.</td>
 </tr>
 <tr>
 <td>sourceLocationIds</td>

@@ -18,3 +18,5 @@ Information about a Recovery Plan.
 - [ActiveDirectoryForest.recoveryPlansInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryForest/index.md)
 - [AwsNativeEc2Instance.recoveryPlansInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeEc2Instance/index.md)
 - [AzureNativeVirtualMachine.recoveryPlansInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureNativeVirtualMachine/index.md)
+- [UnifiedActiveDirectoryDomain.recoveryPlansInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UnifiedActiveDirectoryDomain/index.md)
+- [UnifiedActiveDirectoryForest.recoveryPlansInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UnifiedActiveDirectoryForest/index.md)

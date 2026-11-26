@@ -1,6 +1,6 @@
 # allEventDigests
 
-Retrieve event digests for specific recipients.
+Returns the event digests, periodic email summaries of events, for the given recipient users.
 
 ## Arguments
 

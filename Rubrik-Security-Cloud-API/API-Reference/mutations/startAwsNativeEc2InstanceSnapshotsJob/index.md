@@ -1,6 +1,6 @@
 # startAwsNativeEc2InstanceSnapshotsJob
 
-StartAwsNativeEc2InstanceSnapshotsJob starts on-demand snapshot jobs for a list of EC2 instances. Each instance id succeeds or fails independently, so the reply reports a job id for every instance a job was submitted for and an error for every instance it was not.
+Starts on-demand snapshots of EC2 instances. Each instance succeeds or fails on its own, so the reply has a job ID or an error per instance.
 
 ## Arguments
 

@@ -1,12 +1,12 @@
 # cancelActivitySeries
 
-Cancel an activity series.
+Requests cancellation of a running activity series on its Rubrik cluster and marks it Canceling; follow it to its final status with activitySeries. Returns true if the request was sent and false on any failure, with no error detail, including when the series is not cancelable or does not exist.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                               | Description                             |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| input *(required)* | [CancelActivitySeriesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CancelActivitySeriesInput/index.md)! | Input for canceling an activity series. |
+| Argument           | Type                                                                                                                                               | Description                                                                               |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| input *(required)* | [CancelActivitySeriesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CancelActivitySeriesInput/index.md)! | activitySeriesId and the clusterUuid of the Rubrik cluster running it; both are required. |
 
 ## Returns
 

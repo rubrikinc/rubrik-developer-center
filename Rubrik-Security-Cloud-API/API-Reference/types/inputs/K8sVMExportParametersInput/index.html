@@ -940,17 +940,17 @@
 <tr>
 <td>pvcNames</td>
 <td>[String!]</td>
-<td>Supported in v9.3+</td>
+<td>Restore only the named disks. The virtual machine is applied with all of its volumes, so a disk not named here must already exist in the target namespace, otherwise the virtual machine stays unschedulable until it does.</td>
 </tr>
 <tr>
 <td>runStrategy</td>
 <td>String</td>
-<td>Supported in v9.3+ Specifies the run strategy of the exported virtual machine.</td>
+<td>Supported in v9.3+ v9.3-v9.6: Specifies the run strategy of the exported virtual machine. v9.7: Specifies the run strategy of the exported virtual machine. Allowed values are Always, Halted, Manual, RerunOnFailure, Once, or empty to keep the source value.</td>
 </tr>
 <tr>
 <td>shouldKeepMacAddresses</td>
 <td>Boolean</td>
-<td>Supported in v9.3+ Determines whether the MAC addresses of the network interfaces on the source virtual machine are assigned to the new virtual machine. Set to 'true' to keep the MAC addresses of the new virtual machine the same as the original virtual machine. Set to 'false' to assign new MAC addresses.</td>
+<td>Supported in v9.3+ v9.3-v9.6: Determines whether the MAC addresses of the network interfaces on the source virtual machine are assigned to the new virtual machine. Set to 'true' to keep the MAC addresses of the new virtual machine the same as the original virtual machine. Set to 'false' to assign new MAC addresses. v9.7: Determines whether the MAC addresses of the network interfaces on the source virtual machine are assigned to the new virtual machine. Set to 'true' to keep the MAC addresses of the new virtual machine the same as the original virtual machine. Set to 'false' to assign new MAC addresses. Defaults to false when exporting to a different namespace on the source cluster, true otherwise.</td>
 </tr>
 <tr>
 <td>storageMapping</td>

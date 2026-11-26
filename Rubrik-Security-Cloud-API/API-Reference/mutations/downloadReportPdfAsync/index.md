@@ -1,6 +1,6 @@
 # downloadReportPdfAsync
 
-Download a report asynchronously in PDF format.
+Deprecated: use downloadFile. Starts an asynchronous PDF download of a saved report; track the file with allUserFiles.
 
 ## Arguments
 

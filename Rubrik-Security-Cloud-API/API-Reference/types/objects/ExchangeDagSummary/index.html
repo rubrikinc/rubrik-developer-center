@@ -963,6 +963,11 @@
 <td>String!</td>
 <td>Required. Supported in v8.0+ Name of the Exchange DAG.</td>
 </tr>
+<tr>
+<td>slaProtection</td>
+<td><a href="../SlaProtection/">SlaProtection</a></td>
+<td>How the Exchange DAG is protected, computed by the Rubrik cluster from the SLA Domain assigned to the DAG. An Exchange DAG has no parent to inherit an SLA Domain from, so the status is NO_SLA when no SLA Domain is assigned. Use this, not configuredSlaDomainId or configuredSlaDomainName, to display the protection of the DAG.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="used-by">Used By</h2>

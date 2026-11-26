@@ -1,6 +1,6 @@
 # RcvAwsPrivateConnectivityEndpoints
 
-Customer-provided VPC interface endpoint (PrivateLink) DNS names for routing a Rubrik Cloud Vault (RCV) AWS CDM location's S3 and STS traffic privately. These are the regional interface-endpoint DNS hostnames.
+Customer-provided VPC interface endpoint (PrivateLink) DNS names for routing the S3 and STS traffic of a Rubrik Cloud Vault AWS location on a Rubrik cluster privately. These are the regional interface-endpoint DNS hostnames.
 
 ## Fields
 

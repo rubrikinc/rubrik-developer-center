@@ -938,7 +938,7 @@
 
 
 <h1 id="recoveries">recoveries</h1>
-<p>Return a paginated list of recoveries corresponding to the filter passed. RSC prioritizes recovery_ids if they are passed in the filter. All the filters, if passed, will work as AND logic. A maximum of 50 objects per page is supported.</p>
+<p>Lists recoveries that match every given filter, up to 50 per page. When recoveryIds is set, it takes priority over the other filters.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -1027,7 +1027,7 @@
 <tr>
 <td>workloadTypeFilter</td>
 <td><a href="../../types/enums/ManagedObjectType/">ManagedObjectType</a></td>
-<td>Filter by workload type.</td>
+<td>Workload type to return. Defaults to VSPHERE_VIRTUAL_MACHINE, so set it to see recoveries of other workload types.</td>
 </tr>
 <tr>
 <td>recoveryNameSubstring</td>

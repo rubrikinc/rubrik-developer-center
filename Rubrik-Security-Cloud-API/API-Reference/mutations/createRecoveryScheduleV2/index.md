@@ -4,9 +4,9 @@ Creates a recovery schedule for a recovery plan.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                       | Description                                                            |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| input *(required)* | [CreateRecoveryScheduleV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateRecoveryScheduleV2Input/index.md)! | Creates the recovery schedule information linked to the recovery plan. |
+| Argument           | Type                                                                                                                                                       | Description                                                                                                                                                                             |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| input *(required)* | [CreateRecoveryScheduleV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateRecoveryScheduleV2Input/index.md)! | The recovery plan ID and the schedule. startRunTime and recoveryConfig are required even though the schema marks them optional, and startRunTime may be at most 30 minutes in the past. |
 
 ## Returns
 

@@ -938,7 +938,7 @@
 
 
 <h1 id="recoversaphanadatabasetopointintime">recoverSapHanaDatabaseToPointInTime</h1>
-<p>Recover the SAP HANA database to a point in time Supported in v9.4+ Recover the SAP HANA database to the provided point in time.</p>
+<p>Recovers a SAP HANA database to a point in time within its recoverable ranges (see sapHanaRecoverableRanges). Returns the async request; track it with jobInfo (type SAP_HANA_DATABASE, requestId = the returned id, clusterUuid = the cluster's UUID).</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/RecoverSapHanaDatabaseToPointInTimeInput/">RecoverSapHanaDatabaseToPointInTimeInput</a>!</td>
-<td>Input for V1RecoverSapHanaDatabaseToPointInTime.</td>
+<td>The recovery configuration, including the point in time.</td>
 </tr>
 </tbody>
 </table>

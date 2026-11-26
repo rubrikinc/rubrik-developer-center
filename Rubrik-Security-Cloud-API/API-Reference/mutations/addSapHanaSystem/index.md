@@ -1,12 +1,12 @@
 # addSapHanaSystem
 
-Add a SAP HANA system Supported in v5.3+ Add a SAP HANA system to the Rubrik cluster.
+Adds a SAP HANA system to a Rubrik cluster so its databases can be protected.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                       | Description                   |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------- |
-| input *(required)* | [AddSapHanaSystemInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddSapHanaSystemInput/index.md)! | Input for V1AddSapHanaSystem. |
+| Argument           | Type                                                                                                                                       | Description                                                                                  |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| input *(required)* | [AddSapHanaSystemInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AddSapHanaSystemInput/index.md)! | The cluster UUID and the system's connection details, such as hosts, username, and password. |
 
 ## Returns
 

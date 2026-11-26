@@ -1,6 +1,6 @@
 # allGcpNativeStoredNetworkNamesInProject
 
-List of all the distinct network names of the GCP instances stored with Polaris.
+Lists the distinct network names of the GCP instances Rubrik has discovered in one project.
 
 ## Arguments
 

@@ -1,12 +1,12 @@
 # cloudNativeTagRulesObjectType
 
-GetCloudNativeTagRulesObjectType returns the object type of the cloud native tag rule.
+Returns the object type a cloud native tag rule applies to.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                   | Description                                            |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| input *(required)* | [GetCloudNativeTagRulesObjectTypeReq](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetCloudNativeTagRulesObjectTypeReq/index.md)! | Inputs for getting object id of cloud native tag rule. |
+| Argument           | Type                                                                                                                                                                   | Description              |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| input *(required)* | [GetCloudNativeTagRulesObjectTypeReq](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetCloudNativeTagRulesObjectTypeReq/index.md)! | The tag rule to look up. |
 
 ## Returns
 

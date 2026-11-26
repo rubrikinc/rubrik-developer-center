@@ -1,12 +1,12 @@
 # slaManagedVolume
 
-Details of a SLA Managed Volume object.
+Returns one SLA Managed Volume by its ID.
 
 ## Arguments
 
-| Argument         | Type                                                                                                      | Description                 |
-| ---------------- | --------------------------------------------------------------------------------------------------------- | --------------------------- |
-| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik UUID for the object. |
+| Argument         | Type                                                                                                      | Description                |
+| ---------------- | --------------------------------------------------------------------------------------------------------- | -------------------------- |
+| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | The SLA Managed Volume ID. |
 
 ## Returns
 

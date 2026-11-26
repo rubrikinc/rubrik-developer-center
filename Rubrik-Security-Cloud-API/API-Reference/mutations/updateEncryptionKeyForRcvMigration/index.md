@@ -1,12 +1,12 @@
 # updateEncryptionKeyForRcvMigration
 
-Updates the encryption key of the source location that will be used for migration to RCV.
+Provides the RSA encryption key of a Rubrik cluster archival location that is being migrated to Rubrik Cloud Vault. A migration must be in progress.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                           | Description                                       |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
-| input *(required)* | [UpdateEncryptionKeyForRcvMigrationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateEncryptionKeyForRcvMigrationInput/index.md)! | Input to update encryption key for RCV migration. |
+| Argument           | Type                                                                                                                                                                           | Description                                |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------ |
+| input *(required)* | [UpdateEncryptionKeyForRcvMigrationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateEncryptionKeyForRcvMigrationInput/index.md)! | ID of the source location and its RSA key. |
 
 ## Returns
 

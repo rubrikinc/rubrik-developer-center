@@ -27,6 +27,7 @@ Specifies workloads that have an anomalous snapshot.
 | resolutionStatusFilter | \[[ResolutionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ResolutionStatus/index.md)!\]               | Filter by anomaly resolution.                                                                                                           |
 | riskLevelTypesFilter   | \[[RiskLevelType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RiskLevelType/index.md)!\]                     | Filter by risk level type.                                                                                                              |
 | anomalyCategoryFilter  | \[[WorkloadAnomalyCategory](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadAnomalyCategory/index.md)!\] | Filter by the category the anomaly is grouped under.                                                                                    |
+| skipBlueprintGrouping  | Boolean                                                                                                                                           | Return one row per anomalous object instead of grouping objects under Recovery Plans.                                                   |
 
 ## Returns
 

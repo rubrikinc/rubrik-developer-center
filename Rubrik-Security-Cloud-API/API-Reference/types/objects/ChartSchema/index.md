@@ -15,4 +15,5 @@ The chart schema that contains all available charts of the the report.
 
 **Referenced by**
 
+- [PolarisReportSchema.chartSchema](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolarisReportSchema/index.md)
 - [RscReportTemplate.chartSchema](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RscReportTemplate/index.md)

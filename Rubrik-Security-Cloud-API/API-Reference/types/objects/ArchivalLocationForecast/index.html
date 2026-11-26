@@ -954,6 +954,16 @@
 <td>Forecasted storage time-series (one point per forecast horizon).</td>
 </tr>
 <tr>
+<td>forecastedBytes</td>
+<td>Float</td>
+<td>Forecast storage at the last point of the forecast series, in bytes. Unset when the location has no fresh forecast.</td>
+</tr>
+<tr>
+<td>growthPct</td>
+<td>Float</td>
+<td>Growth from current_bytes to forecasted_bytes, in percent. Unset when forecasted_bytes is unset or current_bytes is 0.</td>
+</tr>
+<tr>
 <td>lastRefreshedAt</td>
 <td><a href="../../scalars/DateTime/">DateTime</a></td>
 <td>Timestamp of the most recent forecast refresh for this archival location. Unset if no forecast data is available yet.</td>

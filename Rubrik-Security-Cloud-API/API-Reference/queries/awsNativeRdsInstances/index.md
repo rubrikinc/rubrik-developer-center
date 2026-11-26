@@ -1,6 +1,6 @@
 # awsNativeRdsInstances
 
-Lists the AWS Native RDS instances under the AWS-native hierarchy root.
+Lists the Amazon RDS instances in the AWS accounts added to Rubrik.
 
 ## Arguments
 

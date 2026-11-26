@@ -938,7 +938,7 @@
 
 
 <h1 id="deletefailoverclusterapp">deleteFailoverClusterApp</h1>
-<p>Delete a failover cluster app Supported in v5.2+ Delete a failover cluster app.</p>
+<p>Deletes a failover cluster app. Existing snapshots are kept by default, set preserveSnapshots to false to delete them.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/DeleteFailoverClusterAppInput/">DeleteFailoverClusterAppInput</a>!</td>
-<td>Input for V1DeleteFailoverClusterApp.</td>
+<td>ID of the failover cluster app and an optional preserveSnapshots flag.</td>
 </tr>
 </tbody>
 </table>

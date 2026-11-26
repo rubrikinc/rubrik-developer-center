@@ -16,3 +16,4 @@ Paginated list of ActiveDirectoryDomainController objects. Each page of the resu
 **Queries**
 
 - [query: activeDirectoryDomainControllers](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/activeDirectoryDomainControllers/index.md)
+- [query: unifiedActiveDirectoryDomainControllers](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/unifiedActiveDirectoryDomainControllers/index.md)

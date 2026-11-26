@@ -1,6 +1,6 @@
 # updateEventDigest
 
-Update event digests for specific recipients.
+Creates or updates the event digest named digestName for each user in recipientUserIds, matched by recipient and name; digestId is not used. Email addresses are rejected; use updateDistributionListDigest for those.
 
 ## Arguments
 

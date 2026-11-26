@@ -938,7 +938,7 @@
 
 
 <h1 id="updatefileset">updateFileset</h1>
-<p>Update a Fileset Supported in v5.0+ Update a Fileset with the specified properties.</p>
+<p>Changes a fileset's SLA Domain, forces a full backup, or sets its SnapMirror labels, and returns the updated fileset.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/UpdateFilesetInput/">UpdateFilesetInput</a>!</td>
-<td>Input for V1UpdateFileset.</td>
+<td>Input fields: id and filesetUpdateProperties, with configuredSlaDomainId, forceFull, forceFullPartitionIds, and SnapMirror labels for full and incremental backups.</td>
 </tr>
 </tbody>
 </table>

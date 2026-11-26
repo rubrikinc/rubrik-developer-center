@@ -1,12 +1,12 @@
 # syslogExportRules
 
-Get the configured syslog export rules Supported in v5.1+ Return the list of all configured syslog export rules.
+Lists the syslog export rules configured on a Rubrik cluster (version 5.1 or later), with each rule's ID.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                               | Description                       |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| input *(required)* | [GetSyslogExportRulesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetSyslogExportRulesInput/index.md)! | Input for V1GetSyslogExportRules. |
+| Argument           | Type                                                                                                                                               | Description                                |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| input *(required)* | [GetSyslogExportRulesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetSyslogExportRulesInput/index.md)! | clusterUuid identifies the Rubrik cluster. |
 
 ## Returns
 

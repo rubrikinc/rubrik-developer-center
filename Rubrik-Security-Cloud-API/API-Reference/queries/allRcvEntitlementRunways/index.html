@@ -938,7 +938,7 @@
 
 
 <h1 id="allrcventitlementrunways">allRcvEntitlementRunways</h1>
-<p>Returns projected runway in days per RCV entitlement group. Each requested group is identified by tier and redundancy; the response includes aggregated current storage, weekly growth rate, projected runway in days, and the freshness of the underlying forecast.</p>
+<p>Returns the projected runway in days for each Rubrik Cloud Vault entitlement group, identified by tier and redundancy, with current storage, weekly growth, and forecast freshness.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>groups <em>(required)</em></td>
 <td>[<a href="../../types/inputs/RcvEntitlementGroupQueryInput/">RcvEntitlementGroupQueryInput</a>!]!</td>
-<td>Per-entitlement-group inputs.</td>
+<td>Entitlement groups to project, each a tier and redundancy.</td>
 </tr>
 </tbody>
 </table>

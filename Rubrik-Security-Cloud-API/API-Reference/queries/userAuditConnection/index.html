@@ -938,7 +938,7 @@
 
 
 <h1 id="userauditconnection">userAuditConnection</h1>
-<p>Paginated list of user audit data. Each page of the results will include at most 50 entries unless otherwise specified using the first parameter. Query the pageInfo.hasNextPage field to know whether all audits were returned.</p>
+<p>Paginated list of user audit entries, newest first by default, up to 1,000 per page (also the default when first is omitted). Returns an empty list without permission to view the audit log.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>

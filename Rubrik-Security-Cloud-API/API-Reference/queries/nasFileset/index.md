@@ -1,6 +1,6 @@
 # nasFileset
 
-A NAS Fileset.
+Returns one NAS fileset, a protected set of files on a NAS share, by its ID.
 
 ## Arguments
 

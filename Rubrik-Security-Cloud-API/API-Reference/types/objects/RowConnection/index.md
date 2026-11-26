@@ -17,3 +17,4 @@ Paginated list of Row objects. Each page of the results includes at most 1000 en
 **Queries**
 
 - [query: reportData](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/reportData/index.md)
+- [query: reportTableData](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/reportTableData/index.md)

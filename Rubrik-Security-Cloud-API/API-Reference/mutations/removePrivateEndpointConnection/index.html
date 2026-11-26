@@ -938,7 +938,7 @@
 
 
 <h1 id="removeprivateendpointconnection">removePrivateEndpointConnection</h1>
-<p>Removes a private endpoint connection from an RCV location. After removing a Private endpoint connection to an RCV storage account, the private tunnel can't be used to send data to and from cdm cluster to Rubrik hosted storage account.</p>
+<p>Removes a private endpoint connection from a Rubrik Cloud Vault Azure location. The Rubrik cluster can then no longer reach the Rubrik-hosted storage account over that private link.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/RemovePrivateEndpointConnectionInput/">RemovePrivateEndpointConnectionInput</a>!</td>
-<td>Input for removing a private endpoint connection from an RCV location.</td>
+<td>ID of the location and ID of the private endpoint.</td>
 </tr>
 </tbody>
 </table>

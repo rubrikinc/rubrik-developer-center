@@ -1,12 +1,12 @@
 # updateAwsExocomputeConfigs
 
-Update AWS Exocompute configs.
+Updates Exocompute configurations for AWS cloud accounts.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                           | Description                                    |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| input *(required)* | [UpdateAwsExocomputeConfigsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateAwsExocomputeConfigsInput/index.md)! | Input to create AWS exocompute configurations. |
+| Argument           | Type                                                                                                                                                           | Description                                  |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| input *(required)* | [UpdateAwsExocomputeConfigsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateAwsExocomputeConfigsInput/index.md)! | The AWS Exocompute configurations to update. |
 
 ## Returns
 

@@ -1,6 +1,6 @@
 # startClusterReportMigrationJob
 
-Start a job to migrate reports from Rubrik cluster to RSC.
+Starts a job that migrates reports from a Rubrik cluster to Rubrik Security Cloud and returns its taskchain ID. Follow progress with clusterReportMigrationJobStatus.
 
 ## Arguments
 

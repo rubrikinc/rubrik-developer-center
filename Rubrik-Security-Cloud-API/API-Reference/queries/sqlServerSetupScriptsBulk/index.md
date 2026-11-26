@@ -4,9 +4,9 @@ The script to setup the SQL Server / Managed Instance for backups, given the lis
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                           | Description                                                            |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| input *(required)* | [GetSqlServerSetupScriptsReqBulk](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetSqlServerSetupScriptsReqBulk/index.md)! | Input for getting scripts for manual managed backup credentials setup. |
+| Argument           | Type                                                                                                                                                           | Description                                     |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| input *(required)* | [GetSqlServerSetupScriptsReqBulk](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetSqlServerSetupScriptsReqBulk/index.md)! | The object IDs to get backup setup scripts for. |
 
 ## Returns
 

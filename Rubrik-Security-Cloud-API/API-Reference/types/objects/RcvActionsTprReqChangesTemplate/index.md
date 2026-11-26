@@ -1,6 +1,6 @@
 # RcvActionsTprReqChangesTemplate
 
-*No description available.*
+Rubrik Cloud Vault actions TPR requested-changes template.
 
 **Implements:** [RequestedChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/RequestedChangesTemplate/index.md)
 
@@ -10,7 +10,7 @@
 | ------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | currentRedundancy   | String  | The current redundancy of the Rubrik Cloud Vault, for tier / redundancy conversion actions. Empty for actions that don't change it.   |
 | currentTier         | String  | The current tier of the Rubrik Cloud Vault, for tier conversion actions. Empty for actions that don't change the tier.                |
-| requestedAction     | String! |                                                                                                                                       |
+| requestedAction     | String! | Requested action.                                                                                                                     |
 | requestedRedundancy | String  | The requested redundancy of the Rubrik Cloud Vault, for tier / redundancy conversion actions. Empty for actions that don't change it. |
 | requestedTier       | String  | The requested tier of the Rubrik Cloud Vault, for tier conversion actions. Empty for actions that don't change the tier.              |
 | templateName        | String! | Name of the requested changes template for quorum authorization.                                                                      |

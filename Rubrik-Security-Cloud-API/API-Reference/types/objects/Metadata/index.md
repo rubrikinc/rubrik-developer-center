@@ -14,4 +14,7 @@ Metadata is a generic key/value pair carrying additional information about a rep
 **Referenced by**
 
 - [CellData.metadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CellData/index.md)
+- [ChartPrimaryGroupBy.metadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ChartPrimaryGroupBy/index.md)
+- [ChartSecondaryGroupBy.metadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ChartSecondaryGroupBy/index.md)
+- [PolarisReportColumn.metadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PolarisReportColumn/index.md)
 - [Row.metadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Row/index.md)

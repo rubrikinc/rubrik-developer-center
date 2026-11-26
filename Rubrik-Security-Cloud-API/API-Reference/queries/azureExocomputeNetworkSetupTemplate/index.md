@@ -1,6 +1,6 @@
 # azureExocomputeNetworkSetupTemplate
 
-GetAzureExocomputeNetworkSetupTemplate retrieves the ARM templates for creating VNet, Subnet, and NSG in the regions provided in the request.
+Returns the Azure Resource Manager templates that create the virtual network, subnet, and network security group Exocompute needs in each requested region.
 
 ## Arguments
 

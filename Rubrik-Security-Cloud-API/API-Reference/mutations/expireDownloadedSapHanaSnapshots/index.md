@@ -1,12 +1,12 @@
 # expireDownloadedSapHanaSnapshots
 
-Expire downloaded snapshots of an SAP HANA database Supported in v8.0+ Requests an asynchronous job to expire all downloaded data and log snapshots. You can specify a begin time or an end time or both to provide a time range to expire only the downloaded data and log snapshots that were taken within the specified time range. The time is relative to when the snapshot was originally taken, not when it was downloaded. You can also configure a flag to expire only the log snapshots.
+Expires a SAP HANA database's downloaded data and log snapshots, optionally only logs or only those taken within a time range. Returns the async request.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                       | Description                                   |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| input *(required)* | [ExpireDownloadedSapHanaSnapshotsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExpireDownloadedSapHanaSnapshotsInput/index.md)! | Input for V1ExpireDownloadedSapHanaSnapshots. |
+| Argument           | Type                                                                                                                                                                       | Description                                                                                                                 |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| input *(required)* | [ExpireDownloadedSapHanaSnapshotsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ExpireDownloadedSapHanaSnapshotsInput/index.md)! | The database ID, optional beforeTime and afterTime (when the snapshot was taken, not downloaded), and shouldExpireLogsOnly. |
 
 ## Returns
 

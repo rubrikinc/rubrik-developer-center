@@ -1,6 +1,6 @@
 # replicationPairs
 
-List of all replication pair Rubrik clusters.
+Lists replication pairs, each a source Rubrik cluster and the target cluster it replicates to.
 
 ## Arguments
 

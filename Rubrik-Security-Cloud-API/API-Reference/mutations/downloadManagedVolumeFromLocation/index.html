@@ -938,7 +938,7 @@
 
 
 <h1 id="downloadmanagedvolumefromlocation">downloadManagedVolumeFromLocation</h1>
-<p>Download a snapshot from a remote target. Supported in v7.0+ Initiates a job to download a snapshot from the specified location when the snapshot does not exist locally. The specified location has to be a remote target connected to this Rubrik cluster.</p>
+<p>Starts a job to download a Managed Volume snapshot from a replication target or archival location when it is not stored on this Rubrik cluster, and returns the job's request status. Set an SLA Domain in downloadConfig to control how long the downloaded snapshot is kept. Requires Rubrik CDM 7.0 or later. CDM 7.0 to 8.1 supports replication targets only; CDM 9.0 or later also supports remote targets.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>

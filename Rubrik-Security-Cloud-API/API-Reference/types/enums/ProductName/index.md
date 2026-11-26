@@ -48,9 +48,14 @@ Name of product.
 | RADAR_BAAS                                   | Anomaly Detection on BaaS workloads (full AWS).               |
 | RADAR_BAAS_UNSTRUCTURED                      | Anomaly Detection on BaaS unstructured (AWS S3).              |
 | RADAR_CLU                                    | Ransomware Investigation on Cloud Unstructured.               |
+| RADAR_CLU_INVESTIGATION                      | Data Impact Investigation add-on to RADAR_CLU.                |
+| RADAR_INVESTIGATION                          | Data Impact Investigation add-on to RADAR.                    |
 | RADAR_NAS                                    | Ransomware Investigation on NAS.                              |
+| RADAR_NAS_INVESTIGATION                      | Data Impact Investigation add-on to RADAR_NAS.                |
 | RADAR_O365                                   | Anomaly Detection on Office 365.                              |
+| RADAR_O365_INVESTIGATION                     | Data Impact Investigation add-on to RADAR_O365.               |
 | RADAR_UCL                                    | Ransomware Investigation on CNP.                              |
+| RADAR_UCL_INVESTIGATION                      | Data Impact Investigation add-on to RADAR_UCL.                |
 | RCV                                          | Rubrik Cloud Vault (RCV).                                     |
 | RCV_UCL                                      | Backup on the Rubrik account.                                 |
 | RDP                                          | Rubrik Data Protection (RDP).                                 |

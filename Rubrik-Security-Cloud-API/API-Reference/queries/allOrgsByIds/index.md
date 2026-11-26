@@ -1,6 +1,6 @@
 # allOrgsByIds
 
-Orgs of given IDs.
+Returns the organizations with the given IDs.
 
 ## Arguments
 

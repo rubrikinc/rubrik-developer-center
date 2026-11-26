@@ -1,12 +1,12 @@
 # activitySeries
 
-Retrieve an activity series.
+Returns one activity series, a job's run history such as a backup or recovery with its latest status and progress, by ID. Returns an error if the series does not exist or the caller cannot view it.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                   | Description                              |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| input *(required)* | [ActivitySeriesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ActivitySeriesInput/index.md)! | Input for retrieving an activity series. |
+| Argument           | Type                                                                                                                                   | Description                                                                                                                                                                                |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| input *(required)* | [ActivitySeriesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ActivitySeriesInput/index.md)! | Identifies the activity series: activitySeriesId is required, and clusterUuid is optional and defaults to Rubrik Security Cloud, which owns series that do not come from a Rubrik cluster. |
 
 ## Returns
 

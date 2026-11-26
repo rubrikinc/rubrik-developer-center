@@ -40,7 +40,13 @@ query AllAwsNativeRdsExportS3Buckets($awsAccountRubrikId: UUID!) {
         "arn": "example-string",
         "name": "example-string",
         "region": "example-string",
-        "regionEnum": "AF_SOUTH_1"
+        "regionEnum": "AF_SOUTH_1",
+        "tags": [
+          {
+            "key": "example-string",
+            "value": "example-string"
+          }
+        ]
       }
     ]
   }

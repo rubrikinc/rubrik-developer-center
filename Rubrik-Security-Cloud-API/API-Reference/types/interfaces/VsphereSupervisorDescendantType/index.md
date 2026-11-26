@@ -51,3 +51,4 @@ Descendants of a vSphere Supervisor.
 ## Implemented By
 
 - [VsphereNamespace](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereNamespace/index.md)
+- [VsphereVm](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/VsphereVm/index.md)

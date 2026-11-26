@@ -1,12 +1,12 @@
 # filesetRequestStatus
 
-Get details about an async request Supported in v5.0+ Get details about a fileset related async request.
+Returns the status, progress, and any error of an asynchronous fileset request, such as an on-demand backup, download, export, or restore.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                               | Description                               |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- |
-| input *(required)* | [GetFilesetAsyncRequestStatusInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetFilesetAsyncRequestStatusInput/index.md)! | Input for V1GetFilesetAsyncRequestStatus. |
+| Argument           | Type                                                                                                                                                               | Description                                                                                 |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| input *(required)* | [GetFilesetAsyncRequestStatusInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetFilesetAsyncRequestStatusInput/index.md)! | Input fields: id, the request ID returned by the mutation; clusterUuid, its Rubrik cluster. |
 
 ## Returns
 

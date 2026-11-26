@@ -1,6 +1,6 @@
 # addAzureCloudAccountWithoutOauth
 
-Add the Azure Subscription cloud account for the given feature without OAuth.
+AzureCloudAccountAddWithoutOAuth allows a way to manually add an Azure cloud account without performing OAuth. When adding the subscription via this endpoint, we will skip creation of any role or assignment and the expectation is that the role is already created and assigned to the configured app/service principal by the customer. Warning: Be very diligent before using this endpoint. We won't be able to support features like automated Upgrade Permissions and Role Deletion on subscriptions added via this mechanism. Add the Azure Subscription cloud account for the given feature without OAuth.
 
 ## Arguments
 

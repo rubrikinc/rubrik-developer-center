@@ -1,6 +1,6 @@
 # customTprPolicies
 
-All unarchived custom TPR policies.
+Lists the custom quorum authorization (two-person rule) policies that are not archived.
 
 ## Arguments
 

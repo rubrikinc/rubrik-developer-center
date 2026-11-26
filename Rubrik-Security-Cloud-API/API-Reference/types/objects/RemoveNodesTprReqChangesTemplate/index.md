@@ -1,6 +1,6 @@
 # RemoveNodesTprReqChangesTemplate
 
-*No description available.*
+Remove cluster nodes TPR requested-changes template.
 
 **Implements:** [RequestedChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/RequestedChangesTemplate/index.md)
 

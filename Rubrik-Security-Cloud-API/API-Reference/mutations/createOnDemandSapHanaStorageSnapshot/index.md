@@ -1,12 +1,12 @@
 # createOnDemandSapHanaStorageSnapshot
 
-Create on demand storage snapshot Supported in v9.1+ Initiates a job to take an on demand storage snapshot of a specified SAP HANA system object. The GET /sap_hana/system/request/{id} endpoint can be used to monitor the progress of the job.
+Starts an on-demand storage snapshot of a SAP HANA system, optionally kept under a given SLA Domain; restore it with restoreSapHanaSystemStorage. Returns the async request.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                               | Description                                       |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| input *(required)* | [CreateOnDemandSapHanaStorageSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateOnDemandSapHanaStorageSnapshotInput/index.md)! | Input for V1CreateOnDemandSapHanaStorageSnapshot. |
+| Argument           | Type                                                                                                                                                                               | Description                                                   |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| input *(required)* | [CreateOnDemandSapHanaStorageSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateOnDemandSapHanaStorageSnapshotInput/index.md)! | The system ID and an optional SLA Domain ID for the snapshot. |
 
 ## Returns
 

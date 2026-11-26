@@ -1,6 +1,6 @@
 # createCloudNativeLabelRule
 
-Create cloud native label rule
+Creates a cloud native label rule, which assigns an SLA Domain to cloud resources by label.
 
 ## Arguments
 

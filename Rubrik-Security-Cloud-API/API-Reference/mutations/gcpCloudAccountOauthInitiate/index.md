@@ -28,9 +28,7 @@ mutation GcpCloudAccountOauthInitiate($input: GcpCloudAccountOauthInitiateInput!
 
 ```json
 {
-  "input": {
-    "customerUrl": "example-string"
-  }
+  "input": {}
 }
 ```
 

@@ -1,12 +1,12 @@
 # allConnectedClusters
 
-List all connected clusters.
+Lists the Rubrik clusters connected to the caller's account that the caller can view. Only on-premises Rubrik clusters are supported.
 
 ## Arguments
 
-| Argument         | Type                                                                                                                         | Description                                    |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| clusterFilterArg | [ClusterTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterTypeEnum/index.md) | Specification to filter cluster based on type. |
+| Argument         | Type                                                                                                                         | Description                                                                  |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| clusterFilterArg | [ClusterTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterTypeEnum/index.md) | Cluster type. Only on-premises (the default) is supported; other types fail. |
 
 ## Returns
 

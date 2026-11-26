@@ -1,6 +1,6 @@
 # createNfsReaderTarget
 
-Creates reader type for NFS archival location on a CDM cluster.
+Creates a reader location on a Rubrik cluster for an existing NFS archival location, so the cluster can read and recover data another cluster archived there.
 
 ## Arguments
 

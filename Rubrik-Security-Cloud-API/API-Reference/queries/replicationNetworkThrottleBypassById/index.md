@@ -4,9 +4,9 @@ Retrieves replication throttle bypass status for a specified replication target 
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                   | Description                                 |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| input *(required)* | [QueryByIdReplicationTargetInfoInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/QueryByIdReplicationTargetInfoInput/index.md)! | Input for V1QueryByIdReplicationTargetInfo. |
+| Argument           | Type                                                                                                                                                                   | Description                                                                   |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| input *(required)* | [QueryByIdReplicationTargetInfoInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/QueryByIdReplicationTargetInfoInput/index.md)! | UUID of the replication source Rubrik cluster and UUID of the target cluster. |
 
 ## Returns
 

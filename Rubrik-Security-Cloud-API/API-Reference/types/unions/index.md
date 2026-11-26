@@ -1,14 +1,16 @@
 # Unions
 
-36 types.
+38 types.
 
 [AccessMethodDetailsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/AccessMethodDetailsType/index.md)\
 [ActionTypes](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ActionTypes/index.md)\
+[ActivitySeriesGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ActivitySeriesGroupByInfo/index.md)\
 [AnomalyResultGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/AnomalyResultGroupByInfo/index.md)\
 [ApplicationSpecificMetadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ApplicationSpecificMetadata/index.md)\
 [AzureSpecificFeatureDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/AzureSpecificFeatureDetails/index.md)\
 [CdmSnapshotGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/CdmSnapshotGroupByInfo/index.md)\
 [CloudDirectNasObject](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/CloudDirectNasObject/index.md)\
+[CloudSpecificMissingPermissionUnion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/CloudSpecificMissingPermissionUnion/index.md)\
 [ClusterGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ClusterGroupByInfo/index.md)\
 [ClusterMetricGroupByInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/ClusterMetricGroupByInfo/index.md)\
 [DataLocationClusterInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/unions/DataLocationClusterInfo/index.md)\

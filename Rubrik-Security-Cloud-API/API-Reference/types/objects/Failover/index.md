@@ -19,7 +19,7 @@ A protection task.
 | source           | String!                                                                                                                             | Source of the workload associated with this Orchestrated Application Recovery failover job. |
 | startTime        | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)!                   | The timestamp that the job starts.                                                          |
 | targetSite       | String!                                                                                                                             | Target site of the Orchestrated Application Recovery failover job.                          |
-| taskchainId      | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                           |                                                                                             |
+| taskchainId      | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                           | Taskchain ID of the failover job.                                                           |
 
 ## Field Arguments
 

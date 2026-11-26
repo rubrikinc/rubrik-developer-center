@@ -1,6 +1,6 @@
 # awsCloudAccountsMigrateInitiate
 
-AwsCloudAccountsMigrateInitiate return template details for migrating the existing AWS accounts which are eligible for migration.
+Returns the template details needed to move eligible AWS accounts already in Rubrik under an AWS organization.
 
 ## Arguments
 

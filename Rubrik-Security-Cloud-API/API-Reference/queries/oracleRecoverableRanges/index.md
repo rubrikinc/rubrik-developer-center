@@ -43,7 +43,8 @@ query OracleRecoverableRanges($input: GetOracleDbRecoverableRangesInput!) {
         {
           "beginTime": "2024-01-01T00:00:00.000Z",
           "endTime": "2024-01-01T00:00:00.000Z",
-          "status": "example-string"
+          "status": "example-string",
+          "zeroRpoEndTime": "2024-01-01T00:00:00.000Z"
         }
       ]
     }

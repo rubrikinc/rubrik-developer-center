@@ -938,7 +938,7 @@
 
 
 <h1 id="testsyslogexportrule">testSyslogExportRule</h1>
-<p>Test the specified syslog export rule Supported in v5.1+ Send a test message using the syslog export rule specified by the given id.</p>
+<p>Sends a test message from a Rubrik cluster (version 5.1 or later) to the syslog server described in the input, without saving a rule. Returns the message that was sent.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/TestSyslogExportRuleInput/">TestSyslogExportRuleInput</a>!</td>
-<td>Input for V1TestSyslogExportRule.</td>
+<td>clusterUuid identifies the sending Rubrik cluster; set the syslogExportRuleV* field that matches the cluster's software version with the settings to test.</td>
 </tr>
 </tbody>
 </table>

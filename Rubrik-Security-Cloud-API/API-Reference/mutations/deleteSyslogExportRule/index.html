@@ -938,7 +938,7 @@
 
 
 <h1 id="deletesyslogexportrule">deleteSyslogExportRule</h1>
-<p>Delete the specified syslog export rule Supported in v5.1+ Delete the syslog export rule specified by the given id.</p>
+<p>Deletes a syslog export rule from a Rubrik cluster (version 5.1 or later), by the rule ID from syslogExportRules.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/DeleteSyslogExportRuleInput/">DeleteSyslogExportRuleInput</a>!</td>
-<td>Input for V1DeleteSyslogExportRule.</td>
+<td>clusterUuid identifies the Rubrik cluster; id is the rule to delete.</td>
 </tr>
 </tbody>
 </table>

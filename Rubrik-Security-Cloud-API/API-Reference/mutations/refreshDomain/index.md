@@ -1,6 +1,6 @@
 # refreshDomain
 
-Initiates an on-demand refresh job of a specified Active Directory domain.
+Starts an on-demand refresh of an Active Directory domain; track it with activeDirectoryAsyncRequestStatus.
 
 ## Arguments
 

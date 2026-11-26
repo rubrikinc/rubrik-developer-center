@@ -1004,6 +1004,11 @@
 <td>Required. Supported in v7.0+ SLA Domain ID assigned to the Db2 instance.</td>
 </tr>
 <tr>
+<td>slaProtection</td>
+<td><a href="../SlaProtection/">SlaProtection</a></td>
+<td>How the Db2 instance is protected, computed by the Rubrik cluster from the SLA Domain assigned to the instance. A Db2 instance has no parent to inherit an SLA Domain from, so the status is NO_SLA when no SLA Domain is assigned. Use this, not slaDomainId, to display the protection of the instance.</td>
+</tr>
+<tr>
 <td>slaType</td>
 <td>String!</td>
 <td>Required. Supported in v7.0+ Type of the SLA Domain assigned to the Db2 instance.</td>

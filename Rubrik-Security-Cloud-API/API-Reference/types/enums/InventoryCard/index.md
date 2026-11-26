@@ -30,6 +30,7 @@ Inventory Card options that the user can select as a workload.
 | GCP                            | Inventory Card is GCP.                                  |
 | GCP_BIGQUERY                   | Inventory card is GCP BigQuery.                         |
 | GCP_CLOUD_SQL                  | Inventory Card is GCP Cloud SQL.                        |
+| GCP_GCS                        | Inventory card is GCP Cloud Storage.                    |
 | GITHUB                         | Inventory card is GitHub.                               |
 | GLUE_ICEBERG                   | Inventory card is AWS Glue Iceberg.                     |
 | GOOGLE_WORKSPACE               | Inventory Card is Google Workspace.                     |

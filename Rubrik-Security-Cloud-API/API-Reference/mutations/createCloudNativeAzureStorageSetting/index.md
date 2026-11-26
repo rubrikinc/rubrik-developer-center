@@ -1,6 +1,6 @@
 # createCloudNativeAzureStorageSetting
 
-Creates Storage Settings for the archival of azure cloud native protected objects
+Creates a storage setting for archiving Azure cloud-native protected objects.
 
 ## Arguments
 

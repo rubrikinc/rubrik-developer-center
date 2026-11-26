@@ -938,7 +938,7 @@
 
 
 <h1 id="failoverclusterapps">failoverClusterApps</h1>
-<p>Get a summary of all failover cluster apps.</p>
+<p>Lists the failover cluster apps under the Linux or Windows host root.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -972,12 +972,12 @@
 <tr>
 <td>hostFailoverClusterRoot <em>(required)</em></td>
 <td><a href="../../types/enums/HostFailoverClusterRoot/">HostFailoverClusterRoot</a>!</td>
-<td>Host failover cluster root type.</td>
+<td>LINUX_HOST_ROOT or WINDOWS_HOST_ROOT.</td>
 </tr>
 <tr>
 <td>sortBy</td>
 <td><a href="../../types/enums/HierarchySortByField/">HierarchySortByField</a></td>
-<td>Sort hierarchy objects according to the hierarchy field.</td>
+<td>Field to sort by; results are sorted only when sortOrder is also set.</td>
 </tr>
 <tr>
 <td>sortOrder</td>
@@ -987,7 +987,7 @@
 <tr>
 <td>filter</td>
 <td>[<a href="../../types/inputs/Filter/">Filter</a>!]</td>
-<td>Hierarchy object filter.</td>
+<td>Filters the results by object fields. Supported fields: NAME, NAME_EXACT_MATCH, NAME_PREFIX, IS_RELIC, IS_GHOST, IS_ARCHIVED, CLUSTER_ID, IS_REPLICATED, FAILOVER_CLUSTER_APP_CONNECTION_STATUS (Connected or Disconnected), and FAILOVER_CLUSTER_ID (apps under the given failover clusters). Ghost objects and hidden replicas are excluded unless IS_GHOST or IS_REPLICATED is set.</td>
 </tr>
 </tbody>
 </table>

@@ -1,6 +1,6 @@
 # cloudNativeLabelRules
 
-Cloud native label rules.
+Lists the cloud native label rules for an object type, with filtering and sorting.
 
 ## Arguments
 

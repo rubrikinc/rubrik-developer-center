@@ -1,6 +1,6 @@
 # cloudNativeTagRules
 
-Cloud native tag rules.
+Lists the cloud native tag rules for an object type, with filtering and sorting.
 
 ## Arguments
 

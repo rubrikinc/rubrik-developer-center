@@ -1223,7 +1223,19 @@
 <td>descendantConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>descendantConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>descendantConnection</td>
@@ -1295,7 +1307,19 @@
 <td>physicalChildConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>physicalChildConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>physicalChildConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>physicalChildConnection</td>
@@ -1334,6 +1358,7 @@
 <ul>
 <li><a href="../../../queries/filesetTemplate/">query: filesetTemplate</a></li>
 <li><a href="../../../queries/filesetTemplates/">query: filesetTemplates</a> <em>(via connection)</em></li>
+<li><a href="../../../queries/filesetTemplatesByFids/">query: filesetTemplatesByFids</a> <em>(via connection)</em></li>
 </ul>
 <p><strong>Referenced by</strong></p>
 <ul>

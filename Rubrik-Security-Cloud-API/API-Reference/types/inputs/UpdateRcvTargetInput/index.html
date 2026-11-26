@@ -935,12 +935,12 @@
 <tr>
 <td>ipMapping</td>
 <td><a href="../IpMappingInput/">IpMappingInput</a></td>
-<td>List of allowed IP addresses for the RCV Azure archival location.</td>
+<td>List of allowed IP addresses for the Rubrik Cloud Vault Azure archival location. Replaces the existing list; if omitted, the list is cleared.</td>
 </tr>
 <tr>
 <td>lockDurationDays</td>
 <td><a href="../../scalars/Long/">Long</a>!</td>
-<td>Lock duration for the immutable location, in days.</td>
+<td>Lock duration for the immutable location, in days. A value of 0 keeps the current lock duration.</td>
 </tr>
 <tr>
 <td>name</td>
@@ -950,7 +950,7 @@
 <tr>
 <td>proxySettings</td>
 <td><a href="../ProxySettingsInput/">ProxySettingsInput</a></td>
-<td>Proxy configuration. If omitted, the existing value is preserved.</td>
+<td>Proxy configuration. If omitted, the location's custom proxy is removed.</td>
 </tr>
 <tr>
 <td>redundancy</td>

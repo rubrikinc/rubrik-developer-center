@@ -24,6 +24,7 @@ AWS Exocompute configuration in a region.
 
 **Referenced by**
 
+- [AwsCloudAccountFeaturesWithExoConfigs.exocomputeConfigs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsCloudAccountFeaturesWithExoConfigs/index.md)
 - [AwsExocomputeConfig.configs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsExocomputeConfig/index.md)
 - [AwsFeatureConfig.exocomputeConfigs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsFeatureConfig/index.md)
 - [CreateAwsExocomputeConfigsReply.configs](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CreateAwsExocomputeConfigsReply/index.md)

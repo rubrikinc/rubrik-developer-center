@@ -1,6 +1,6 @@
 # awsNativeEc2InstancesByName
 
-Lists the AWS Native EC2 instances under the AWS-native hierarchy root whose name or instance ID matches the given substring.
+Lists the Amazon EC2 instances in the AWS accounts added to Rubrik whose name or instance ID contains the given text.
 
 ## Arguments
 

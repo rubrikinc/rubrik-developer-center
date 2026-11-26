@@ -1,12 +1,12 @@
 # rcsArchivalLocationsConsumptionStats
 
-RCS Azure archival location consumption stats.
+Returns blob capacity, ingress, and egress statistics for the given Rubrik Cloud Vault Azure archival locations, optionally with 90 days of capacity history.
 
 ## Arguments
 
-| Argument                                           | Type                                                                                                                                             | Description                                                              |
-| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
-| rcsAzureTargetConsumptionStatsRequest *(required)* | [RcsConsumptionStatsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RcsConsumptionStatsInput/index.md)! | Request for fetching consumption stats for multiple rcs Azure locations. |
+| Argument                                           | Type                                                                                                                                             | Description                                                                                |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| rcsAzureTargetConsumptionStatsRequest *(required)* | [RcsConsumptionStatsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/RcsConsumptionStatsInput/index.md)! | The archival location IDs, the metrics to return, and whether to include capacity history. |
 
 ## Returns
 

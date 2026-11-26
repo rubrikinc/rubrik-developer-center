@@ -938,7 +938,7 @@
 
 
 <h1 id="updatefailoverclusterapp">updateFailoverClusterApp</h1>
-<p>Update a failover cluster app Supported in v5.2+ Update the failover cluster app with specified properties.</p>
+<p>Changes a failover cluster app's name, cluster, source, or SLA Domain.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/UpdateFailoverClusterAppInput/">UpdateFailoverClusterAppInput</a>!</td>
-<td>Input for V1UpdateFailoverClusterApp.</td>
+<td>ID of the app and updateProperties. name, failoverClusterId, failoverClusterType and failoverClusterAppSource are required, so send the full configuration. configuredSlaDomainId is optional.</td>
 </tr>
 </tbody>
 </table>

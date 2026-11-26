@@ -1,6 +1,6 @@
 # allAllowedOrgAdminOperations
 
-Returns privileges that are allowed to be asssigned to org admin roles.
+Returns the privileges that can be assigned to organization administrator roles.
 
 ## Returns
 

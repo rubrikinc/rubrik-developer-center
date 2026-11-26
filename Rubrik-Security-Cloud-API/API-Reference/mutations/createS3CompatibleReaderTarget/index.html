@@ -938,7 +938,7 @@
 
 
 <h1 id="creates3compatiblereadertarget">createS3CompatibleReaderTarget</h1>
-<p>Creates reader type for S3Compatible archival location on a CDM cluster.</p>
+<p>Creates a reader location on a Rubrik cluster for an existing S3-compatible archival location, so the cluster can read and recover data another cluster archived there. Setting a TLS certificate or certificate trust mode requires certificate binding to be enabled for the Rubrik cluster.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/CreateS3CompatibleReaderTargetInput/">CreateS3CompatibleReaderTargetInput</a>!</td>
-<td>Input for creating a new S3Compatible reader target.</td>
+<td>The Rubrik cluster, the archival location details, and how the reader retrieves data.</td>
 </tr>
 </tbody>
 </table>

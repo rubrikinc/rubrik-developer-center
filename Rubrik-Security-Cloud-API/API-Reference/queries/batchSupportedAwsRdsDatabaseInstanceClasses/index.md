@@ -1,6 +1,6 @@
 # batchSupportedAwsRdsDatabaseInstanceClasses
 
-BatchSupportedAwsRdsDatabaseInstanceClasses returns the list of supported DB instance classes for multiple engine/version combinations in a single batch request.
+Lists the supported Amazon RDS instance classes for several engine and version combinations in one call.
 
 ## Arguments
 

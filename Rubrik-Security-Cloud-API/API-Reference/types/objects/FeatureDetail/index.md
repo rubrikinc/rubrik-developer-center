@@ -27,6 +27,7 @@ Feature specific details for a cloud account.
 
 **Referenced by**
 
+- [AwsCloudAccountFeaturesWithExoConfigs.featureDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsCloudAccountFeaturesWithExoConfigs/index.md)
 - [AwsCloudAccountWithFeatures.featureDetails](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsCloudAccountWithFeatures/index.md)
 - [AwsExocomputeConfig.featureDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsExocomputeConfig/index.md)
 - [AwsFeatureConfig.featureDetail](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsFeatureConfig/index.md)

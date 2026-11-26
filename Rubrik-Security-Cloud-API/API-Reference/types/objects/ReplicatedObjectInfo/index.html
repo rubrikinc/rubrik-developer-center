@@ -941,26 +941,30 @@
 <tr>
 <td>cdmObjectId</td>
 <td>String!</td>
-<td>CDM ID of the object.</td>
+<td>ID of the object on its Rubrik cluster.</td>
 </tr>
 <tr>
 <td>clusterName</td>
 <td>String</td>
-<td>Name of the Rubrik CDM cluster.</td>
+<td>Name of the Rubrik cluster that holds this copy.</td>
 </tr>
 <tr>
 <td>clusterUuid</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
-<td>UUID of the Rubrik CDM cluster.</td>
+<td>UUID of the Rubrik cluster that holds this copy.</td>
 </tr>
 <tr>
 <td>fid</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
-<td>FID of the object.</td>
+<td>ID of this copy of the object in Rubrik Security Cloud.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="used-by">Used By</h2>
+<p><strong>Queries</strong></p>
+<ul>
+<li><a href="../../../queries/replicatedObjects/">query: replicatedObjects</a></li>
+</ul>
 <p><strong>Referenced by</strong></p>
 <ul>
 <li><a href="../CrossAccountReplicatedObjectInfo/">CrossAccountReplicatedObjectInfo.replicatedObjects</a></li>

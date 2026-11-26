@@ -15,3 +15,4 @@ Cloud Account ID along with Features and permissions serialized in JSON format.
 
 - [query: allCurrentFeaturePermissionsForCloudAccounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allCurrentFeaturePermissionsForCloudAccounts/index.md)
 - [query: allLatestFeaturePermissionsForCloudAccounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/allLatestFeaturePermissionsForCloudAccounts/index.md)
+- [query: gcpCloudAccountGrantedPermissionsGroups](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/gcpCloudAccountGrantedPermissionsGroups/index.md)

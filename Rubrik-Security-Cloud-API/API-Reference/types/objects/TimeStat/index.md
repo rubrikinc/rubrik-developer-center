@@ -13,5 +13,6 @@ Supported in v5.0+
 
 **Referenced by**
 
+- [ArchivalBandwidthStatsReply.items](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ArchivalBandwidthStatsReply/index.md)
 - [InternalReplicationBandwidthIncomingResponse.items](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/InternalReplicationBandwidthIncomingResponse/index.md)
 - [InternalReplicationBandwidthOutgoingResponse.items](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/InternalReplicationBandwidthOutgoingResponse/index.md)

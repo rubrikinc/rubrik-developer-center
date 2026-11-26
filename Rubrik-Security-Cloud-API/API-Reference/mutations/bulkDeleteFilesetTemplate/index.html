@@ -938,7 +938,7 @@
 
 
 <h1 id="bulkdeletefilesettemplate">bulkDeleteFilesetTemplate</h1>
-<p>Delete fileset templates Supported in v5.0+ Deletes specfied fileset templates. Detaches and retains all associated filesets as independent filesets with the existing values.</p>
+<p>Deletes the given fileset templates and every fileset created from them. By default (preserveSnapshots true) the existing snapshots are kept as relics, set preserveSnapshots to false to delete them as well.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/BulkDeleteFilesetTemplateInput/">BulkDeleteFilesetTemplateInput</a>!</td>
-<td>Input for InternalBulkDeleteFilesetTemplate.</td>
+<td>IDs of the fileset templates and an optional preserveSnapshots flag.</td>
 </tr>
 </tbody>
 </table>

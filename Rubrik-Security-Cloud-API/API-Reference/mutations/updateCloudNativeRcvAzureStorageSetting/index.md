@@ -1,12 +1,12 @@
 # updateCloudNativeRcvAzureStorageSetting
 
-Updates an existing Rubrik Cloud Vault Azure storage settings for the archival of Azure cloud-native protected objects.
+Updates the name, redundancy, or tier of an existing Rubrik Cloud Vault Azure storage setting for archiving Azure cloud-native protected objects. Moving from the Backup tier to the Archive tier can require a Quorum Authorization policy.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                                     | Description                                                                      |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| input *(required)* | [UpdateCloudNativeRcvAzureStorageSettingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateCloudNativeRcvAzureStorageSettingInput/index.md)! | Request for updating an existing Rubrik Cloud Vault (RCV) Azure storage setting. |
+| Argument           | Type                                                                                                                                                                                     | Description                                                                                                  |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| input *(required)* | [UpdateCloudNativeRcvAzureStorageSettingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateCloudNativeRcvAzureStorageSettingInput/index.md)! | ID and name of the storage setting, with optional redundancy, tier, and whether to also update child vaults. |
 
 ## Returns
 

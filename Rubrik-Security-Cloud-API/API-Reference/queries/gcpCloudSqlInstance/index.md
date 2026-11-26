@@ -1,6 +1,6 @@
 # gcpCloudSqlInstance
 
-Get details of a GCP Cloud SQL instance.
+Returns a Google Cloud SQL instance protected by Rubrik, by its Rubrik ID.
 
 ## Arguments
 

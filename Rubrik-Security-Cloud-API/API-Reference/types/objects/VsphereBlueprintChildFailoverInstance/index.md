@@ -6,10 +6,10 @@
 
 ## Fields
 
-| Field            | Type                                                                                                                          | Description |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| failoverInstance | [AwsEc2Instance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsEc2Instance/index.md)! |             |
-| snappableId      | String!                                                                                                                       |             |
+| Field            | Type                                                                                                                          | Description                    |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| failoverInstance | [AwsEc2Instance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsEc2Instance/index.md)! |                                |
+| snappableId      | String!                                                                                                                       | The Blueprint child object ID. |
 
 ## Used By
 

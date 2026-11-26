@@ -938,7 +938,7 @@
 
 
 <h1 id="upgradecdmmanagedtarget">upgradeCdmManagedTarget</h1>
-<p>Upgrade archival locations managed through a Rubrik cluster.</p>
+<p>Starts converting archival locations managed by a Rubrik cluster into locations managed by Rubrik Security Cloud, keeping their IDs. Conversion runs in the background. Ineligible locations are skipped, and errors for individual locations are not returned. An empty list converts every eligible location.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/UpgradeCdmManagedTargetInput/">UpgradeCdmManagedTargetInput</a>!</td>
-<td>Request for upgrading archival locations managed through a Rubrik cluster.</td>
+<td>IDs of the archival locations to upgrade.</td>
 </tr>
 </tbody>
 </table>

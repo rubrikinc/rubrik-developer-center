@@ -1,12 +1,12 @@
 # createFailoverClusterApp
 
-Create a failover cluster app Supported in v5.2+ Create a failover cluster app.
+Creates an app on a host failover cluster so it can be protected, and returns its details.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                       | Description                           |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| input *(required)* | [CreateFailoverClusterAppInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateFailoverClusterAppInput/index.md)! | Input for V1CreateFailoverClusterApp. |
+| Argument           | Type                                                                                                                                                       | Description                                                                                                                     |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| input *(required)* | [CreateFailoverClusterAppInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateFailoverClusterAppInput/index.md)! | Input fields: config, with name, failoverClusterId, failoverClusterType, the app source, and an optional configuredSlaDomainId. |
 
 ## Returns
 

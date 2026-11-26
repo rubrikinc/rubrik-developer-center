@@ -1021,6 +1021,11 @@
 <td>List of all GCE instances under this GCP project.</td>
 </tr>
 <tr>
+<td>gcsBucketCount</td>
+<td>Int!</td>
+<td>Number of GCS buckets in the GCP project.</td>
+</tr>
+<tr>
 <td>id</td>
 <td><a href="../../scalars/UUID/">UUID</a>!</td>
 <td>ID of the hierarchy object.</td>
@@ -1215,7 +1220,19 @@
 <td>logicalChildConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>logicalChildConnection</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>logicalChildConnection</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>logicalChildConnection</td>
@@ -1290,10 +1307,13 @@
 <li><a href="../GcpAlloyDbCluster/">GcpAlloyDbCluster.gcpProject</a></li>
 <li><a href="../GcpBigQueryDataset/">GcpBigQueryDataset.gcpProject</a></li>
 <li><a href="../GcpCloudSqlInstance/">GcpCloudSqlInstance.gcpProject</a></li>
+<li><a href="../GcpGcsBucket/">GcpGcsBucket.gcpProject</a></li>
 <li><a href="../GcpNativeDisk/">GcpNativeDisk.gcpNativeProject</a></li>
 <li><a href="../GcpNativeDisk/">GcpNativeDisk.gcpProject</a></li>
 <li><a href="../GcpNativeGceInstance/">GcpNativeGceInstance.gcpNativeProject</a></li>
 <li><a href="../GcpNativeGceInstance/">GcpNativeGceInstance.gcpProject</a></li>
+<li><a href="../GcpSpannerDatabase/">GcpSpannerDatabase.gcpProject</a></li>
+<li><a href="../GcpSpannerInstance/">GcpSpannerInstance.gcpProject</a></li>
 </ul>
 
 

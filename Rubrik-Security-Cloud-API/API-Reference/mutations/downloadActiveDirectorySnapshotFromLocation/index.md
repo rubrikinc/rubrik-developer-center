@@ -1,6 +1,6 @@
 # downloadActiveDirectorySnapshotFromLocation
 
-Download a snapshot from a remote target Supported in v9.0+ Initiates a job to download a snapshot from the specified location when the snapshot does not exist locally. The specified location has to be a remote target connected to this Rubrik cluster. If an SLA Domain is not provided, the snapshot will be retained forever.
+Starts a job that downloads a domain controller snapshot from an archival or replication location to its Rubrik cluster; track it with activeDirectoryAsyncRequestStatus. Without an SLA Domain the snapshot is kept forever.
 
 ## Arguments
 

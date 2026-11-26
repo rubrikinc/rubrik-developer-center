@@ -1,12 +1,12 @@
 # gcpNativeProject
 
-Get details of a GCP Project
+Returns a GCP project added to Rubrik, by its Rubrik ID.
 
 ## Arguments
 
-| Argument         | Type                                                                                                      | Description                 |
-| ---------------- | --------------------------------------------------------------------------------------------------------- | --------------------------- |
-| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik UUID for the object. |
+| Argument         | Type                                                                                                      | Description               |
+| ---------------- | --------------------------------------------------------------------------------------------------------- | ------------------------- |
+| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik ID of the project. |
 
 ## Returns
 
@@ -22,6 +22,7 @@ query GcpNativeProject($fid: UUID!) {
     cloudAccountId
     cloudNativeId
     diskCount
+    gcsBucketCount
     id
     isRelic
     lastRefreshedAt
@@ -60,7 +61,7 @@ query GcpNativeProject($fid: UUID!) {
       "cloudAccountId": "example-string",
       "cloudNativeId": "example-string",
       "diskCount": 0,
-      "id": "00000000-0000-0000-0000-000000000000",
+      "gcsBucketCount": 0,
       "allOrgs": [
         {
           "allUrls": [

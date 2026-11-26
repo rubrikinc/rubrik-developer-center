@@ -1,6 +1,6 @@
 # requestPersistentExocluster
 
-Requests a persistent Exocompute clusters for a region configuration in a cloud account.
+Requests a persistent Exocompute cluster for a region configuration in a cloud account.
 
 ## Arguments
 

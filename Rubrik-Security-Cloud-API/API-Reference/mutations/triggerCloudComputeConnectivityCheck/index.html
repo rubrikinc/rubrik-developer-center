@@ -938,7 +938,7 @@
 
 
 <h1 id="triggercloudcomputeconnectivitycheck">triggerCloudComputeConnectivityCheck</h1>
-<p>Trigger cloud compute connectivity check Supported in v6.0+ Triggers a background job to perform the cloud compute connectivity check for the specified archival location.</p>
+<p>Starts a background check of cloud compute connectivity for an archival location on a Rubrik cluster. Follow it with checkCloudComputeConnectivityJobProgress.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/TriggerCloudComputeConnectivityCheckInput/">TriggerCloudComputeConnectivityCheckInput</a>!</td>
-<td>Input for V1TriggerCloudComputeConnectivityCheck.</td>
+<td>The archival location ID, and whether to check connectivity for CloudOn and CloudOut in addition to archiving.</td>
 </tr>
 </tbody>
 </table>

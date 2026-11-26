@@ -1,6 +1,6 @@
 # azureDevOpsConnectionStatusSummary
 
-AzureDevOpsOrgConnectionStatusSummary returns the connection status of all the Azure DevOps cloud accounts for a given organization.
+Returns the connection status of every Azure DevOps cloud account in an organization.
 
 ## Returns
 

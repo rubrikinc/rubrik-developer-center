@@ -4,9 +4,9 @@ Delete webhook configuration.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                     | Description           |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
-| input *(required)* | [DeleteWebhookV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteWebhookV2Input/index.md)! | Delete webhook input. |
+| Argument           | Type                                                                                                                                     | Description                      |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
+| input *(required)* | [DeleteWebhookV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteWebhookV2Input/index.md)! | The ID of the webhook to delete. |
 
 ## Returns
 

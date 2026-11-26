@@ -16,3 +16,5 @@ Supported in v9.4+
 **Referenced by**
 
 - [GetLatestGpoSettingsRes.gpoSettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GetLatestGpoSettingsRes/index.md)
+- [GpoSettingsChangeDataRes.currGpoSettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GpoSettingsChangeDataRes/index.md)
+- [GpoSettingsChangeDataRes.prevGpoSettings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GpoSettingsChangeDataRes/index.md)

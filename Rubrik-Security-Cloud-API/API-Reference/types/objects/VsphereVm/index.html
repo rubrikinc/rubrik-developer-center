@@ -939,7 +939,7 @@
 
 <h1 id="vspherevm">VsphereVm</h1>
 <p>A vSphere virtual machine.</p>
-<p><strong>Implements:</strong> <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/CdmHierarchySnappableNew/">CdmHierarchySnappableNew</a>, <a href="../../interfaces/HierarchySnappable/">HierarchySnappable</a>, <a href="../../interfaces/VsphereVcenterDescendantType/">VsphereVcenterDescendantType</a>, <a href="../../interfaces/VsphereComputeClusterDescendantType/">VsphereComputeClusterDescendantType</a>, <a href="../../interfaces/VsphereContentLibraryDescendantType/">VsphereContentLibraryDescendantType</a>, <a href="../../interfaces/VsphereContentLibraryLibraryChildType/">VsphereContentLibraryLibraryChildType</a>, <a href="../../interfaces/VsphereDatacenterDescendantType/">VsphereDatacenterDescendantType</a>, <a href="../../interfaces/VsphereDatacenterFolderDescendantType/">VsphereDatacenterFolderDescendantType</a>, <a href="../../interfaces/VsphereFolderLogicalChildType/">VsphereFolderLogicalChildType</a>, <a href="../../interfaces/VsphereFolderDescendantType/">VsphereFolderDescendantType</a>, <a href="../../interfaces/VsphereHostPhysicalChildType/">VsphereHostPhysicalChildType</a>, <a href="../../interfaces/VsphereHostDescendantType/">VsphereHostDescendantType</a>, <a href="../../interfaces/VsphereTagTagChildType/">VsphereTagTagChildType</a>, <a href="../../interfaces/VsphereTagDescendantType/">VsphereTagDescendantType</a>, <a href="../../interfaces/VsphereTagCategoryDescendantType/">VsphereTagCategoryDescendantType</a>, <a href="../../interfaces/VcdTopLevelDescendantType/">VcdTopLevelDescendantType</a>, <a href="../../interfaces/VcdDescendantType/">VcdDescendantType</a>, <a href="../../interfaces/VcdLogicalChildType/">VcdLogicalChildType</a>, <a href="../../interfaces/VcdOrgDescendantType/">VcdOrgDescendantType</a>, <a href="../../interfaces/VcdOrgLogicalChildType/">VcdOrgLogicalChildType</a>, <a href="../../interfaces/VcdOrgVdcDescendantType/">VcdOrgVdcDescendantType</a>, <a href="../../interfaces/VcdOrgVdcLogicalChildType/">VcdOrgVdcLogicalChildType</a>, <a href="../../interfaces/VcdVappDescendantType/">VcdVappDescendantType</a>, <a href="../../interfaces/VcdVappLogicalChildType/">VcdVappLogicalChildType</a></p>
+<p><strong>Implements:</strong> <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/CdmHierarchySnappableNew/">CdmHierarchySnappableNew</a>, <a href="../../interfaces/HierarchySnappable/">HierarchySnappable</a>, <a href="../../interfaces/VsphereVcenterDescendantType/">VsphereVcenterDescendantType</a>, <a href="../../interfaces/VsphereComputeClusterDescendantType/">VsphereComputeClusterDescendantType</a>, <a href="../../interfaces/VsphereContentLibraryDescendantType/">VsphereContentLibraryDescendantType</a>, <a href="../../interfaces/VsphereContentLibraryLibraryChildType/">VsphereContentLibraryLibraryChildType</a>, <a href="../../interfaces/VsphereDatacenterDescendantType/">VsphereDatacenterDescendantType</a>, <a href="../../interfaces/VsphereDatacenterFolderDescendantType/">VsphereDatacenterFolderDescendantType</a>, <a href="../../interfaces/VsphereFolderLogicalChildType/">VsphereFolderLogicalChildType</a>, <a href="../../interfaces/VsphereFolderDescendantType/">VsphereFolderDescendantType</a>, <a href="../../interfaces/VsphereHostPhysicalChildType/">VsphereHostPhysicalChildType</a>, <a href="../../interfaces/VsphereHostDescendantType/">VsphereHostDescendantType</a>, <a href="../../interfaces/VsphereTagTagChildType/">VsphereTagTagChildType</a>, <a href="../../interfaces/VsphereTagDescendantType/">VsphereTagDescendantType</a>, <a href="../../interfaces/VsphereTagCategoryDescendantType/">VsphereTagCategoryDescendantType</a>, <a href="../../interfaces/VsphereSupervisorDescendantType/">VsphereSupervisorDescendantType</a>, <a href="../../interfaces/VsphereNamespaceChildType/">VsphereNamespaceChildType</a>, <a href="../../interfaces/VsphereNamespaceDescendantType/">VsphereNamespaceDescendantType</a>, <a href="../../interfaces/VcdTopLevelDescendantType/">VcdTopLevelDescendantType</a>, <a href="../../interfaces/VcdDescendantType/">VcdDescendantType</a>, <a href="../../interfaces/VcdLogicalChildType/">VcdLogicalChildType</a>, <a href="../../interfaces/VcdOrgDescendantType/">VcdOrgDescendantType</a>, <a href="../../interfaces/VcdOrgLogicalChildType/">VcdOrgLogicalChildType</a>, <a href="../../interfaces/VcdOrgVdcDescendantType/">VcdOrgVdcDescendantType</a>, <a href="../../interfaces/VcdOrgVdcLogicalChildType/">VcdOrgVdcLogicalChildType</a>, <a href="../../interfaces/VcdVappLogicalChildType/">VcdVappLogicalChildType</a>, <a href="../../interfaces/VcdVappDescendantType/">VcdVappDescendantType</a></p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -1353,7 +1353,7 @@
 <td>missedSnapshotConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>missedSnapshotConnection</td>
@@ -1365,7 +1365,7 @@
 <td>missedSnapshotConnection</td>
 <td>before</td>
 <td>String</td>
-<td>Returns the elements in the list that occur before the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>missedSnapshotConnection</td>
@@ -1383,7 +1383,7 @@
 <td>missedSnapshotGroupByConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>missedSnapshotGroupByConnection</td>
@@ -1395,7 +1395,7 @@
 <td>missedSnapshotGroupByConnection</td>
 <td>before</td>
 <td>String</td>
-<td>Returns the elements in the list that occur before the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>missedSnapshotGroupByConnection</td>
@@ -1473,7 +1473,7 @@
 <td>snapshotConnection</td>
 <td>after</td>
 <td>String</td>
-<td>Returns the elements in the list that occur after the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
 </tr>
 <tr>
 <td>snapshotConnection</td>
@@ -1485,7 +1485,7 @@
 <td>snapshotConnection</td>
 <td>before</td>
 <td>String</td>
-<td>Returns the elements in the list that occur before the specified cursor.</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 <tr>
 <td>snapshotConnection</td>

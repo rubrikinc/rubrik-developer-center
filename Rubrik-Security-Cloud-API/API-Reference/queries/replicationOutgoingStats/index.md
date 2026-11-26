@@ -4,9 +4,9 @@ Get the time series of total outgoing bandwidth from the replication clusters.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                               | Description                                     |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------- |
-| input *(required)* | [ReplicationBandwidthOutgoingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ReplicationBandwidthOutgoingInput/index.md)! | Input for InternalReplicationBandwidthOutgoing. |
+| Argument           | Type                                                                                                                                                               | Description                                                          |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| input *(required)* | [ReplicationBandwidthOutgoingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ReplicationBandwidthOutgoingInput/index.md)! | The Rubrik cluster UUID and an optional range such as -1h (default). |
 
 ## Returns
 

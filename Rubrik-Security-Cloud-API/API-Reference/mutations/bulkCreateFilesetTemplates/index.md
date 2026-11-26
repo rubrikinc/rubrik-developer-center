@@ -1,12 +1,12 @@
 # bulkCreateFilesetTemplates
 
-Create fileset templates Supported in v5.0+ v5.0-v5.3: Create fileset templates. The template is applied to the host. Each template is a set of paths on the host. A template uses full paths and wildcards to define the objects to include, exclude, and exempt from exclusion. The ***exceptions*** value specifies paths that should not be excluded from the fileset by the ***exclude*** value. Specify an array of full path descriptions for each property ***include***, ***exclude***, and ***exceptions***. Acceptable wildcard characters are The following rules apply to path descriptions v6.0+: Create fileset templates. The template is applied to the host. Each template is a set of paths on the host. A template uses full paths and wildcards to define the objects to include, exclude, and exempt from exclusion. The ***exceptions*** value specifies paths that should not be excluded from the fileset by the ***exclude*** value. Specify an array of full path descriptions for each property ***include***, ***exclude***, and ***exceptions***. Acceptable wildcard characters are. The following rules apply to path descriptions.
+Creates fileset templates on a Rubrik cluster. Each template sets the include, exclude, and exception paths (full paths with wildcards) that a fileset backs up on a host.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                           | Description                                  |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| input *(required)* | [BulkCreateFilesetTemplatesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkCreateFilesetTemplatesInput/index.md)! | Input for InternalBulkCreateFilesetTemplate. |
+| Argument           | Type                                                                                                                                                           | Description                                                        |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| input *(required)* | [BulkCreateFilesetTemplatesInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkCreateFilesetTemplatesInput/index.md)! | Input fields: clusterUuid and definitions, one template per entry. |
 
 ## Returns
 

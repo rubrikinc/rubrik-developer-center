@@ -938,7 +938,7 @@
 
 
 <h1 id="createfailoverclusterapp">createFailoverClusterApp</h1>
-<p>Create a failover cluster app Supported in v5.2+ Create a failover cluster app.</p>
+<p>Creates an app on a host failover cluster so it can be protected, and returns its details.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/CreateFailoverClusterAppInput/">CreateFailoverClusterAppInput</a>!</td>
-<td>Input for V1CreateFailoverClusterApp.</td>
+<td>Input fields: config, with name, failoverClusterId, failoverClusterType, the app source, and an optional configuredSlaDomainId.</td>
 </tr>
 </tbody>
 </table>

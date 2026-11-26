@@ -24,4 +24,6 @@ Role customization details for the AWS account.
 
 **Referenced by**
 
+- [AwsCloudAccountFeaturesWithExoConfigs.awsRoleCustomization](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsCloudAccountFeaturesWithExoConfigs/index.md)
 - [AwsCloudAccountWithFeatures.awsRoleCustomization](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsCloudAccountWithFeatures/index.md)
+- [AwsOrgEnabledFeaturesReply.awsRoleCustomization](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsOrgEnabledFeaturesReply/index.md)

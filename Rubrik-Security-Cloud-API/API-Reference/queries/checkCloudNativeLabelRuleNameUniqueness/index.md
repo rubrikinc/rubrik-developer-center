@@ -1,6 +1,6 @@
 # checkCloudNativeLabelRuleNameUniqueness
 
-Check if label rule name is unique or not
+Returns whether a label rule name is unused for the given object type.
 
 ## Arguments
 

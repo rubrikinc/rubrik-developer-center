@@ -14,6 +14,5 @@ The status code and message describing an error.
 **Referenced by**
 
 - [TestExistingWebhookReply.errorInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/TestExistingWebhookReply/index.md)
-- [TestWebhookReply.errorInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/TestWebhookReply/index.md)
 - [UpdateWebhookReply.testError](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateWebhookReply/index.md)
 - [Webhook.lastFailedErrorInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Webhook/index.md)

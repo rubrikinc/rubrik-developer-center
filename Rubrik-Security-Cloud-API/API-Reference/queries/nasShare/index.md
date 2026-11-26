@@ -1,6 +1,6 @@
 # nasShare
 
-A NAS Share.
+Returns one NAS share, an NFS export or SMB share, by its ID.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # exocomputeGetSupportedHealthChecks
 
-ExocomputeGetSupportedHealthChecks returns the supported health check details for the given cloud type for Exocompute.
+Lists the Exocompute health checks available for a cloud provider.
 
 ## Arguments
 

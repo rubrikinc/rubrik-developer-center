@@ -927,7 +927,7 @@
 
 
 <h1 id="s3bucketdetails">S3BucketDetails</h1>
-<p>Details of S3 Bucket containing name, region and ARN.</p>
+<p>Details of S3 Bucket containing name, region, ARN and, when requested, tags.</p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -957,6 +957,11 @@
 <td>regionEnum</td>
 <td><a href="../../enums/AwsCloudAccountRegion/">AwsCloudAccountRegion</a>!</td>
 <td>Enum representation of bucket region.</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>[<a href="../Tag/">Tag</a>!]!</td>
+<td>AWS tags of the bucket. Populated only when the listing request sets include_tags. A bucket whose tags could not be read is returned without tags.</td>
 </tr>
 </tbody>
 </table>

@@ -1,6 +1,6 @@
 # azureCloudAccountAddWithCustomerAppInitiate
 
-AzureCloudAccountAddWithCustomerAppInitiate adds a cloud account using customer app credentials without requiring interactive user consent. This process uses the user's app ID and secret key to assign roles to the service principal of the Rubrik multi-tenant app.
+Adds an Azure cloud account using your own app's ID and secret instead of interactive consent; the app assigns roles to the service principal of the Rubrik multi-tenant app.
 
 ## Arguments
 

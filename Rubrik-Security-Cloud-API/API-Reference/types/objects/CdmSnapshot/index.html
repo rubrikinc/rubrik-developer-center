@@ -1170,6 +1170,11 @@
 <td>MariaDB instance-specific metadata carrying the snapshot statistics and the full or differential snapshot type. Null if the snapshot is not of a MariaDB instance.</td>
 </tr>
 <tr>
+<td>mongoDatabaseAppMetadata</td>
+<td><a href="../MongoDatabaseAppMetadata/">MongoDatabaseAppMetadata</a></td>
+<td>Mongo database specific metadata for the snapshot. Null if the snapshot is not of a Mongo database.</td>
+</tr>
+<tr>
 <td>mongoSourceAppMetadata</td>
 <td><a href="../MongoSourceAppMetadata/">MongoSourceAppMetadata</a></td>
 <td>Mongo source specific metadata for the snapshot.</td>
@@ -1213,6 +1218,11 @@
 <td>postgresDbClusterAppMetadata</td>
 <td><a href="../PostgresDbClusterAppMetadata/">PostgresDbClusterAppMetadata</a></td>
 <td>PostgreSQL Database Cluster-specific metadata. Null if the snapshot is not of a PostgreSQL Database Cluster.</td>
+</tr>
+<tr>
+<td>proxmoxSnapshotNetworkAdapters</td>
+<td><a href="../ProxmoxSnapshotNetworkAdapters/">ProxmoxSnapshotNetworkAdapters</a></td>
+<td>Network interfaces the cluster recorded when the Proxmox virtual machine snapshot was taken. Null if the snapshot is not of a Proxmox virtual machine or carries no interface record; an empty list means the virtual machine had no network interfaces.</td>
 </tr>
 <tr>
 <td>replicationLocations</td>
@@ -1283,6 +1293,7 @@
 </ul>
 <p><strong>Referenced by</strong></p>
 <ul>
+<li><a href="../ActiveDirectoryCleanRecoveryConfig/">ActiveDirectoryCleanRecoveryConfig.preferredSnapshot</a></li>
 <li><a href="../ActiveDirectoryDomainController/">ActiveDirectoryDomainController.newestArchivedSnapshot</a></li>
 <li><a href="../ActiveDirectoryDomainController/">ActiveDirectoryDomainController.newestCleanSnapshot</a></li>
 <li><a href="../ActiveDirectoryDomainController/">ActiveDirectoryDomainController.newestIndexedSnapshot</a></li>
@@ -1312,8 +1323,7 @@
 <li><a href="../ExchangeDatabase/">ExchangeDatabase.newestIndexedSnapshot</a></li>
 <li><a href="../ExchangeDatabase/">ExchangeDatabase.newestReplicatedSnapshot</a></li>
 <li><a href="../ExchangeDatabase/">ExchangeDatabase.newestSnapshot</a></li>
-<li><a href="../ExchangeDatabase/">ExchangeDatabase.oldestSnapshot</a></li>
-<li><em>…and 194 more</em></li>
+<li><em>…and 195 more</em></li>
 </ul>
 
 

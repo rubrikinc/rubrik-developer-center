@@ -1,6 +1,6 @@
 # changePassword
 
-Changes a users password without using email.
+Changes a user's password without sending an email.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # oauthCodesForEdgeReg
 
-Reply for request to download Rubrik Edge from Rubrik Security Cloud.
+Returns OAuth registration codes for registering the given number of Rubrik Edge instances with Rubrik Security Cloud, along with the OVA download link.
 
 ## Arguments
 

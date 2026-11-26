@@ -1,12 +1,12 @@
 # uploadSnapshotOnDemand
 
-UploadSnapshotOnDemand triggers an on-demand upload of a snapshot to a new archival location specified by the SLA Domain.
+Starts an on-demand upload of a snapshot to the archival location of an SLA Domain, and returns the ID of the request on the Rubrik cluster.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                   | Description                                         |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------- |
-| input *(required)* | [UploadSnapshotOnDemandInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UploadSnapshotOnDemandInput/index.md)! | Input containing snapshot ID, SLA ID, and priority. |
+| Argument           | Type                                                                                                                                                   | Description                                                                                                    |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| input *(required)* | [UploadSnapshotOnDemandInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UploadSnapshotOnDemandInput/index.md)! | ID of the snapshot, ID of the SLA Domain whose archival location receives the upload, and the upload priority. |
 
 ## Returns
 

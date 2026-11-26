@@ -97,6 +97,7 @@ Represents different types of activity objects.
 | GCP_ALLOY_DB_CLUSTER                        | GCP AlloyDB Cluster.                                                                                                                            |
 | GCP_BIG_QUERY_DATASET                       | GCP BigQuery Dataset.                                                                                                                           |
 | GCP_CLOUD_SQL_INSTANCE                      | GCP Cloud SQL Instance.                                                                                                                         |
+| GCP_GCS_BUCKET                              | GCP GCS Bucket.                                                                                                                                 |
 | GITHUB_ORGANIZATION                         | GitHub Organization.                                                                                                                            |
 | GITHUB_ORG_PACKAGES_FIXED_OBJECT            | GitHub organization packages per organization.                                                                                                  |
 | GITHUB_REPOSITORY                           | GitHub Repository.                                                                                                                              |
@@ -304,6 +305,13 @@ Represents different types of activity objects.
 | SALESFORCE_METADATA                         | Salesforce metadata.                                                                                                                            |
 | SALESFORCE_OBJECT                           | Salesforce objects.                                                                                                                             |
 | SALESFORCE_ORGANIZATION                     | Salesforce organization.                                                                                                                        |
+| SANGFOR_AVAILABILITY_ZONE                   | Sangfor availability zone (resource pool).                                                                                                      |
+| SANGFOR_CLUSTER                             | Sangfor cluster.                                                                                                                                |
+| SANGFOR_DATASTORE                           | Sangfor datastore.                                                                                                                              |
+| SANGFOR_HOST                                | Sangfor host.                                                                                                                                   |
+| SANGFOR_NETWORK                             | Sangfor network.                                                                                                                                |
+| SANGFOR_SCP                                 | Sangfor Cloud Platform (SCP) manager.                                                                                                           |
+| SANGFOR_VIRTUAL_MACHINE                     | Sangfor virtual machine.                                                                                                                        |
 | SamlSso                                     | SAML single sign-on.                                                                                                                            |
 | SapHanaDb                                   | SAP HANA database.                                                                                                                              |
 | SapHanaSystem                               | SAP HANA system.                                                                                                                                |

@@ -938,7 +938,7 @@
 
 
 <h1 id="approvercvprivateendpoint">approveRcvPrivateEndpoint</h1>
-<p>ApproveRCVPrivateEndpoint approves a pending request for RCV private endpoints. After approving the private endpoint connection request, the customer can start using the private tunnel to send data to and from the CDM cluster to the Rubrik hosted storage account.</p>
+<p>Approves a pending private endpoint request for a Rubrik Cloud Vault location. Once approved, the Rubrik cluster can send data to and from the Rubrik-hosted storage account over the private link.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/ApproveRcvPrivateEndpointInput/">ApproveRcvPrivateEndpointInput</a>!</td>
-<td>Input for approving a private endpoint connection request for an RCV location.</td>
+<td>ID of the Rubrik Cloud Vault location and the private endpoint to approve.</td>
 </tr>
 </tbody>
 </table>

@@ -30,5 +30,4 @@ A webhook configuration in the account.
 
 **Referenced by**
 
-- [CreateWebhookReply.webhook](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CreateWebhookReply/index.md)
 - [UpdateWebhookReply.webhook](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UpdateWebhookReply/index.md)

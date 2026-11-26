@@ -938,7 +938,7 @@
 
 
 <h1 id="filesetrequeststatus">filesetRequestStatus</h1>
-<p>Get details about an async request Supported in v5.0+ Get details about a fileset related async request.</p>
+<p>Returns the status, progress, and any error of an asynchronous fileset request, such as an on-demand backup, download, export, or restore.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/GetFilesetAsyncRequestStatusInput/">GetFilesetAsyncRequestStatusInput</a>!</td>
-<td>Input for V1GetFilesetAsyncRequestStatus.</td>
+<td>Input fields: id, the request ID returned by the mutation; clusterUuid, its Rubrik cluster.</td>
 </tr>
 </tbody>
 </table>

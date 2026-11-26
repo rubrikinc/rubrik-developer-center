@@ -1,6 +1,6 @@
 # isValidTprPolicyName
 
-Validate the name of a TPR policy.
+Checks whether a name can be used for a new quorum authorization (two-person rule) policy.
 
 ## Arguments
 

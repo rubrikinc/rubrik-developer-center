@@ -1,6 +1,6 @@
 # airGapStatus
 
-Update the air-gap status of the Rubrik cluster.
+Sets whether a Rubrik cluster is marked as air-gapped. Despite its noun name, this is a mutation that updates the status.
 
 ## Arguments
 

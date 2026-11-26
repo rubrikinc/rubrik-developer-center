@@ -938,7 +938,7 @@
 
 
 <h1 id="deletesaphanasystem">deleteSapHanaSystem</h1>
-<p>Delete a SAP HANA system Supported in v5.3+ Initiates a job to delete a SAP HANA system object. GET /sap_hana/system/request/{id} endpoint can be used to monitor the progress of the job.</p>
+<p>Removes a SAP HANA system from its Rubrik cluster. Returns the async request; track it with jobInfo (type SAP_HANA_SYSTEM, requestId = the returned id, clusterUuid = the cluster's UUID).</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/DeleteSapHanaSystemInput/">DeleteSapHanaSystemInput</a>!</td>
-<td>Input for V1DeleteSapHanaSystem.</td>
+<td>The system ID and an optional audit note.</td>
 </tr>
 </tbody>
 </table>

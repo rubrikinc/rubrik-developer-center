@@ -151,7 +151,7 @@ A Rubrik CDM Cluster.
 - [CdmManagedNfsTarget.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmManagedNfsTarget/index.md)
 - [CdmManagedS3CompatibleTarget.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmManagedS3CompatibleTarget/index.md)
 - [CdmManagedTapeTarget.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmManagedTapeTarget/index.md)
+- [CdmRole.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmRole/index.md)
+- [CdmSSOGroup.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmSSOGroup/index.md)
 - [CdmSnapshot.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmSnapshot/index.md)
-- [CdmTarget.cluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CdmTarget/index.md)
-- CloudDirectHierarchyObject.cluster
-- *…and 355 more*
+- *…and 370 more*

@@ -1,6 +1,6 @@
 # updateTprPolicy
 
-Update a TPR policy.
+Updates a quorum authorization (two-person rule) policy.
 
 ## Arguments
 

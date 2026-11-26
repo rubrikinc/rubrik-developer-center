@@ -1,6 +1,6 @@
 # createCloudNativeRcvAzureStorageSetting
 
-Create Rubrik Cloud Vault storage settings for archiving azure cloud native protected objects.
+Creates a Rubrik Cloud Vault storage setting for archiving Azure cloud-native protected objects.
 
 ## Arguments
 

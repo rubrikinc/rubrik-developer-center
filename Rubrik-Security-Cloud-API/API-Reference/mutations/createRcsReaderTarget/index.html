@@ -938,7 +938,7 @@
 
 
 <h1 id="creatercsreadertarget">createRcsReaderTarget</h1>
-<p>Creates reader type for RCS Azure archival location on a CDM cluster.</p>
+<p>Creates a reader location on a Rubrik cluster for an existing Rubrik Cloud Vault Azure archival location, so the cluster can read and recover data another cluster archived there.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/CreateRcsReaderTargetInput/">CreateRcsReaderTargetInput</a>!</td>
-<td>Input for creating a new RCS reader target.</td>
+<td>Rubrik cluster UUID, reader location name, name of the Rubrik Cloud Vault Azure location to read from, and retrieval settings.</td>
 </tr>
 </tbody>
 </table>

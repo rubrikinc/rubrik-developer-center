@@ -1,6 +1,6 @@
 # awsNativeEc2Instances
 
-Lists the AWS Native EC2 instances under the AWS-native hierarchy root.
+Lists the Amazon EC2 instances in the AWS accounts added to Rubrik.
 
 ## Arguments
 

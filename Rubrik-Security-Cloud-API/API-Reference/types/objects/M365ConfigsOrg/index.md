@@ -44,6 +44,7 @@ An M365 Configs organization managed by Rubrik.
 | status                          | [SaasOrganizationStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SaasOrganizationStatus/index.md)!                        | The state of the SaaS organization.                                                 |
 | storageRegion                   | String                                                                                                                                                             | The storage region for the organization.                                            |
 | storageRegions                  | [SaasAppsOrgStorageLocations](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/SaasAppsOrgStorageLocations/index.md)!            | The storage regions where RSC backs up organization's data.                         |
+| url                             | [URL](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/URL/index.md)                                                             | The initial domain of the M365 tenant.                                              |
 
 ## Field Arguments
 

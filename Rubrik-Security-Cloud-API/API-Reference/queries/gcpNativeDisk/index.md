@@ -1,12 +1,12 @@
 # gcpNativeDisk
 
-Get details of a GCP Disk
+Returns a GCP persistent disk protected by Rubrik, by its Rubrik ID.
 
 ## Arguments
 
-| Argument         | Type                                                                                                      | Description                 |
-| ---------------- | --------------------------------------------------------------------------------------------------------- | --------------------------- |
-| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik UUID for the object. |
+| Argument         | Type                                                                                                      | Description            |
+| ---------------- | --------------------------------------------------------------------------------------------------------- | ---------------------- |
+| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik ID of the disk. |
 
 ## Returns
 

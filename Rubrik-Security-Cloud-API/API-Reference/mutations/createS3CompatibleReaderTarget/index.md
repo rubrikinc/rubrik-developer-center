@@ -1,12 +1,12 @@
 # createS3CompatibleReaderTarget
 
-Creates reader type for S3Compatible archival location on a CDM cluster.
+Creates a reader location on a Rubrik cluster for an existing S3-compatible archival location, so the cluster can read and recover data another cluster archived there. Setting a TLS certificate or certificate trust mode requires certificate binding to be enabled for the Rubrik cluster.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                   | Description                                          |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| input *(required)* | [CreateS3CompatibleReaderTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateS3CompatibleReaderTargetInput/index.md)! | Input for creating a new S3Compatible reader target. |
+| Argument           | Type                                                                                                                                                                   | Description                                                                           |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| input *(required)* | [CreateS3CompatibleReaderTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateS3CompatibleReaderTargetInput/index.md)! | The Rubrik cluster, the archival location details, and how the reader retrieves data. |
 
 ## Returns
 

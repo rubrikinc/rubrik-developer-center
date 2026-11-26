@@ -938,7 +938,7 @@
 
 
 <h1 id="failoverclustertopleveldescendants">failoverClusterTopLevelDescendants</h1>
-<p>Get a summary of all failover cluster top level descendants.</p>
+<p>Lists the host failover clusters, failover cluster apps, and Linux and Windows filesets under the Linux or Windows host root.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -962,7 +962,7 @@
 <tr>
 <td>sortBy</td>
 <td><a href="../../types/enums/HierarchySortByField/">HierarchySortByField</a></td>
-<td>Sort hierarchy objects according to the hierarchy field.</td>
+<td>Field to sort by; results are sorted only when sortOrder is also set.</td>
 </tr>
 <tr>
 <td>sortOrder</td>
@@ -972,17 +972,17 @@
 <tr>
 <td>typeFilter</td>
 <td>[<a href="../../types/enums/HierarchyObjectTypeEnum/">HierarchyObjectTypeEnum</a>!]</td>
-<td>Types of objects to include.</td>
+<td>Object types to include.</td>
 </tr>
 <tr>
 <td>filter</td>
 <td>[<a href="../../types/inputs/Filter/">Filter</a>!]</td>
-<td>Hierarchy object filter.</td>
+<td>Filters the results by object fields. Supported fields: NAME, NAME_EXACT_MATCH, NAME_PREFIX, IS_RELIC, IS_GHOST, IS_ARCHIVED, CLUSTER_ID, and IS_REPLICATED. Ghost objects and hidden replicas are excluded unless IS_GHOST or IS_REPLICATED is set.</td>
 </tr>
 <tr>
 <td>hostFailoverClusterRoot <em>(required)</em></td>
 <td><a href="../../types/enums/HostFailoverClusterRoot/">HostFailoverClusterRoot</a>!</td>
-<td>Host failover cluster root type.</td>
+<td>LINUX_HOST_ROOT or WINDOWS_HOST_ROOT.</td>
 </tr>
 </tbody>
 </table>

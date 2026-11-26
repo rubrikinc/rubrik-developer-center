@@ -938,7 +938,7 @@
 
 
 <h1 id="uploadsnapshotondemand">uploadSnapshotOnDemand</h1>
-<p>UploadSnapshotOnDemand triggers an on-demand upload of a snapshot to a new archival location specified by the SLA Domain.</p>
+<p>Starts an on-demand upload of a snapshot to the archival location of an SLA Domain, and returns the ID of the request on the Rubrik cluster.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/UploadSnapshotOnDemandInput/">UploadSnapshotOnDemandInput</a>!</td>
-<td>Input containing snapshot ID, SLA ID, and priority.</td>
+<td>ID of the snapshot, ID of the SLA Domain whose archival location receives the upload, and the upload priority.</td>
 </tr>
 </tbody>
 </table>

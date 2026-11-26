@@ -938,7 +938,7 @@
 
 
 <h1 id="deletemanagedvolume">deleteManagedVolume</h1>
-<p>Delete a Managed Volume Supported in v7.0+ Delete a Managed Volume.</p>
+<p>Deletes a Managed Volume and starts a job to unexport its shares, returning that job's status. Its snapshots are kept as relics unless preserveSnapshots is false. Requires Rubrik CDM 7.0 or later.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/DeleteManagedVolumeInput/">DeleteManagedVolumeInput</a>!</td>
-<td>Input for V1DeleteManagedVolumeV1.</td>
+<td>The Managed Volume ID, whether to keep its snapshots (default true), and an optional note for the audit log.</td>
 </tr>
 </tbody>
 </table>

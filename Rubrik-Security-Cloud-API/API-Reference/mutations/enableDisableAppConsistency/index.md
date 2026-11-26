@@ -1,6 +1,6 @@
 # enableDisableAppConsistency
 
-Enable/ Disable App consistency for a VM
+Turns application-consistent snapshots on or off for an Azure virtual machine.
 
 ## Arguments
 

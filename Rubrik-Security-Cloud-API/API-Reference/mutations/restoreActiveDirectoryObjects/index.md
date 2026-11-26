@@ -1,6 +1,6 @@
 # restoreActiveDirectoryObjects
 
-Restore the given objects to the Active Directory Supported in v9.0+ Initiates a recovery for the given Active Directory objects.
+Starts a job that restores the given Active Directory objects from a domain controller snapshot; track it with activeDirectoryAsyncRequestStatus.
 
 ## Arguments
 

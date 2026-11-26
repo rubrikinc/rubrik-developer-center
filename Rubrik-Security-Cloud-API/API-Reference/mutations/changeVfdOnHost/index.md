@@ -1,12 +1,12 @@
 # changeVfdOnHost
 
-Install or uninstall volume filter driver on hosts.
+Installs or uninstalls the Rubrik volume filter driver on the given hosts.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                     | Description                        |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| input *(required)* | [ChangeVfdOnHostInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ChangeVfdOnHostInput/index.md)! | Input for InternalChangeVfdOnHost. |
+| Argument           | Type                                                                                                                                     | Description                                                                           |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| input *(required)* | [ChangeVfdOnHostInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ChangeVfdOnHostInput/index.md)! | Input fields: config, with hostIds and install (true to install, false to uninstall). |
 
 ## Returns
 

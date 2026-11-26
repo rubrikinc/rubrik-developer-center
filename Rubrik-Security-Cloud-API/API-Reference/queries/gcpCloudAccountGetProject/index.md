@@ -1,6 +1,6 @@
 # gcpCloudAccountGetProject
 
-GcpCloudAccountGetProject gets the GCP project corresponding to the requested project id.
+Returns the GCP project with the given project ID.
 
 ## Arguments
 

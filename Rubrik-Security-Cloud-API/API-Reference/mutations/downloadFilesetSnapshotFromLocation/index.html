@@ -938,7 +938,7 @@
 
 
 <h1 id="downloadfilesetsnapshotfromlocation">downloadFilesetSnapshotFromLocation</h1>
-<p>Download a snapshot from a replication target Supported in v7.0+ Initiates a job to download a snapshot from the specified location when the snapshot does not exist locally. The specified location has to be a replication target connected to this Rubrik cluster. If an SLA Domain is not provided, the snapshot will be retained forever.</p>
+<p>Starts a job that downloads a fileset snapshot from a connected replication target when it is not on this Rubrik cluster. Without an SLA Domain the snapshot is kept forever.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/DownloadFilesetSnapshotFromLocationInput/">DownloadFilesetSnapshotFromLocationInput</a>!</td>
-<td>Input for V2DownloadFilesetSnapshotFromLocation.</td>
+<td>Input fields: snapshotId, locationId of the replication target, and downloadConfig with an optional slaId and cloud rehydration speed.</td>
 </tr>
 </tbody>
 </table>

@@ -87,3 +87,5 @@ Active Directory Domain.
 **Referenced by**
 
 - [ActiveDirectoryDomainController.activeDirectoryDomain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryDomainController/index.md)
+- [PromoteHostForestRestoreJobStatus.domain](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PromoteHostForestRestoreJobStatus/index.md)
+- [UnifiedActiveDirectoryDomain.domains](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UnifiedActiveDirectoryDomain/index.md)

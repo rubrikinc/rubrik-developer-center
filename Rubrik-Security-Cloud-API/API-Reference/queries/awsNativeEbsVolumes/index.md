@@ -1,6 +1,6 @@
 # awsNativeEbsVolumes
 
-Lists the AWS Native EBS volumes under the AWS-native hierarchy root.
+Lists the Amazon EBS volumes in the AWS accounts added to Rubrik.
 
 ## Arguments
 

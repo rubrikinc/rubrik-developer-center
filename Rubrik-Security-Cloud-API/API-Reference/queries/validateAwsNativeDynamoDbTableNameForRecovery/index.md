@@ -1,6 +1,6 @@
 # validateAwsNativeDynamoDbTableNameForRecovery
 
-ValidateAwsNativeDynamoDbTableNameForRecovery validates the recovery table name entered by the customer, authorizing the caller against the AWS Native account and gating on the DynamoDB feature flag.
+Checks whether a table name can be used to recover a DynamoDB table in the given AWS account and region.
 
 ## Arguments
 

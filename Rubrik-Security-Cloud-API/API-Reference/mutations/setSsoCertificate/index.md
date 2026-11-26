@@ -1,12 +1,12 @@
 # setSsoCertificate
 
-Set User defined SSO certs.
+Sets a certificate you uploaded as the single sign-on (SSO) signing or encryption certificate for the caller's organization.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                         | Description                        |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| input *(required)* | [SetSsoCertificateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetSsoCertificateInput/index.md)! | SSO certificate details to be set. |
+| Argument           | Type                                                                                                                                         | Description                                                                                                  |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| input *(required)* | [SetSsoCertificateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/SetSsoCertificateInput/index.md)! | Contains certificateType and certificateFid, the ID of an uploaded certificate. certificateId is deprecated. |
 
 ## Returns
 

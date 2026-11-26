@@ -15,6 +15,7 @@ Cloud Account with mapped Exocompute account.
 **Referenced by**
 
 - [ApplicationCloudAccountToExocomputeConfig.mappedExocomputeAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ApplicationCloudAccountToExocomputeConfig/index.md)
+- [AwsCloudAccountFeaturesWithExoConfigs.mappedExocomputeAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsCloudAccountFeaturesWithExoConfigs/index.md)
 - [AwsExocomputeConfig.mappedCloudAccounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsExocomputeConfig/index.md)
 - [AwsFeatureConfig.mappedExocomputeAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsFeatureConfig/index.md)
 - [AzureApplicationCloudAccountToExocomputeConfig.mappedExocomputeAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureApplicationCloudAccountToExocomputeConfig/index.md)

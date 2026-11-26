@@ -1,6 +1,6 @@
 # allGcpCloudAccountMissingPermissionsForAddition
 
-Check GCP projects permissions for addition.
+Lists the permissions each GCP project is missing before it can be added to Rubrik, for the current OAuth session.
 
 ## Arguments
 

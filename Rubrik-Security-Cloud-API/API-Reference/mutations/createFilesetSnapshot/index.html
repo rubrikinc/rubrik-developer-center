@@ -938,7 +938,7 @@
 
 
 <h1 id="createfilesetsnapshot">createFilesetSnapshot</h1>
-<p>Initiate an on-demand backup for a fileset Supported in v5.0+ Create an on-demand backup request for the given fileset.</p>
+<p>Starts an on-demand backup of a fileset; poll the returned request ID with filesetRequestStatus.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/CreateFilesetSnapshotInput/">CreateFilesetSnapshotInput</a>!</td>
-<td>Input for V1CreateFilesetBackupJob.</td>
+<td>ID of the fileset, an optional config.slaId for retention, and an optional userNote.</td>
 </tr>
 </tbody>
 </table>

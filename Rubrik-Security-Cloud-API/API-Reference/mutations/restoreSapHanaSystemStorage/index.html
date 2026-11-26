@@ -938,7 +938,7 @@
 
 
 <h1 id="restoresaphanasystemstorage">restoreSapHanaSystemStorage</h1>
-<p>Restore SAP HANA storage to a storage snapshot Supported in v9.1+ Initiates a job to restore the storage of a SAP HANA system object. The GET /sap_hana/system/request/{id} endpoint can be used to monitor the progress of the job.</p>
+<p>Restores a SAP HANA system's storage from a storage snapshot taken by createOnDemandSapHanaStorageSnapshot. Returns the async request.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/RestoreSapHanaSystemStorageInput/">RestoreSapHanaSystemStorageInput</a>!</td>
-<td>Input for V1RestoreSapHanaSystemStorage.</td>
+<td>The system ID and the storage snapshot ID.</td>
 </tr>
 </tbody>
 </table>

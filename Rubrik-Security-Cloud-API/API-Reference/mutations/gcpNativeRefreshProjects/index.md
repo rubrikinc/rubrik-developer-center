@@ -1,6 +1,6 @@
 # gcpNativeRefreshProjects
 
-Trigger refresh of the given GCP projects.
+Starts jobs that re-discover the workloads in the given GCP projects. Returns the launched taskchain ID for each project and an error ID for each project that failed.
 
 ## Arguments
 

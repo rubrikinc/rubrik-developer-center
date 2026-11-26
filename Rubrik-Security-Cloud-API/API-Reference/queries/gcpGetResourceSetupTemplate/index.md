@@ -1,6 +1,6 @@
 # gcpGetResourceSetupTemplate
 
-GcpGetResourceSetupTemplate returns the terraform template to setup the resources on GCP.
+Returns the Terraform template that sets up the resources Rubrik needs in GCP.
 
 ## Arguments
 

@@ -1,12 +1,12 @@
 # deleteSapHanaSystem
 
-Delete a SAP HANA system Supported in v5.3+ Initiates a job to delete a SAP HANA system object. GET /sap_hana/system/request/{id} endpoint can be used to monitor the progress of the job.
+Removes a SAP HANA system from its Rubrik cluster. Returns the async request; track it with jobInfo (type SAP_HANA_SYSTEM, requestId = the returned id, clusterUuid = the cluster's UUID).
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                             | Description                      |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------- |
-| input *(required)* | [DeleteSapHanaSystemInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteSapHanaSystemInput/index.md)! | Input for V1DeleteSapHanaSystem. |
+| Argument           | Type                                                                                                                                             | Description                               |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- |
+| input *(required)* | [DeleteSapHanaSystemInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteSapHanaSystemInput/index.md)! | The system ID and an optional audit note. |
 
 ## Returns
 

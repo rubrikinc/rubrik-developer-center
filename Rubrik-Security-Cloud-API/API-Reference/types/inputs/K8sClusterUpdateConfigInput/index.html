@@ -985,7 +985,7 @@
 <tr>
 <td>maxConcurrentAgents</td>
 <td>Int</td>
-<td>Supported in v9.6+ Maximum number of kupr backup agents allowed to run concurrently against this Kubernetes cluster. Set to 0 to disable the concurrent-agent throttle. Omit to leave the current setting unchanged.</td>
+<td>Supported in v9.6+ Maximum number of kupr backup agents allowed to run concurrently against this Kubernetes cluster. A positive value is required for the batched PVC workflow. Set to 0 to disable the batched PVC workflow. This field then sets no limit on agents, but other throttle configs may still apply. Omit to leave the current setting unchanged.</td>
 </tr>
 <tr>
 <td>maxPvcsPerAgent</td>
@@ -1010,7 +1010,7 @@
 <tr>
 <td>pvcGroupingStrategy</td>
 <td>String</td>
-<td>Supported in v9.6+ PVC grouping strategy used for multi-agent backup. Determines how PVCs are partitioned across kupr backup agents. One of: node_affinity, count, none. Omit to leave unchanged.</td>
+<td>Supported in v9.6+ PVC grouping strategy used for multi-agent backup. Determines how PVCs are partitioned across kupr backup agents. One of: node_affinity, count. Omit to leave unchanged.</td>
 </tr>
 <tr>
 <td>registry</td>

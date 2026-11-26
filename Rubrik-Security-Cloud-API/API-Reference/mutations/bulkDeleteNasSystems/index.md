@@ -1,12 +1,12 @@
 # bulkDeleteNasSystems
 
-Delete multiple NAS systems Supported in v7.0+ Triggers a delete of the specified NAS systems. Returns an asynchronous request to check their delete status.
+Starts deletion of the given NAS systems and returns the status of each asynchronous delete request.
 
 ## Arguments
 
 | Argument           | Type                                                                                                                                               | Description                       |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| input *(required)* | [BulkDeleteNasSystemsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkDeleteNasSystemsInput/index.md)! | Input for V1BulkDeleteNasSystems. |
+| input *(required)* | [BulkDeleteNasSystemsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkDeleteNasSystemsInput/index.md)! | IDs of the NAS systems to delete. |
 
 ## Returns
 

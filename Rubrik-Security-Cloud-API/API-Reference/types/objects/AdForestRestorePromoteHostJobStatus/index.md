@@ -1,0 +1,21 @@
+# AdForestRestorePromoteHostJobStatus
+
+AdForestRestorePromoteHostJobStatus is the per-host promotion status for a post-forest-restore child job, with host and domain resolved as named objects.
+
+## Fields
+
+| Field                    | Type                                                                                                                                                                  | Description                                                                                                                                                                                                                                  |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| domain                   | [AdDomainInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AdDomainInfo/index.md)!                                             | Domain the host is promoted into.                                                                                                                                                                                                            |
+| failureAcknowledgedSteps | \[[FailureAcknowledgedStep](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/FailureAcknowledgedStep/index.md)!\]!                  | Steps whose failures have been acknowledged by the user.                                                                                                                                                                                     |
+| host                     | [AdHostInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AdHostInfo/index.md)!                                                 | Host being promoted.                                                                                                                                                                                                                         |
+| lastUpdatedAt            | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                                                      | Time this host-promotion status was last updated.                                                                                                                                                                                            |
+| retryStatus              | \[[JobRetryStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/JobRetryStatus/index.md)!\]!                                    | Status from each retry attempt of the promote host job.                                                                                                                                                                                      |
+| snapshotId               | String!                                                                                                                                                               | ID of the IFM snapshot the host is promoted from. Matches the snapshot_id of an entry in snapshot_download_statuses of the child job when the snapshot is downloaded from an archival location. Empty when the host is promoted without IFM. |
+| status                   | [ActiveDirectoryForestRestoreStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryForestRestoreStatus/index.md)! | Recovery status of the host-promotion job.                                                                                                                                                                                                   |
+
+## Used By
+
+**Referenced by**
+
+- [AdForestRestorePromoteHostChildJobStatus.promoteHostsStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AdForestRestorePromoteHostChildJobStatus/index.md)

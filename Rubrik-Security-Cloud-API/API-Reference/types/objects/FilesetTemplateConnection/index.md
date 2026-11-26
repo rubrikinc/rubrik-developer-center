@@ -16,3 +16,4 @@ Paginated list of FilesetTemplate objects. Each page of the results includes at 
 **Queries**
 
 - [query: filesetTemplates](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/filesetTemplates/index.md)
+- [query: filesetTemplatesByFids](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/filesetTemplatesByFids/index.md)

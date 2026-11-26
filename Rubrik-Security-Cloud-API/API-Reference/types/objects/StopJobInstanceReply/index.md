@@ -12,4 +12,4 @@ Stop job instance output.
 
 **Mutations**
 
-- [mutation: stopJobInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/stopJobInstance/index.md)
+- [mutation: cancelActiveDirectoryForestRestore](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/cancelActiveDirectoryForestRestore/index.md)

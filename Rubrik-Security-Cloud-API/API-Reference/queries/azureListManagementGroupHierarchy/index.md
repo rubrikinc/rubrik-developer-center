@@ -1,6 +1,6 @@
 # azureListManagementGroupHierarchy
 
-AzureListManagementGroupHierarchy lists the flattened management groups hierarchy under a given management group. If should_recurse is false, the hierarchy is limited upto 1 level.
+Lists, as a flat list, the management groups under a given Azure management group; only direct children unless shouldRecurse is true.
 
 ## Arguments
 

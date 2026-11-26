@@ -1,12 +1,12 @@
 # updateManagedVolume
 
-Mutation to update an existing Managed Volume.
+Changes a Managed Volume's name, SLA Domain, size (increase only), share access settings, or backup script settings, and returns the updated Managed Volume summary.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                             | Description                            |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------- |
-| input *(required)* | [UpdateManagedVolumeInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateManagedVolumeInput/index.md)! | Input for InternalUpdateManagedVolume. |
+| Argument           | Type                                                                                                                                             | Description                                                                              |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| input *(required)* | [UpdateManagedVolumeInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateManagedVolumeInput/index.md)! | The Managed Volume ID, the properties to change, and an optional note for the audit log. |
 
 ## Returns
 

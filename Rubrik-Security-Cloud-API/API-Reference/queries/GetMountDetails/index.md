@@ -1,6 +1,6 @@
 # GetMountDetails
 
-GetMountDetails returns the details of mounted disk for a particular mount. Returns the details of mount disks.
+Returns the details of the disks mounted by one mount.
 
 ## Arguments
 

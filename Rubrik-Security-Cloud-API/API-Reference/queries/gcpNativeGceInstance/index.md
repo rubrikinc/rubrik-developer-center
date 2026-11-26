@@ -1,12 +1,12 @@
 # gcpNativeGceInstance
 
-Get details of a GCE Instance
+Returns a Google Compute Engine (GCE) instance protected by Rubrik, by its Rubrik ID.
 
 ## Arguments
 
-| Argument         | Type                                                                                                      | Description                 |
-| ---------------- | --------------------------------------------------------------------------------------------------------- | --------------------------- |
-| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik UUID for the object. |
+| Argument         | Type                                                                                                      | Description                |
+| ---------------- | --------------------------------------------------------------------------------------------------------- | -------------------------- |
+| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik ID of the instance. |
 
 ## Returns
 

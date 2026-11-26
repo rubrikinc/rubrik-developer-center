@@ -988,6 +988,11 @@
 <td>Required. Supported in v9.6+ Managed ID of the MongoDB source cluster.</td>
 </tr>
 <tr>
+<td>sourceShardToTargetShardMap</td>
+<td><a href="../MongoSourceShardToTargetShardMapInput/">MongoSourceShardToTargetShardMapInput</a></td>
+<td>Map from source cluster shards to target cluster shards for primary shard placement of databases and unsharded collections.</td>
+</tr>
+<tr>
 <td>targetAuthenticationType</td>
 <td><a href="../../enums/MongoAuthenticationType/">MongoAuthenticationType</a></td>
 <td>Supported in v9.6+ Type of user authentication used when recovering to a target MongoDB cluster. If no option is provided, the one used while adding the target source is used.</td>
@@ -1006,6 +1011,11 @@
 <td>targetMongoClusterId</td>
 <td>String!</td>
 <td>Required. Supported in v9.6+ Managed ID of the MongoDB target cluster.</td>
+</tr>
+<tr>
+<td>targetShardToSourceShardMap</td>
+<td><a href="../MongoTargetShardToSourceShardMapInput/">MongoTargetShardToSourceShardMapInput</a></td>
+<td>Map from target cluster shards to source cluster shards for zone assignment. Required when shard sets differ and config database recovery is selected. Shards map to self when shard sets match.</td>
 </tr>
 <tr>
 <td>versionTime</td>

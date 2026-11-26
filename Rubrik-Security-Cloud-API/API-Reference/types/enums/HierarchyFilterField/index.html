@@ -1803,6 +1803,10 @@
 <td>Filters Informix instances by their host connection status.</td>
 </tr>
 <tr>
+<td>INFRASTRUCTURE_MONITORING_STATUS</td>
+<td>Filters S3 buckets, RDS instances and DynamoDB tables by their Infrastructure Monitoring status. Texts are one or more CrpMonitoringStatus value names, ORed. The filter adds nothing when the account lacks the Critical Resource Protection entitlement.</td>
+</tr>
+<tr>
 <td>IRISDB_CONNECTION_STATUS</td>
 <td>Filter IRIS DB instances by the Rubrik Backup Service (RBS) connection status of their host.</td>
 </tr>
@@ -2279,6 +2283,10 @@
 <td>Filter Oracle databases by a case-insensitive substring match on the database name or the database unique name. Takes exactly one text of at most 255 bytes. Objects with no Oracle database record are dropped from the result. Data Guard groups have one, so restrict the object type to ORACLE_DATABASE to exclude them.</td>
 </tr>
 <tr>
+<td>ORACLE_HOST_PHYSICAL_HOST_ID</td>
+<td>Filter Oracle hosts by the CDM ID of their physical host. Texts takes one to 100 physical host CDM IDs, matched against cdm_oracle_host.host_id.</td>
+</tr>
+<tr>
 <td>ORACLE_OS_TYPE</td>
 <td>Filter Oracle host and RAC objects by OS type.</td>
 </tr>
@@ -2589,6 +2597,10 @@
 <tr>
 <td>VMWARE_VCD_HOSTNAME</td>
 <td>Filter by vCD hostname.</td>
+</tr>
+<tr>
+<td>VMWARE_VM_IS_VM_SERVICE_VM</td>
+<td>Filter VMware virtual machines by whether a vSphere Supervisor runs them through its virtual machine service.</td>
 </tr>
 <tr>
 <td>VMWARE_VM_MAC_ADDRESS</td>

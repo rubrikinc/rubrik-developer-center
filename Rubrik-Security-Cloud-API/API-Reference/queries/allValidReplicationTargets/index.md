@@ -1,6 +1,6 @@
 # allValidReplicationTargets
 
-Lists all valid replication target clusters.
+Lists Rubrik clusters that can be chosen as replication targets.
 
 ## Arguments
 
@@ -12,7 +12,7 @@ Lists all valid replication target clusters.
 | before                       | String                                                                                                                                                                     | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
 | sortBy                       | [ListValidReplicationTargetsSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ListValidReplicationTargetsSortByField/index.md) | Field to sort by for valid replication targets.                                                                                         |
 | sortOrder                    | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                                           | Sort order.                                                                                                                             |
-| isCrossAccount               | Boolean                                                                                                                                                                    | Deprecated. Use ListValidReplicationTargetFilter instead.                                                                               |
+| isCrossAccount               | Boolean                                                                                                                                                                    | Deprecated; use validReplicationTargetFilter instead.                                                                                   |
 | validReplicationTargetFilter | [ListValidReplicationTargetFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ListValidReplicationTargetFilter/index.md)            | Filter to retrieve valid replication targets.                                                                                           |
 
 ## Returns

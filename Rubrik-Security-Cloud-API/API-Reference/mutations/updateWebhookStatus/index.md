@@ -1,12 +1,12 @@
 # updateWebhookStatus
 
-Update the webhook status.
+Enables or disables a webhook; AUTO_DISABLED is set only by the system and is rejected. Failures, including a provider type not available to the account, come back in errorInfo.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                             | Description                  |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------- |
-| input *(required)* | [UpdateWebhookStatusInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateWebhookStatusInput/index.md)! | Update webhook status input. |
+| Argument           | Type                                                                                                                                             | Description                                             |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------- |
+| input *(required)* | [UpdateWebhookStatusInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateWebhookStatusInput/index.md)! | The webhook ID and the new status, ENABLED or DISABLED. |
 
 ## Returns
 

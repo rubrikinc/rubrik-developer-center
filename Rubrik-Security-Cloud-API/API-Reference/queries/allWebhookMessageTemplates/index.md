@@ -1,12 +1,12 @@
 # allWebhookMessageTemplates
 
-Retrieve webhook message templates.
+Returns all webhook message templates in the account, both Rubrik defaults and custom templates.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                           | Description                       |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| input *(required)* | [WebhookMessageTemplatesReqInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WebhookMessageTemplatesReqInput/index.md)! | Retrieve message templates input. |
+| Argument           | Type                                                                                                                                                           | Description                                                                      |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| input *(required)* | [WebhookMessageTemplatesReqInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/WebhookMessageTemplatesReqInput/index.md)! | Requires recordType (DEFAULT or CUSTOM), which is not applied as a filter today. |
 
 ## Returns
 

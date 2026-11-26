@@ -1,6 +1,6 @@
 # Enums
 
-1323 types.
+1423 types.
 
 [AKSClusterAccessType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AKSClusterAccessType/index.md)\
 [AKSNodeCountBucket](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AKSNodeCountBucket/index.md)\
@@ -26,17 +26,32 @@
 [ActivityEntityType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActivityEntityType/index.md)\
 [ActivityObjectTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActivityObjectTypeEnum/index.md)\
 [ActivityOperation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActivityOperation/index.md)\
+[ActivitySeriesGroupByEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActivitySeriesGroupByEnum/index.md)\
+[ActivitySeriesSortByEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActivitySeriesSortByEnum/index.md)\
 [ActivitySeriesSortField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActivitySeriesSortField/index.md)\
 [ActivitySeverityEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActivitySeverityEnum/index.md)\
 [ActivityStatusEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActivityStatusEnum/index.md)\
 [ActivityTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActivityTypeEnum/index.md)\
 [ActorIdentificationState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActorIdentificationState/index.md)\
 [ActorType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ActorType/index.md)\
+[AdForestRecoveryTargetType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AdForestRecoveryTargetType/index.md)\
 [AdForestTransitionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AdForestTransitionStatus/index.md)\
 [AdVolumeExportFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AdVolumeExportFilterField/index.md)\
 [AdVolumeExportSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AdVolumeExportSortByField/index.md)\
 [AdoptionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AdoptionStatus/index.md)\
 [AffectedFilesDeltaType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AffectedFilesDeltaType/index.md)\
+[AgentCloudAuthorizationStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AgentCloudAuthorizationStatus/index.md)\
+[AgentCloudDocumentContentType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AgentCloudDocumentContentType/index.md)\
+[AgentCloudEnforcementTypeAvailabilityStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AgentCloudEnforcementTypeAvailabilityStatus/index.md)\
+[AgentCloudExampleClassification](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AgentCloudExampleClassification/index.md)\
+[AgentCloudPolicyEnforcementType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AgentCloudPolicyEnforcementType/index.md)\
+[AgentCloudPolicyErrorType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AgentCloudPolicyErrorType/index.md)\
+[AgentCloudPolicyPackSubscription](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AgentCloudPolicyPackSubscription/index.md)\
+[AgentCloudPolicySeverity](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AgentCloudPolicySeverity/index.md)\
+[AgentCloudPolicySource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AgentCloudPolicySource/index.md)\
+[AgentCloudPolicyStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AgentCloudPolicyStatus/index.md)\
+[AgentCloudPolicySurface](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AgentCloudPolicySurface/index.md)\
+[AgentCloudScopeMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AgentCloudScopeMode/index.md)\
 [AgentConnectStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AgentConnectStatus/index.md)\
 [AgentConnectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AgentConnectionStatus/index.md)\
 [AirGatewayProvisioningState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AirGatewayProvisioningState/index.md)\
@@ -71,13 +86,20 @@
 [ApplicationRecoveryOutcome](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ApplicationRecoveryOutcome/index.md)\
 [ApplicationRecoveryStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ApplicationRecoveryStatus/index.md)\
 [ApplicationWarningFlag](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ApplicationWarningFlag/index.md)\
+[ArchivalBandwidthStatsRequestType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalBandwidthStatsRequestType/index.md)\
 [ArchivalEntityQueryFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalEntityQueryFilterField/index.md)\
 [ArchivalEntityQuerySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalEntityQuerySortByField/index.md)\
 [ArchivalEntityUseCaseType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalEntityUseCaseType/index.md)\
 [ArchivalForecastConfidenceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalForecastConfidenceType/index.md)\
 [ArchivalGroupQuerySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalGroupQuerySortByField/index.md)\
+[ArchivalGroupRekeyStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalGroupRekeyStatus/index.md)\
 [ArchivalGroupTieringStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalGroupTieringStatus/index.md)\
 [ArchivalGroupType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalGroupType/index.md)\
+[ArchivalLocationEncryptionCipher](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalLocationEncryptionCipher/index.md)\
+[ArchivalLocationEncryptionHealthStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalLocationEncryptionHealthStatus/index.md)\
+[ArchivalLocationEncryptionJobStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalLocationEncryptionJobStatus/index.md)\
+[ArchivalLocationEncryptionKeyType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalLocationEncryptionKeyType/index.md)\
+[ArchivalLocationEncryptionStatusFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalLocationEncryptionStatusFilter/index.md)\
 [ArchivalLocationImmutabilityMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalLocationImmutabilityMode/index.md)\
 [ArchivalLocationIneligibilityReason](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalLocationIneligibilityReason/index.md)\
 [ArchivalLocationOperationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalLocationOperationType/index.md)\
@@ -125,6 +147,7 @@
 [AwsNativeAccountSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeAccountSortFields/index.md)\
 [AwsNativeEbsVolumeSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeEbsVolumeSortFields/index.md)\
 [AwsNativeEbsVolumeType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeEbsVolumeType/index.md)\
+[AwsNativeEc2DedicatedHostState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeEc2DedicatedHostState/index.md)\
 [AwsNativeEc2InstanceSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeEc2InstanceSortFields/index.md)\
 [AwsNativeEc2InstanceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeEc2InstanceType/index.md)\
 [AwsNativeFileRecoveryStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeFileRecoveryStatus/index.md)\
@@ -137,10 +160,12 @@
 [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md)\
 [AwsNativeRegionForReplication](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegionForReplication/index.md)\
 [AwsNativeRegionSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegionSortFields/index.md)\
+[AwsOrgChildrenSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsOrgChildrenSortFields/index.md)\
 [AwsParameterGroupType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsParameterGroupType/index.md)\
 [AwsPermissionDiffStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsPermissionDiffStatus/index.md)\
 [AwsRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsRegion/index.md)\
 [AwsRetrievalTier](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsRetrievalTier/index.md)\
+[AwsSecretRegionEnabledState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsSecretRegionEnabledState/index.md)\
 [AwsServiceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsServiceType/index.md)\
 [AwsStorageClass](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsStorageClass/index.md)\
 [AwsTargetGroupTargetType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsTargetGroupTargetType/index.md)\
@@ -184,9 +209,11 @@
 [AzureCosmosNosqlNetworkAccessMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCosmosNosqlNetworkAccessMode/index.md)\
 [AzureCosmosNosqlThroughputMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCosmosNosqlThroughputMode/index.md)\
 [AzureCosmosNosqlThroughputScope](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureCosmosNosqlThroughputScope/index.md)\
+[AzureDevOpsProjectNameValidationErrorReason](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureDevOpsProjectNameValidationErrorReason/index.md)\
 [AzureFeatureForPermissionCheck](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureFeatureForPermissionCheck/index.md)\
 [AzureHostType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureHostType/index.md)\
 [AzureInstanceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureInstanceType/index.md)\
+[AzureKeyVaultKeyState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureKeyVaultKeyState/index.md)\
 [AzureLocalIpAllocationMethod](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureLocalIpAllocationMethod/index.md)\
 [AzureLocalIpv4Type](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureLocalIpv4Type/index.md)\
 [AzureNativeCommonResourceGroupSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AzureNativeCommonResourceGroupSortFields/index.md)\
@@ -236,6 +263,7 @@
 [BackupWindowScope](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BackupWindowScope/index.md)\
 [BackupWindowType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BackupWindowType/index.md)\
 [BackupWindowsForObjectsSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BackupWindowsForObjectsSortByField/index.md)\
+[BigQueryRecoveryMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BigQueryRecoveryMode/index.md)\
 [BliMigrationStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BliMigrationStatus/index.md)\
 [BlueprintFailoverStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BlueprintFailoverStatus/index.md)\
 [BlueprintLocationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BlueprintLocationType/index.md)\
@@ -244,11 +272,13 @@
 [BlueprintStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BlueprintStatus/index.md)\
 [BrowseAggregationScope](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BrowseAggregationScope/index.md)\
 [BrowseObjectStoreSnapshotFileMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BrowseObjectStoreSnapshotFileMode/index.md)\
+[BucketOwnershipControls](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BucketOwnershipControls/index.md)\
 [BulkThreatHuntValidationStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/BulkThreatHuntValidationStatus/index.md)\
 [CalendarEmailAddressFilterType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CalendarEmailAddressFilterType/index.md)\
 [CalendarEventType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CalendarEventType/index.md)\
 [CalendarRecurrenceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CalendarRecurrenceType/index.md)\
 [CalendarSearchKeywordType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CalendarSearchKeywordType/index.md)\
+[CannotMigrateReasonEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CannotMigrateReasonEnum/index.md)\
 [CascadingImpactActionType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CascadingImpactActionType/index.md)\
 [CascadingImpactResolutionMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CascadingImpactResolutionMode/index.md)\
 [Category](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Category/index.md)\
@@ -263,6 +293,7 @@
 [CdmFeatureFlagType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CdmFeatureFlagType/index.md)\
 [CdmFindBadDiskResultType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CdmFindBadDiskResultType/index.md)\
 [CdmJobStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CdmJobStatus/index.md)\
+[CdmKeyRotationState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CdmKeyRotationState/index.md)\
 [CdmManagedVolumeType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CdmManagedVolumeType/index.md)\
 [CdmNutanixSnapshotConsistencyMandate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CdmNutanixSnapshotConsistencyMandate/index.md)\
 [CdmReportMigrationStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CdmReportMigrationStatus/index.md)\
@@ -282,6 +313,7 @@
 [CertificateUsageLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CertificateUsageLocation/index.md)\
 [ChannelMembershipType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ChannelMembershipType/index.md)\
 [ChartType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ChartType/index.md)\
+[ChartViewType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ChartViewType/index.md)\
 [ClassificationPolicyColor](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClassificationPolicyColor/index.md)\
 [ClassificationPolicyMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClassificationPolicyMode/index.md)\
 [CloudAccountAction](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CloudAccountAction/index.md)\
@@ -366,6 +398,7 @@
 [ClusterTimezoneType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterTimezoneType/index.md)\
 [ClusterTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterTypeEnum/index.md)\
 [ClusterUnsupportedWorkloadState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ClusterUnsupportedWorkloadState/index.md)\
+[CnpArchivalLocationEncryptionJobStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/CnpArchivalLocationEncryptionJobStatus/index.md)\
 [ColdStorageClass](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ColdStorageClass/index.md)\
 [ColossusStorageContainerImmutabilityStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ColossusStorageContainerImmutabilityStatus/index.md)\
 [ComplianceDuration](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ComplianceDuration/index.md)\
@@ -402,6 +435,8 @@
 [DataGovShareType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DataGovShareType/index.md)\
 [DataGuardType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DataGuardType/index.md)\
 [DataLocationName](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DataLocationName/index.md)\
+[DataLocationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DataLocationType/index.md)\
+[DataSizeFormatType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DataSizeFormatType/index.md)\
 [DataThreatAnalyticsEnablementEntity](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DataThreatAnalyticsEnablementEntity/index.md)\
 [DataTransferType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DataTransferType/index.md)\
 [DataTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DataTypeEnum/index.md)\
@@ -428,9 +463,11 @@
 [DefenderAlertSeverity](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DefenderAlertSeverity/index.md)\
 [DeleteVmwareSnapshotRequestLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DeleteVmwareSnapshotRequestLocation/index.md)\
 [DeltaType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DeltaType/index.md)\
+[DevOpsObjectQuerySelectionMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DevOpsObjectQuerySelectionMode/index.md)\
 [DevOpsObjectStatKey](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DevOpsObjectStatKey/index.md)\
 [DevOpsStorageType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DevOpsStorageType/index.md)\
 [DeviceState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DeviceState/index.md)\
+[DeviceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DeviceType/index.md)\
 [DevopsAuthMechanism](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DevopsAuthMechanism/index.md)\
 [DevopsConnectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DevopsConnectionStatus/index.md)\
 [DevopsHostType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DevopsHostType/index.md)\
@@ -457,6 +494,7 @@
 [DnsRecoveryType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DnsRecoveryType/index.md)\
 [DocumentAttributeType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DocumentAttributeType/index.md)\
 [DocumentTypeStatusFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DocumentTypeStatusFilter/index.md)\
+[DomainControllerOperationMasterRoles](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DomainControllerOperationMasterRoles/index.md)\
 [DownloadIdentifierEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DownloadIdentifierEnum/index.md)\
 [DownloadSnapshotFromLocationSnappableType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DownloadSnapshotFromLocationSnappableType/index.md)\
 [DownloadStatusEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DownloadStatusEnum/index.md)\
@@ -472,6 +510,8 @@
 [EmResourceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmResourceType/index.md)\
 [EmSubjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmSubjectType/index.md)\
 [EmailAddressFilterType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmailAddressFilterType/index.md)\
+[EmailDomainAllowlistEntriesSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmailDomainAllowlistEntriesSortByField/index.md)\
+[EmailDomainAllowlistEntryType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EmailDomainAllowlistEntryType/index.md)\
 [Encryption](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Encryption/index.md)\
 [EncryptionKeyUpdateStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EncryptionKeyUpdateStatus/index.md)\
 [EncryptionLevel](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/EncryptionLevel/index.md)\
@@ -535,6 +575,7 @@
 [FileStateEnumType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FileStateEnumType/index.md)\
 [FileStructureSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FileStructureSortBy/index.md)\
 [FileSystemType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FileSystemType/index.md)\
+[FileTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FileTypeEnum/index.md)\
 [FileTypeEnumType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FileTypeEnumType/index.md)\
 [FileVersionSourceEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FileVersionSourceEnum/index.md)\
 [FilesetExportFilesJobConfigRecoveryPurpose](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FilesetExportFilesJobConfigRecoveryPurpose/index.md)\
@@ -546,10 +587,16 @@
 [FilesetTemplatePatchShareType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FilesetTemplatePatchShareType/index.md)\
 [FilterOperator](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FilterOperator/index.md)\
 [FilterType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FilterType/index.md)\
-[FlagAttribute](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FlagAttribute/index.md)\
+[FilterTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FilterTypeEnum/index.md)\
 [FlexmotionFailoverType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FlexmotionFailoverType/index.md)\
 [FlexmotionWorkloadType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FlexmotionWorkloadType/index.md)\
 [FlowErrorCode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FlowErrorCode/index.md)\
+[ForceDeleteEligibilityReason](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ForceDeleteEligibilityReason/index.md)\
+[ForestRecoveryDcStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ForestRecoveryDcStatus/index.md)\
+[ForestRecoveryJobPhase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ForestRecoveryJobPhase/index.md)\
+[ForestRecoveryStep](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ForestRecoveryStep/index.md)\
+[ForestRecoveryStepStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ForestRecoveryStepStatus/index.md)\
+[ForestRestoreJobPhase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ForestRestoreJobPhase/index.md)\
 [FsmoRoles](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FsmoRoles/index.md)\
 [FusionComputeMountsSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FusionComputeMountsSortByField/index.md)\
 [FusionComputeSnapshotConsistencyMandate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FusionComputeSnapshotConsistencyMandate/index.md)\
@@ -557,6 +604,7 @@
 [FusionComputeVmStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FusionComputeVmStatus/index.md)\
 [FusionComputeVrmUserType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/FusionComputeVrmUserType/index.md)\
 [GPOLinkingStatusEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GPOLinkingStatusEnum/index.md)\
+[GcpBigQueryDatasetSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpBigQueryDatasetSortFields/index.md)\
 [GcpBigQueryLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpBigQueryLocation/index.md)\
 [GcpBigQueryTableType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpBigQueryTableType/index.md)\
 [GcpBucketNetworkAccess](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpBucketNetworkAccess/index.md)\
@@ -567,6 +615,7 @@
 [GcpCloudSqlInstanceSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpCloudSqlInstanceSortFields/index.md)\
 [GcpInstanceType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpInstanceType/index.md)\
 [GcpKmsLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpKmsLocation/index.md)\
+[GcpLocationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpLocationType/index.md)\
 [GcpNativeDiskSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpNativeDiskSortFields/index.md)\
 [GcpNativeFileIndexingStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpNativeFileIndexingStatus/index.md)\
 [GcpNativeGceInstanceSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpNativeGceInstanceSortFields/index.md)\
@@ -574,8 +623,13 @@
 [GcpNativeProjectSortFields](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpNativeProjectSortFields/index.md)\
 [GcpNativeProjectStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpNativeProjectStatus/index.md)\
 [GcpNativeProtectionFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpNativeProtectionFeature/index.md)\
+[GcpPcrServiceAccountValidationFailure](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpPcrServiceAccountValidationFailure/index.md)\
+[GcpRecoveryEncryptionKeyType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpRecoveryEncryptionKeyType/index.md)\
 [GcpRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpRegion/index.md)\
 [GcpSnapshotType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpSnapshotType/index.md)\
+[GcpSpannerDatabaseDialect](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpSpannerDatabaseDialect/index.md)\
+[GcpSpannerEdition](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpSpannerEdition/index.md)\
+[GcpSpannerLocation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpSpannerLocation/index.md)\
 [GcpStorageClass](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GcpStorageClass/index.md)\
 [GeneralActionName](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GeneralActionName/index.md)\
 [GetCrossAccountClustersFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GetCrossAccountClustersFilterField/index.md)\
@@ -584,12 +638,17 @@
 [GetCrossAccountPairsSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GetCrossAccountPairsSortByField/index.md)\
 [GetLicenseNotificationRequest](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GetLicenseNotificationRequest/index.md)\
 [GetObjectPauseListSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GetObjectPauseListSortByField/index.md)\
+[GetRCVRegionsFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GetRCVRegionsFilterField/index.md)\
 [GitHubAppStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GitHubAppStatus/index.md)\
 [GlobalCertificateSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GlobalCertificateSortBy/index.md)\
 [GlobalCertificateStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GlobalCertificateStatus/index.md)\
 [GlobalExistingSnapshotRetention](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GlobalExistingSnapshotRetention/index.md)\
+[GlobalObjectLocationsFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GlobalObjectLocationsFilterField/index.md)\
 [GlobalSlaQueryFilterInputField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GlobalSlaQueryFilterInputField/index.md)\
 [GoogleSecOpsIntegrationConfigType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GoogleSecOpsIntegrationConfigType/index.md)\
+[GpoChangeLabel](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GpoChangeLabel/index.md)\
+[GpoDataAvailability](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GpoDataAvailability/index.md)\
+[GpoLinkType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GpoLinkType/index.md)\
 [GpoSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GpoSetting/index.md)\
 [GpoSettingName](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GpoSettingName/index.md)\
 [GpoStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/GpoStatus/index.md)\
@@ -610,6 +669,7 @@
 [HierarchyFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchyFilterField/index.md)\
 [HierarchyObjectTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchyObjectTypeEnum/index.md)\
 [HierarchySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortByField/index.md)\
+[HierarchySortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HierarchySortOrder/index.md)\
 [HookFailureHandling](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HookFailureHandling/index.md)\
 [HostConfigurationPropertyEnabled](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HostConfigurationPropertyEnabled/index.md)\
 [HostConnectivityStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/HostConnectivityStatus/index.md)\
@@ -684,6 +744,7 @@
 [IocOperation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IocOperation/index.md)\
 [IpAllocationMethod](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IpAllocationMethod/index.md)\
 [IpEntrySource](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IpEntrySource/index.md)\
+[IrPrerequisiteCheckStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IrPrerequisiteCheckStatus/index.md)\
 [IrisdbAuthenticationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IrisdbAuthenticationType/index.md)\
 [IrisdbSnapshotType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IrisdbSnapshotType/index.md)\
 [IssueEventType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/IssueEventType/index.md)\
@@ -703,6 +764,12 @@
 [KerberosProtocolType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KerberosProtocolType/index.md)\
 [KeyType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KeyType/index.md)\
 [KeyTypeEnumType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KeyTypeEnumType/index.md)\
+[KmipProtectedEntityType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KmipProtectedEntityType/index.md)\
+[KmipServerKeyAssignmentInfoSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KmipServerKeyAssignmentInfoSortBy/index.md)\
+[KmsInstancesSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KmsInstancesSortBy/index.md)\
+[KmsMappingProvisioningStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KmsMappingProvisioningStatus/index.md)\
+[KmsSharingMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KmsSharingMode/index.md)\
+[KmsType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KmsType/index.md)\
 [KosmosClusterMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KosmosClusterMode/index.md)\
 [KosmosTopologyReplicaRole](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KosmosTopologyReplicaRole/index.md)\
 [KosmosTopologyReplicaStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/KosmosTopologyReplicaStatus/index.md)\
@@ -738,7 +805,9 @@
 [LogLevel](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LogLevel/index.md)\
 [Logging](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Logging/index.md)\
 [LogicalOperator](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LogicalOperator/index.md)\
+[LogicalOperatorType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LogicalOperatorType/index.md)\
 [LookBackWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LookBackWindow/index.md)\
+[LookbackPeriod](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LookbackPeriod/index.md)\
 [M365AccessMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/M365AccessMode/index.md)\
 [M365AccessRecoveryState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/M365AccessRecoveryState/index.md)\
 [M365Cloud](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/M365Cloud/index.md)\
@@ -843,6 +912,7 @@
 [NfAnomalyResultGroupBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/NfAnomalyResultGroupBy/index.md)\
 [NfAnomalyResultSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/NfAnomalyResultSortBy/index.md)\
 [NfsSubType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/NfsSubType/index.md)\
+[NodeKeyRotationSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/NodeKeyRotationSortBy/index.md)\
 [NodeStatsAggregationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/NodeStatsAggregationType/index.md)\
 [NodeTunnelFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/NodeTunnelFilter/index.md)\
 [NotificationApplication](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/NotificationApplication/index.md)\
@@ -879,6 +949,18 @@
 [ObjectTypeAccessSummaryGroupBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ObjectTypeAccessSummaryGroupBy/index.md)\
 [ObjectTypeAccessSummarySortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ObjectTypeAccessSummarySortBy/index.md)\
 [ObjectTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ObjectTypeEnum/index.md)\
+[OktaAuthenticatorIdFilterType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OktaAuthenticatorIdFilterType/index.md)\
+[OktaAuthenticatorMethodType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OktaAuthenticatorMethodType/index.md)\
+[OktaAuthenticatorSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OktaAuthenticatorSortByField/index.md)\
+[OktaAuthenticatorStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OktaAuthenticatorStatus/index.md)\
+[OktaAuthenticatorType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OktaAuthenticatorType/index.md)\
+[OktaIdentityProviderSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OktaIdentityProviderSortByField/index.md)\
+[OktaIdpProvisioningAction](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OktaIdpProvisioningAction/index.md)\
+[OktaIdpRoutingRuleSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OktaIdpRoutingRuleSortByField/index.md)\
+[OktaIdpRoutingRuleStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OktaIdpRoutingRuleStatus/index.md)\
+[OktaIdpStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OktaIdpStatus/index.md)\
+[OktaIdpType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OktaIdpType/index.md)\
+[OktaProfileMappingStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OktaProfileMappingStatus/index.md)\
 [OlvmBackupScriptFailureHandling](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OlvmBackupScriptFailureHandling/index.md)\
 [OlvmSnapshotConsistencyMandate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OlvmSnapshotConsistencyMandate/index.md)\
 [OlvmVirtualMachinePowerStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/OlvmVirtualMachinePowerStatus/index.md)\
@@ -910,10 +992,12 @@
 [PermissionReportType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PermissionReportType/index.md)\
 [PermissionType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PermissionType/index.md)\
 [PermissionsGroup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PermissionsGroup/index.md)\
+[PersonalAccessTokenSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PersonalAccessTokenSortByField/index.md)\
 [Platform](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Platform/index.md)\
 [PlatformCategory](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PlatformCategory/index.md)\
 [PolarisObjectAuthorizedOperationsEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PolarisObjectAuthorizedOperationsEnum/index.md)\
 [PolarisReportViewType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PolarisReportViewType/index.md)\
+[PolarisReportsFilterType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PolarisReportsFilterType/index.md)\
 [PolarisSnappableAuthorizedOperationsEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PolarisSnappableAuthorizedOperationsEnum/index.md)\
 [PolarisSnapshotGroupByEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PolarisSnapshotGroupByEnum/index.md)\
 [PolarisSnapshotSortByEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PolarisSnapshotSortByEnum/index.md)\
@@ -935,8 +1019,10 @@
 [PowerPlatformFlowStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PowerPlatformFlowStatus/index.md)\
 [PowerPlatformFlowType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PowerPlatformFlowType/index.md)\
 [PrePostScriptFailureHandlingEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PrePostScriptFailureHandlingEnum/index.md)\
+[PreSeedState](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PreSeedState/index.md)\
 [PrecheckIdentifier](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PrecheckIdentifier/index.md)\
 [PrechecksStatusTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PrechecksStatusTypeEnum/index.md)\
+[PredicateType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PredicateType/index.md)\
 [PrincipalFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PrincipalFeature/index.md)\
 [PrincipalOrigin](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PrincipalOrigin/index.md)\
 [PrincipalRiskySummaryPrincipalType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PrincipalRiskySummaryPrincipalType/index.md)\
@@ -959,12 +1045,14 @@
 [ProviderType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ProviderType/index.md)\
 [ProviderTypeV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ProviderTypeV2/index.md)\
 [ProvisionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ProvisionStatus/index.md)\
+[ProvisioningMethod](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ProvisioningMethod/index.md)\
 [ProxyProtocol](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ProxyProtocol/index.md)\
 [PureStorageProtectionGroupSummarySnapshotConsistencyMandate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PureStorageProtectionGroupSummarySnapshotConsistencyMandate/index.md)\
 [PureStorageProtectionGroupUpdateConfigSnapshotConsistencyMandate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/PureStorageProtectionGroupUpdateConfigSnapshotConsistencyMandate/index.md)\
 [QmcInitiatorPage](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QmcInitiatorPage/index.md)\
 [QuarantineFilter](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QuarantineFilter/index.md)\
 [QuarantineOperationType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QuarantineOperationType/index.md)\
+[QueryArchivalLocationsEncryptionDetailsSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QueryArchivalLocationsEncryptionDetailsSortByField/index.md)\
 [QueryFusionComputeMountsFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QueryFusionComputeMountsFilterField/index.md)\
 [QueryFusionComputeVirtualDisksFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QueryFusionComputeVirtualDisksFilterField/index.md)\
 [QueryType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QueryType/index.md)\
@@ -972,6 +1060,7 @@
 [QuiesceTargetTargetType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/QuiesceTargetTargetType/index.md)\
 [RansomwareResultGroupBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RansomwareResultGroupBy/index.md)\
 [RansomwareResultSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RansomwareResultSortBy/index.md)\
+[RbacSpecialCase](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RbacSpecialCase/index.md)\
 [RbsClusterRelation](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RbsClusterRelation/index.md)\
 [RbsUpgradeStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RbsUpgradeStatus/index.md)\
 [RcsConsumptionMetricNameType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RcsConsumptionMetricNameType/index.md)\
@@ -1011,6 +1100,7 @@
 [RecoveryTag](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryTag/index.md)\
 [RecoveryTriggeredFrom](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryTriggeredFrom/index.md)\
 [RecoveryType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RecoveryType/index.md)\
+[RefreshHarmfulLifecyclePoliciesStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RefreshHarmfulLifecyclePoliciesStatus/index.md)\
 [RefreshableObjectConnectionStatusType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RefreshableObjectConnectionStatusType/index.md)\
 [RegisteredMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RegisteredMode/index.md)\
 [RegistryHiveRoot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RegistryHiveRoot/index.md)\
@@ -1041,6 +1131,7 @@
 [ReportRoomType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ReportRoomType/index.md)\
 [ReportTableColumnEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ReportTableColumnEnum/index.md)\
 [ReportTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ReportTemplate/index.md)\
+[ReportVersionType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ReportVersionType/index.md)\
 [ResetAfterRemoveType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ResetAfterRemoveType/index.md)\
 [ResolutionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ResolutionStatus/index.md)\
 [ResolutionType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ResolutionType/index.md)\
@@ -1057,6 +1148,8 @@
 [RoleNameValidity](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RoleNameValidity/index.md)\
 [RoleType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RoleType/index.md)\
 [RpoLagLevel](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RpoLagLevel/index.md)\
+[RscTagFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RscTagFilterField/index.md)\
+[RscTagSortByFieldEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RscTagSortByFieldEnum/index.md)\
 [RscUpgradeStatusType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RscUpgradeStatusType/index.md)\
 [RscpUpgradeMode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RscpUpgradeMode/index.md)\
 [RubrikCloudVaultType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/RubrikCloudVaultType/index.md)\
@@ -1093,6 +1186,7 @@
 [ScanStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ScanStatus/index.md)\
 [ScheduleFrequency](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ScheduleFrequency/index.md)\
 [SchemaFieldType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SchemaFieldType/index.md)\
+[Scope](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/Scope/index.md)\
 [ScriptErrorAction](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ScriptErrorAction/index.md)\
 [SearchKeywordType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SearchKeywordType/index.md)\
 [SearchObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SearchObjectType/index.md)\
@@ -1127,6 +1221,7 @@
 [SlaMigrationStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SlaMigrationStatus/index.md)\
 [SlaMonth](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SlaMonth/index.md)\
 [SlaObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SlaObjectType/index.md)\
+[SlaProtectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SlaProtectionStatus/index.md)\
 [SlaPurpose](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SlaPurpose/index.md)\
 [SlaQuerySortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SlaQuerySortByField/index.md)\
 [SlaStatusFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SlaStatusFilterField/index.md)\
@@ -1189,11 +1284,14 @@
 [SupportUserAccessStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SupportUserAccessStatus/index.md)\
 [SyslogFacility](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SyslogFacility/index.md)\
 [SyslogSeverity](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SyslogSeverity/index.md)\
+[SystemTagObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SystemTagObjectType/index.md)\
 [TableViewType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TableViewType/index.md)\
 [TagConditionKeyPrefix](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TagConditionKeyPrefix/index.md)\
 [TagConditionOperator](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TagConditionOperator/index.md)\
 [TagFilterType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TagFilterType/index.md)\
 [TagRuleSlaAssignType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TagRuleSlaAssignType/index.md)\
+[TaggedObjectFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TaggedObjectFilterField/index.md)\
+[TaggedObjectSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TaggedObjectSortByField/index.md)\
 [TargetEncryptionTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TargetEncryptionTypeEnum/index.md)\
 [TargetMappingQueryFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TargetMappingQueryFilterField/index.md)\
 [TargetQueryFilterField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/TargetQueryFilterField/index.md)\
@@ -1284,6 +1382,7 @@
 [VcenterSummaryConflictResolutionAuthz](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/VcenterSummaryConflictResolutionAuthz/index.md)\
 [VcenterSummaryV2ConflictResolutionAuthz](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/VcenterSummaryV2ConflictResolutionAuthz/index.md)\
 [VcenterUpdateConfigV2ConflictResolutionAuthz](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/VcenterUpdateConfigV2ConflictResolutionAuthz/index.md)\
+[VcfConnectionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/VcfConnectionStatus/index.md)\
 [VendorType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/VendorType/index.md)\
 [VersionStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/VersionStatus/index.md)\
 [ViolationHistoryEventType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ViolationHistoryEventType/index.md)\
@@ -1322,6 +1421,7 @@
 [WorkdayStatusCode](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkdayStatusCode/index.md)\
 [WorkloadAnomaliesSortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadAnomaliesSortBy/index.md)\
 [WorkloadAnomalyCategory](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadAnomalyCategory/index.md)\
+[WorkloadGroupByEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadGroupByEnum/index.md)\
 [WorkloadLevelHierarchy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadLevelHierarchy/index.md)\
 [WorkloadRecoveryStatusV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/WorkloadRecoveryStatusV2/index.md)\
 [YaraVersion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/YaraVersion/index.md)

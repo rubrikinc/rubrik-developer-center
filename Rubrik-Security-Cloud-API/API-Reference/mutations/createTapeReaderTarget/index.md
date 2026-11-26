@@ -1,12 +1,12 @@
 # createTapeReaderTarget
 
-Creates a reader location for a Tape archival location on a CDM cluster.
+Creates a reader location on a Rubrik cluster for an existing tape archival location, so the cluster can read and recover data another cluster archived there.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                   | Description                                             |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------- |
-| input *(required)* | [CreateTapeReaderTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateTapeReaderTargetInput/index.md)! | Input for creating a new Tape reader archival location. |
+| Argument           | Type                                                                                                                                                   | Description                                                                                       |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| input *(required)* | [CreateTapeReaderTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateTapeReaderTargetInput/index.md)! | The Rubrik cluster, tape host and volume details, credentials, and how the reader retrieves data. |
 
 ## Returns
 

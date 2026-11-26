@@ -1,6 +1,6 @@
 # downloadCdmTprConfigurationAsync
 
-Download CDM two-person rule (TPR) configuration report for all Rubrik clusters connected to this RSC account.
+Starts a report of the quorum authorization (two-person rule) settings on every Rubrik cluster connected to the account. Get the file's link with getDownloadUrl once getUserDownloads shows it ready.
 
 ## Returns
 

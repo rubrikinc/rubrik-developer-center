@@ -1,6 +1,6 @@
 # tprRequestSummaries
 
-Details of TPR requests.
+Lists quorum authorization (two-person rule) requests, with filters.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # enableTprOrg
 
-Enable TPR for an organization.
+Turns on quorum authorization (two-person rule) for an organization.
 
 ## Arguments
 

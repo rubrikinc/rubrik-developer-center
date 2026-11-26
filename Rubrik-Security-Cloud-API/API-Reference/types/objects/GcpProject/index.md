@@ -23,3 +23,4 @@ GcpProject represents a Google Cloud Platform (GCP) project within the Rubrik pl
 **Referenced by**
 
 - [GcpCloudAccountGetProjectResponse.project](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpCloudAccountGetProjectResponse/index.md)
+- [GcpListAllProjectsForOauthReply.projects](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/GcpListAllProjectsForOauthReply/index.md)

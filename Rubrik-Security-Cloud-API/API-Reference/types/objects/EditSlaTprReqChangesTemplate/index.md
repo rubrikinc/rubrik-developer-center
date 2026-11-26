@@ -1,6 +1,6 @@
 # EditSlaTprReqChangesTemplate
 
-*No description available.*
+Template for TPR Requested Changes for Edit SLA.
 
 **Implements:** [RequestedChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/RequestedChangesTemplate/index.md)
 

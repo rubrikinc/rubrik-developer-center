@@ -938,7 +938,7 @@
 
 
 <h1 id="enablereplicationpause">enableReplicationPause</h1>
-<p>A single Rubrik cluster can be the replication target for multiple source Rubrik clusters. For each source cluster specified, this pauses replication from that source cluster to the target cluster.</p>
+<p>A single Rubrik cluster can be the replication target for multiple source Rubrik clusters. For each source cluster specified, this pauses replication from that source cluster to the target cluster. This operation may require quorum authorization.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/EnablePerLocationPauseInputVariable/">EnablePerLocationPauseInputVariable</a>!</td>
-<td>Input for V1EnablePerLocationPause.</td>
+<td>The target Rubrik cluster UUID, the source cluster UUIDs to pause, and whether to cancel or pause running replication jobs immediately.</td>
 </tr>
 </tbody>
 </table>

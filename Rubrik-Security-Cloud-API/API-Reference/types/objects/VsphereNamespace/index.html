@@ -928,7 +928,7 @@
 
 <h1 id="vspherenamespace">VsphereNamespace</h1>
 <p>A vSphere Namespace.</p>
-<p><strong>Implements:</strong> <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/VsphereVcenterDescendantType/">VsphereVcenterDescendantType</a>, <a href="../../interfaces/VsphereSupervisorDescendantType/">VsphereSupervisorDescendantType</a></p>
+<p><strong>Implements:</strong> <a href="../../interfaces/CdmHierarchyObject/">CdmHierarchyObject</a>, <a href="../../interfaces/HierarchyObject/">HierarchyObject</a>, <a href="../../interfaces/VsphereVcenterDescendantType/">VsphereVcenterDescendantType</a>, <a href="../../interfaces/VsphereSupervisorDescendantType/">VsphereSupervisorDescendantType</a>, <a href="../../interfaces/VsphereVcenterSupervisorChildType/">VsphereVcenterSupervisorChildType</a>, <a href="../../interfaces/VsphereSupervisorChildType/">VsphereSupervisorChildType</a></p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -1106,8 +1106,8 @@
 </tr>
 <tr>
 <td>supervisorId</td>
-<td><a href="../../scalars/UUID/">UUID</a>!</td>
-<td>RSC id of the Supervisor that owns the Namespace.</td>
+<td><a href="../../scalars/UUID/">UUID</a></td>
+<td>RSC id of the Supervisor that owns the Namespace. Null when the Namespace has no Supervisor.</td>
 </tr>
 <tr>
 <td>vCenterId</td>

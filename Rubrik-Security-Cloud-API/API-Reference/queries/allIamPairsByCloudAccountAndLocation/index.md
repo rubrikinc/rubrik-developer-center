@@ -1,12 +1,12 @@
 # allIamPairsByCloudAccountAndLocation
 
-List the IAM pairs of the provided cloud account and any missing permission groups, if applicable, for an optional archival location.
+Lists the IAM pairs of an AWS role-based cloud account. If an AWS S3 archival location is given, also lists the permission groups each pair is missing for it.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                               | Description                                                                                                                                        |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| input *(required)* | [AllIamPairsByCloudAccountAndLocationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AllIamPairsByCloudAccountAndLocationInput/index.md)! | Input for listing the IAM pairs of the provided cloud account and any missing permission groups, if applicable, for an optional archival location. |
+| Argument           | Type                                                                                                                                                                               | Description                                                                                  |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| input *(required)* | [AllIamPairsByCloudAccountAndLocationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/AllIamPairsByCloudAccountAndLocationInput/index.md)! | ID of the AWS role-based cloud account (needed) and an optional AWS S3 archival location ID. |
 
 ## Returns
 

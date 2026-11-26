@@ -4,9 +4,9 @@ Create storage settings for archiving AWS cloud native protected objects.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                           | Description                              |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------- |
-| input *(required)* | [CreateCloudNativeAwsStorageSettingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateCloudNativeAwsStorageSettingInput/index.md)! | Create AWS cloud native storage setting. |
+| Argument           | Type                                                                                                                                                                           | Description                                                                                                                                                                                                                                                                                                    |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| input *(required)* | [CreateCloudNativeAwsStorageSettingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateCloudNativeAwsStorageSettingInput/index.md)! | Name, AWS cloud account ID, bucket prefix, storage class (Intelligent-Tiering is not supported), and template type (source region or a specific region). Provide exactly one encryption key: a KMS master key ID or an AWS KMS key. Region is needed for a specific-region template. Bucket tags are optional. |
 
 ## Returns
 

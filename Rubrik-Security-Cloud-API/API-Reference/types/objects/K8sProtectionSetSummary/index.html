@@ -993,6 +993,11 @@
 <td>String!</td>
 <td>Required. Supported in v9.1+ v9.1-v9.5: Type of the Kubernetes protection set. v9.6+: Type of the Kubernetes protection set. One of: namespace, cluster, application.</td>
 </tr>
+<tr>
+<td>slaProtection</td>
+<td><a href="../SlaProtection/">SlaProtection</a></td>
+<td>How the Kubernetes protection set is protected, computed by the Rubrik cluster from the stored effective SLA Domain of the protection set, including an SLA Domain inherited from the cluster. Use this, not effectiveSlaDomainId or configuredSlaDomainId, to display the protection of the protection set.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="used-by">Used By</h2>

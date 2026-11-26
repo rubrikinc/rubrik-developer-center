@@ -1,12 +1,12 @@
 # createRcsTarget
 
-Creates an RCS Azure archival target on the Rubrik cluster.
+Creates a Rubrik Cloud Vault Azure archival location on a Rubrik cluster.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                     | Description                                    |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| input *(required)* | [CreateRcsTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateRcsTargetInput/index.md)! | Request for creating a new RCS Azure location. |
+| Argument           | Type                                                                                                                                     | Description                                                   |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| input *(required)* | [CreateRcsTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateRcsTargetInput/index.md)! | Request for creating a new Rubrik Cloud Vault Azure location. |
 
 ## Returns
 

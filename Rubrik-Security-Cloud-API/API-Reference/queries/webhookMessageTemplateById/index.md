@@ -4,9 +4,9 @@ Retrieve webhook message template according to ID.
 
 ## Arguments
 
-| Argument           | Type | Description        |
-| ------------------ | ---- | ------------------ |
-| input *(required)* | Int! | ID of the webhook. |
+| Argument           | Type | Description                                                              |
+| ------------------ | ---- | ------------------------------------------------------------------------ |
+| input *(required)* | Int! | The ID of the webhook message template, from allWebhookMessageTemplates. |
 
 ## Returns
 

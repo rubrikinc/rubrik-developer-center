@@ -53,6 +53,7 @@ Represents different types of activities.
 | PRE_SEEDING                     | Pre-seed event type.                                                                                        |
 | PROTECTED_OBJECT_DELETION       | Protected object deletion event type.                                                                       |
 | QUARANTINE                      | Quarantine event type.                                                                                      |
+| REAL_TIME_PROTECTION            | Real-Time Protection event type.                                                                            |
 | REENCRYPTION                    | Reencryption (re-encrypt a snapshot with the customer-managed key) event type.                              |
 | RadarAnalysis                   | Ransomware Investigation analysis type.                                                                     |
 | Recovery                        | Recovery type.                                                                                              |

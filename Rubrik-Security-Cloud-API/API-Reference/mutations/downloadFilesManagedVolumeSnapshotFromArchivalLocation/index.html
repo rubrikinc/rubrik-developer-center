@@ -938,7 +938,7 @@
 
 
 <h1 id="downloadfilesmanagedvolumesnapshotfromarchivallocation">downloadFilesManagedVolumeSnapshotFromArchivalLocation</h1>
-<p>Initiate a job to download multiple files or folders Supported in v8.0+ Initiates a job to download one or more files or folders from an archived Managed Volume snapshot. Returns the job instance ID.</p>
+<p>Starts a job to download one or more files or folders from a Managed Volume snapshot stored at an archival location, and returns the job's request status. Requires Rubrik CDM 8.0 or later.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/CreateMVDownloadFilesFromArchivalLocationJobInput/">CreateMVDownloadFilesFromArchivalLocationJobInput</a>!</td>
-<td>Input for V1CreateMVDownloadFilesFromArchivalLocationJob.</td>
+<td>The snapshot ID, the archival location ID, and the files or folders to download.</td>
 </tr>
 </tbody>
 </table>

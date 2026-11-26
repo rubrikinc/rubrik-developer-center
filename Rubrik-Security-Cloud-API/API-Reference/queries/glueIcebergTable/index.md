@@ -1,6 +1,6 @@
 # glueIcebergTable
 
-GetGlueIcebergTable returns the hierarchy details for a single AWS Glue Iceberg table.
+Returns an AWS Glue Iceberg table protected by Rubrik, by its Rubrik ID.
 
 ## Arguments
 

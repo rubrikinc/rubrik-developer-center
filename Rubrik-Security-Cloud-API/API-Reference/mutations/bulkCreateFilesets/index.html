@@ -938,7 +938,7 @@
 
 
 <h1 id="bulkcreatefilesets">bulkCreateFilesets</h1>
-<p>Create filesets for a host Supported in v5.0+ Create filesets for a network host. Each fileset is a fileset template applied to a host.</p>
+<p>Creates filesets by applying fileset templates to hosts, one fileset per entry.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/BulkCreateFilesetsInput/">BulkCreateFilesetsInput</a>!</td>
-<td>Input for InternalBulkCreateFileset.</td>
+<td>Input fields: clusterUuid and definitions, each naming a host and a fileset template.</td>
 </tr>
 </tbody>
 </table>

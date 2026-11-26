@@ -938,7 +938,7 @@
 
 
 <h1 id="snmpconfigurations">snmpConfigurations</h1>
-<p>Get SNMP configuration of the cluster Supported in v5.0+ Get SNMP configuration of the queried cluster.</p>
+<p>Returns the SNMP (Simple Network Management Protocol) configuration of one Rubrik cluster, version 5.0 or later.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/GetSnmpConfigurationInput/">GetSnmpConfigurationInput</a>!</td>
-<td>Input for InternalGetSnmpConfiguration.</td>
+<td>clusterUuid routes the request; id is the Rubrik cluster ID, or "me" for that same cluster.</td>
 </tr>
 </tbody>
 </table>

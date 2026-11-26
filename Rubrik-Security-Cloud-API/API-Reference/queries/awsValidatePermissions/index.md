@@ -1,6 +1,6 @@
 # awsValidatePermissions
 
-AwsValidatePermissions validates the permissions for the given AWS cloud accounts.
+Checks whether the given AWS cloud accounts have the permissions Rubrik needs.
 
 ## Arguments
 

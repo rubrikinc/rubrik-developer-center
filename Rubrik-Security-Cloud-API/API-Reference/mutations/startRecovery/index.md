@@ -1,6 +1,6 @@
 # startRecovery
 
-StartRecovery triggers a recovery job for the relevant recovery spec.
+Starts a recovery from a saved recovery plan, or an ad hoc cyber recovery, and returns its recoveryId. Follow it with recoveries or allWorkloadsRecoveryInfo.
 
 ## Arguments
 

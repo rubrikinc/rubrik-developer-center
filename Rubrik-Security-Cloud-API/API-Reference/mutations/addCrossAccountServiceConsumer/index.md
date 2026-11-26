@@ -1,6 +1,6 @@
 # addCrossAccountServiceConsumer
 
-Add service consumer to provider RSC account.
+Adds a consumer Rubrik Security Cloud (RSC) account to a cross-account pair; runs on the provider account's side.
 
 ## Arguments
 

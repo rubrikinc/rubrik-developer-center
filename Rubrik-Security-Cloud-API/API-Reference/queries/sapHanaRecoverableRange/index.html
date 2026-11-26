@@ -938,7 +938,7 @@
 
 
 <h1 id="saphanarecoverablerange">sapHanaRecoverableRange</h1>
-<p>Details of a SAP HANA recoverable range for a given FID.</p>
+<p>Returns one SAP HANA recoverable range, a span of time a database can be recovered to, by its Rubrik ID; find IDs with sapHanaRecoverableRanges.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>fid <em>(required)</em></td>
 <td><a href="../../types/scalars/UUID/">UUID</a>!</td>
-<td>Rubrik UUID for the object.</td>
+<td>Rubrik ID of the recoverable range.</td>
 </tr>
 </tbody>
 </table>

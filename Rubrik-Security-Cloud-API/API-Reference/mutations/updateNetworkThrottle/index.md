@@ -1,12 +1,12 @@
 # updateNetworkThrottle
 
-Update a network throttle Supported in v5.0+ Update the configuration of a specified network throttle object.
+Updates a network throttle on a Rubrik cluster. Values not given are left unchanged.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                 | Description                              |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| input *(required)* | [UpdateNetworkThrottleInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateNetworkThrottleInput/index.md)! | Input for InternalUpdateNetworkThrottle. |
+| Argument           | Type                                                                                                                                                 | Description                                                           |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| input *(required)* | [UpdateNetworkThrottleInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateNetworkThrottleInput/index.md)! | The Rubrik cluster UUID, the throttle ID, and the settings to change. |
 
 ## Returns
 

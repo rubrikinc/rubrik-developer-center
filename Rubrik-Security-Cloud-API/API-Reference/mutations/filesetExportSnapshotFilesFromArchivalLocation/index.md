@@ -1,6 +1,6 @@
 # filesetExportSnapshotFilesFromArchivalLocation
 
-Create an export job to export files from a snapshot stored at an archival location. Starts a job that exports one or more files or folders from a fileset snapshot at an archival location to the destination host.
+Starts a job that exports files or folders from a fileset snapshot at an archival location to a destination host; poll the returned request ID with filesetRequestStatus.
 
 ## Arguments
 

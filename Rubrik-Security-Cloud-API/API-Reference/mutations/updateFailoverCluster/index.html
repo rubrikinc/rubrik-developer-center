@@ -938,7 +938,7 @@
 
 
 <h1 id="updatefailovercluster">updateFailoverCluster</h1>
-<p>Update a failover cluster Supported in v5.2+ Update failover cluster with specified properties.</p>
+<p>Changes a host failover cluster's name, hosts, or SLA Domain.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/UpdateFailoverClusterInput/">UpdateFailoverClusterInput</a>!</td>
-<td>Input for V1UpdateFailoverCluster.</td>
+<td>ID of the failover cluster and updateProperties. name and hostIds are required, so send the full configuration. configuredSlaDomainId is optional.</td>
 </tr>
 </tbody>
 </table>

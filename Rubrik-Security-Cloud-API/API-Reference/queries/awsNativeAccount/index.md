@@ -1,12 +1,12 @@
 # awsNativeAccount
 
-Returns a single AWS Native account by its Rubrik FID.
+Returns an AWS account protected by Rubrik, by its Rubrik ID.
 
 ## Arguments
 
 | Argument                                | Type                                                                                                                                                | Description                                                        |
 | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| awsNativeAccountRubrikId *(required)*   | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                           | Rubrik FID of the AWS Native account.                              |
+| awsNativeAccountRubrikId *(required)*   | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                           | Rubrik ID of the AWS account.                                      |
 | awsNativeProtectionFeature *(required)* | [AwsNativeProtectionFeature](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeProtectionFeature/index.md)! | Protection feature whose workload scopes the account's SLA.        |
 | includeSecurityMetadata                 | Boolean                                                                                                                                             | Whether to include the object's security metadata in the response. |
 

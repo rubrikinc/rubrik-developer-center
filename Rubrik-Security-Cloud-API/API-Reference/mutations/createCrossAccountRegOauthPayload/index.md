@@ -1,12 +1,12 @@
 # createCrossAccountRegOauthPayload
 
-Create a payload for cross-account OAuth registration.
+Creates the OAuth registration payload that starts cross-account pairing with a provider Rubrik Security Cloud account.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                         | Description                                                                                |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| input *(required)* | [CreateCrossAccountRegOauthPayloadInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateCrossAccountRegOauthPayloadInput/index.md)! | Input fully qualified domain name of the organization in the service provider RSC account. |
+| Argument           | Type                                                                                                                                                                         | Description                                                                                    |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| input *(required)* | [CreateCrossAccountRegOauthPayloadInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateCrossAccountRegOauthPayloadInput/index.md)! | Fully qualified domain name of the organization in the provider Rubrik Security Cloud account. |
 
 ## Returns
 

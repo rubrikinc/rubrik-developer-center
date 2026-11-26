@@ -14,6 +14,7 @@ Details of AWS account which facilitates role chaining.
 
 **Referenced by**
 
+- [AwsCloudAccountFeaturesWithExoConfigs.roleChainingAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsCloudAccountFeaturesWithExoConfigs/index.md)
 - [AwsCloudAccountWithFeatures.roleChainingAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsCloudAccountWithFeatures/index.md)
 - [AwsExocomputeConfig.roleChainingAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsExocomputeConfig/index.md)
 - [AwsFeatureConfig.roleChainingAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsFeatureConfig/index.md)

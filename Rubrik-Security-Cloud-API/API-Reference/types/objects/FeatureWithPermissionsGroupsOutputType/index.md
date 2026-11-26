@@ -14,3 +14,4 @@ Represents the feature with permission groups.
 **Referenced by**
 
 - [AwsIamPair.featuresWithPermissionsGroups](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsIamPair/index.md)
+- [AwsOrgEnabledFeaturesReply.featuresWithPermissionsGroups](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsOrgEnabledFeaturesReply/index.md)

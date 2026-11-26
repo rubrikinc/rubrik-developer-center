@@ -1,12 +1,12 @@
 # allRcvPrivateEndpointConnections
 
-Get private endpoint connection approval request.
+Lists the private endpoint connections of a Rubrik Cloud Vault location.
 
 ## Arguments
 
-| Argument           | Type                                                                                                      | Description                                |
-| ------------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| input *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Corresponds to ID of the target in Rubrik. |
+| Argument           | Type                                                                                                      | Description                                     |
+| ------------------ | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| input *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | ID of the Rubrik Cloud Vault archival location. |
 
 ## Returns
 

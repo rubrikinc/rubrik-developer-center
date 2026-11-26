@@ -1,12 +1,12 @@
 # patchSapHanaSystem
 
-v5.3-v8.1: Update the SLA Domain for a SAP HANA system v9.0+: Update the system properties of the SAP HANA system Supported in v5.3+ v5.3-v8.1: Update the SLA Domain that is configured for a SAP HANA system. v9.0+: Update the system properties for the SAP HANA system.
+Updates a SAP HANA system's settings, such as hosts, instance number, SID, credentials, authentication type, SSL settings, and backup trigger type. On Rubrik cluster versions before 9.0 it sets only the system's SLA Domain.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                           | Description                     |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| input *(required)* | [PatchSapHanaSystemInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PatchSapHanaSystemInput/index.md)! | Input for V1PatchSapHanaSystem. |
+| Argument           | Type                                                                                                                                           | Description                                                          |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| input *(required)* | [PatchSapHanaSystemInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/PatchSapHanaSystemInput/index.md)! | The system ID, the properties to change, and an optional audit note. |
 
 ## Returns
 

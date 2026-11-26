@@ -1,6 +1,6 @@
 # createEventDigestBatch
 
-Create event digests for specific recipients.
+Creates one event digest, a periodic email summary of events, per entry in the batch.
 
 ## Arguments
 

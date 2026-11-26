@@ -4,10 +4,10 @@ Storage usage of an archival location.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                       | Description                                                                                  |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| input *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                  | Corresponds to ID of the target in Rubrik.                                                   |
-| lookBackWindow     | [LookBackWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LookBackWindow/index.md) | Lookback window defines how far back in time to look for a specific archival-related metric. |
+| Argument           | Type                                                                                                                       | Description                           |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| input *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                  | ID of the archival location.          |
+| lookBackWindow     | [LookBackWindow](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/LookBackWindow/index.md) | How far back to report storage usage. |
 
 ## Returns
 

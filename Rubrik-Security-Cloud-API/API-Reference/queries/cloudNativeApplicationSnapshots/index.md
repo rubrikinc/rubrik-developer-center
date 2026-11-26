@@ -1,6 +1,6 @@
 # cloudNativeApplicationSnapshots
 
-GetCloudNativeApplicationSnapshots returns the config snapshot and all workload snapshots for a cloud native application. Retrieves the config snapshot via allOptimizedSnapshots, resolves workloads from the config snapshot, then retrieves workload snapshots with per-workload-type filter policies (e.g., compute instances get all filters, databases get time-only).
+Returns a cloud native application's config snapshot and the snapshots of every workload in it.
 
 ## Arguments
 

@@ -938,7 +938,7 @@
 
 
 <h1 id="downloadsaphanasnapshotsforpointintimerecovery">downloadSapHanaSnapshotsForPointInTimeRecovery</h1>
-<p>Download SAP HANA database snapshots from archive for a point in time recovery Supported in v8.0+ Downloads the most recent full snapshot and the log snapshots taken after the full snapshot, required for the point in time recovery of an SAP HANA database.</p>
+<p>Downloads from archive the latest full snapshot and later log snapshots a SAP HANA database needs to recover to a point in time. Returns the async request.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/DownloadSapHanaSnapshotsForPointInTimeRecoveryInput/">DownloadSapHanaSnapshotsForPointInTimeRecoveryInput</a>!</td>
-<td>Input for V1DownloadSapHanaSnapshotsForPointInTimeRecovery.</td>
+<td>The database ID, the point in time, and the archival location ID.</td>
 </tr>
 </tbody>
 </table>

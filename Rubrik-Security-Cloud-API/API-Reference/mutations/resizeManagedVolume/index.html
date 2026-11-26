@@ -938,7 +938,7 @@
 
 
 <h1 id="resizemanagedvolume">resizeManagedVolume</h1>
-<p>Resize managed volume Supported in v5.3+ Resize the managed volume to a larger size. Once a volume size has been increased, it can not be decreased.</p>
+<p>Starts a job that increases a Managed Volume's size and returns the job's request status. A Managed Volume cannot be made smaller. Requires Rubrik CDM 5.3 or later.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/ResizeManagedVolumeInput/">ResizeManagedVolumeInput</a>!</td>
-<td>Input for InternalResizeApiForManagedVolume.</td>
+<td>The Managed Volume ID and the new size, in bytes.</td>
 </tr>
 </tbody>
 </table>

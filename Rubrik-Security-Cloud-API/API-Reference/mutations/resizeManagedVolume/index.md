@@ -1,12 +1,12 @@
 # resizeManagedVolume
 
-Resize managed volume Supported in v5.3+ Resize the managed volume to a larger size. Once a volume size has been increased, it can not be decreased.
+Starts a job that increases a Managed Volume's size and returns the job's request status. A Managed Volume cannot be made smaller. Requires Rubrik CDM 5.3 or later.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                             | Description                                  |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
-| input *(required)* | [ResizeManagedVolumeInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ResizeManagedVolumeInput/index.md)! | Input for InternalResizeApiForManagedVolume. |
+| Argument           | Type                                                                                                                                             | Description                                       |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
+| input *(required)* | [ResizeManagedVolumeInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ResizeManagedVolumeInput/index.md)! | The Managed Volume ID and the new size, in bytes. |
 
 ## Returns
 

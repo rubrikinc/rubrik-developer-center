@@ -1,12 +1,12 @@
 # createFailoverCluster
 
-Create a failover cluster Supported in v5.2+ Create a failover cluster.
+Creates a host failover cluster from a group of Windows or Linux hosts on a Rubrik cluster, optionally assigning an SLA Domain, and returns its details.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                 | Description                        |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| input *(required)* | [CreateFailoverClusterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateFailoverClusterInput/index.md)! | Input for V1CreateFailoverCluster. |
+| Argument           | Type                                                                                                                                                 | Description                                                                                      |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| input *(required)* | [CreateFailoverClusterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateFailoverClusterInput/index.md)! | Input fields: clusterUuid and config, with name, hostIds, and an optional configuredSlaDomainId. |
 
 ## Returns
 

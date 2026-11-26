@@ -1,6 +1,6 @@
 # accountId
 
-Account ID.
+Deprecated. Returns the caller's RSC account ID.
 
 ## Returns
 

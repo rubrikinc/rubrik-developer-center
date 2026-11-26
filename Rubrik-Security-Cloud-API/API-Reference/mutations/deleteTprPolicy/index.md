@@ -1,6 +1,6 @@
 # deleteTprPolicy
 
-Delete a TPR policy.
+Deletes a quorum authorization (two-person rule) policy.
 
 ## Arguments
 

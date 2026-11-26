@@ -938,7 +938,7 @@
 
 
 <h1 id="triggerblimigration">triggerBliMigration</h1>
-<p>TriggerBLIMigration triggers blob immutability migration for a list of RCV Azure locations.</p>
+<p>Starts blob-level immutability migration for the given Rubrik Cloud Vault Azure locations. Each location is paused during migration. Locations that use unified encryption, or whose migration is already in progress or done, are skipped. Follow progress with rcvAzureBliMigrationDetails.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/TriggerBliMigrationInput/">TriggerBliMigrationInput</a>!</td>
-<td>Input to trigger blob immutability migration.</td>
+<td>IDs of the locations, and whether to skip locations with backup or archival jobs in progress.</td>
 </tr>
 </tbody>
 </table>

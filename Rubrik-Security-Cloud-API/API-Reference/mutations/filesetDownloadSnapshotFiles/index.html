@@ -938,7 +938,7 @@
 
 
 <h1 id="filesetdownloadsnapshotfiles">filesetDownloadSnapshotFiles</h1>
-<p>Download files from a fileset backup Supported in v5.0+ Start an asynchronous job to download multiple files and folders from a specified fileset backup. The response returns an asynchronous request ID. Get the URL for downloading the ZIP file including the specific files/folders by sending a GET request to 'fileset/request/{id}'.</p>
+<p>Starts a job that packages files and folders from a fileset snapshot into a ZIP file for download; poll the returned request ID with filesetRequestStatus to get the download link.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/FilesetDownloadSnapshotFilesInput/">FilesetDownloadSnapshotFilesInput</a>!</td>
-<td>Input for fileset download snapshot files.</td>
+<td>The fileset snapshot and the paths to download.</td>
 </tr>
 </tbody>
 </table>

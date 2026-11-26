@@ -11,6 +11,10 @@ User settings represented by key-value pairs for the predefined keys in Rubrik.
 
 ## Used By
 
+**Mutations**
+
+- [mutation: setUserSetting](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/setUserSetting/index.md)
+
 **Referenced by**
 
 - [UserSettings.settings](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/UserSettings/index.md)

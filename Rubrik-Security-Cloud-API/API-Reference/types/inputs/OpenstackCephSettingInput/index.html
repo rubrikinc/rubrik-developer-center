@@ -945,7 +945,7 @@
 <tr>
 <td>keyring</td>
 <td>String</td>
-<td>Supported in v9.5+ The Ceph keyring for authentication (optional).</td>
+<td>Supported in v9.5+ v9.5-v9.6: The Ceph keyring for authentication (optional). v9.7: The Ceph keyring for authentication (optional). Responses carry "<SECRET REDACTED>" when a keyring is stored. When an existing setting is updated, "<SECRET REDACTED>" keeps the stored keyring and an absent keyring removes it.</td>
 </tr>
 <tr>
 <td>monHosts</td>

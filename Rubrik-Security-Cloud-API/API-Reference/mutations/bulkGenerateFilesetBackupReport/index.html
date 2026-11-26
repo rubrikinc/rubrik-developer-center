@@ -938,7 +938,7 @@
 
 
 <h1 id="bulkgeneratefilesetbackupreport">bulkGenerateFilesetBackupReport</h1>
-<p>BulkGenerateFilesetBackupReport generates backup reports for multiple fileset snapshots.</p>
+<p>Starts a success and failure report for each of several fileset snapshots. Returns one request status per snapshot, with an error for snapshots that could not start. Each report's status and download link appear in the events for the fileset, not through filesetRequestStatus.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/BulkGenerateFilesetBackupReportInput/">BulkGenerateFilesetBackupReportInput</a>!</td>
-<td>Input containing snapshot IDs for which to generate backup reports.</td>
+<td>Input fields: snapshotIds, the fileset snapshots to report on.</td>
 </tr>
 </tbody>
 </table>

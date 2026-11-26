@@ -938,7 +938,7 @@
 
 
 <h1 id="deletefailovercluster">deleteFailoverCluster</h1>
-<p>Delete a failover cluster Supported in v5.2+ Delete a failover cluster.</p>
+<p>Deletes a host failover cluster. Existing snapshots are kept by default, set preserveSnapshots to false to delete them.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/DeleteFailoverClusterInput/">DeleteFailoverClusterInput</a>!</td>
-<td>Input for V1DeleteFailoverCluster.</td>
+<td>ID of the failover cluster and an optional preserveSnapshots flag.</td>
 </tr>
 </tbody>
 </table>

@@ -1,6 +1,6 @@
 # cloudNativeSnapshotTypeDetails
 
-Details of the available snapshot types.
+Returns the snapshot types available for the given snapshot.
 
 ## Arguments
 

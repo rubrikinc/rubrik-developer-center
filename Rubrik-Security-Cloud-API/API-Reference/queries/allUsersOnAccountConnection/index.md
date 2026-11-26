@@ -1,6 +1,6 @@
 # allUsersOnAccountConnection
 
-*No description available.*
+Deprecated; use usersInCurrentAndDescendantOrganization. Lists the users in the account, filtered by lockout state, hidden state, and sign-in domain.
 
 ## Arguments
 

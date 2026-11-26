@@ -14,3 +14,11 @@ Column represents a report table column for the UI.
 | nullable    | Boolean!                                                                                                                | Specifies if the value of the column can be null.                                       |
 | sortable    | Boolean!                                                                                                                | Specifies if the table can be sorted by the column.                                     |
 | type        | [DataTypeEnum](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/DataTypeEnum/index.md)! | Specifies the data type of the column.                                                  |
+
+## Used By
+
+**Referenced by**
+
+- [ReportSchema.allColumns](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ReportSchema/index.md)
+- [ReportSchema.sortBy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ReportSchema/index.md)
+- [ReportSchema.tableColumns](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ReportSchema/index.md)

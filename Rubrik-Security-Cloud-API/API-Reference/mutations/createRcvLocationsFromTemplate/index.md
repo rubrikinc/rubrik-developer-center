@@ -1,6 +1,6 @@
 # createRcvLocationsFromTemplate
 
-Creates Rubrik Cloud Vault Azure locations from the specified location template.
+Creates Rubrik Cloud Vault Azure locations from a location template. For AWS, use createRcvAwsLocationsFromTemplate.
 
 ## Arguments
 

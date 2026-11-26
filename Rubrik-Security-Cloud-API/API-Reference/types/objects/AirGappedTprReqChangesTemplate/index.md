@@ -1,6 +1,6 @@
 # AirGappedTprReqChangesTemplate
 
-*No description available.*
+Air-gapped TPR requested-changes template.
 
 **Implements:** [RequestedChangesTemplate](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/RequestedChangesTemplate/index.md)
 

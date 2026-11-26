@@ -938,7 +938,7 @@
 
 
 <h1 id="recoveryreport">recoveryReport</h1>
-<p>Returns status and information about a recovery report.</p>
+<p>Returns the status of a recovery report (GENERATING, ACTIVE, GENERATION_FAILED, or EXPIRED) and, once it is ACTIVE, its download URL and expiry time.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/RecoveryReportInput/">RecoveryReportInput</a>!</td>
-<td>Recovery report request parameters.</td>
+<td>The reportId returned by generateRecoveryReport.</td>
 </tr>
 </tbody>
 </table>

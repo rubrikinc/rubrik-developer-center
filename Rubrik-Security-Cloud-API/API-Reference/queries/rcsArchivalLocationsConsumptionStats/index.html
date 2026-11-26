@@ -938,7 +938,7 @@
 
 
 <h1 id="rcsarchivallocationsconsumptionstats">rcsArchivalLocationsConsumptionStats</h1>
-<p>RCS Azure archival location consumption stats.</p>
+<p>Returns blob capacity, ingress, and egress statistics for the given Rubrik Cloud Vault Azure archival locations, optionally with 90 days of capacity history.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>rcsAzureTargetConsumptionStatsRequest <em>(required)</em></td>
 <td><a href="../../types/inputs/RcsConsumptionStatsInput/">RcsConsumptionStatsInput</a>!</td>
-<td>Request for fetching consumption stats for multiple rcs Azure locations.</td>
+<td>The archival location IDs, the metrics to return, and whether to include capacity history.</td>
 </tr>
 </tbody>
 </table>

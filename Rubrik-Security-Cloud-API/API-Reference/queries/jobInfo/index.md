@@ -1,12 +1,12 @@
 # jobInfo
 
-Information about a job running on CDM. Note that some types of jobs cannot be queries using this field. Refer to `JobType` enum to see which jobs types are available. Only users with Admin or Owner roles are allowed to access the field.
+Returns the status of an asynchronous job on a Rubrik cluster: in progress, succeeded, or failed. Supported job types are listed in the JobType enum. Only users with Admin or Owner roles are allowed to access the field.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                         | Description                                  |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| input *(required)* | [JobInfoRequest](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/JobInfoRequest/index.md)! | Request to retrieve information about a job. |
+| Argument           | Type                                                                                                                         | Description                                                                                                                     |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| input *(required)* | [JobInfoRequest](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/JobInfoRequest/index.md)! | The job's requestId and clusterUuid from the operation that started it, its JobType, and additionalInfo when the type needs it. |
 
 ## Returns
 

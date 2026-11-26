@@ -13,8 +13,13 @@ Represents the status of a single async job.
 
 **Mutations**
 
+- [mutation: forceDeleteCloudAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/forceDeleteCloudAccount/index.md)
+- [mutation: gcpNativeExportBigQueryDataset](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/gcpNativeExportBigQueryDataset/index.md)
+- [mutation: gcpNativeExportCloudSqlInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/gcpNativeExportCloudSqlInstance/index.md)
 - [mutation: gcpNativeExportDisk](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/gcpNativeExportDisk/index.md)
 - [mutation: gcpNativeExportGceInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/gcpNativeExportGceInstance/index.md)
+- [mutation: gcpNativeRestoreBigQueryDataset](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/gcpNativeRestoreBigQueryDataset/index.md)
+- [mutation: gcpNativeRestoreCloudSqlInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/gcpNativeRestoreCloudSqlInstance/index.md)
 - [mutation: gcpNativeRestoreGceInstance](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/gcpNativeRestoreGceInstance/index.md)
 - [mutation: startAwsExocomputeDisableJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startAwsExocomputeDisableJob/index.md)
 - [mutation: startAwsNativeAccountDisableJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/startAwsNativeAccountDisableJob/index.md)

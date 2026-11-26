@@ -930,7 +930,7 @@
 <tr>
 <td>ipConfig</td>
 <td><a href="../NicIpConfigInput/">NicIpConfigInput</a>!</td>
-<td>IP configuration for this NIC. Only DHCP is supported by the Azure Local recovery flow. See SPARK-914317.</td>
+<td>IP configuration for this NIC. method is DHCP or STATIC_AUTOMATIC with no ipv4_address, or STATIC with the ipv4_address to assign from the logical network's IP pool. subnet_mask, gateway and dns_servers come from the logical network and are ignored. See SPARK-914317.</td>
 </tr>
 <tr>
 <td>logicalNetworkId</td>

@@ -1,6 +1,6 @@
 # updateAutomaticAzureTargetMapping
 
-*No description available.*
+Updates an automatic Azure archival group. The ID must belong to an Azure archival group, and an omitted name keeps the current name.
 
 ## Arguments
 

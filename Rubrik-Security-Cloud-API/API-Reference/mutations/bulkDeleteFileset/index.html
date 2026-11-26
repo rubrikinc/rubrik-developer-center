@@ -938,7 +938,7 @@
 
 
 <h1 id="bulkdeletefileset">bulkDeleteFileset</h1>
-<p>Delete filesets Supported in v5.0+ Delete filesets by specifying the fileset IDs.</p>
+<p>Deletes the given filesets. Existing snapshots are kept by default, set preserveSnapshots to false to delete them.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/BulkDeleteFilesetInput/">BulkDeleteFilesetInput</a>!</td>
-<td>Input for InternalBulkDeleteFileset.</td>
+<td>IDs of the filesets and an optional preserveSnapshots flag.</td>
 </tr>
 </tbody>
 </table>

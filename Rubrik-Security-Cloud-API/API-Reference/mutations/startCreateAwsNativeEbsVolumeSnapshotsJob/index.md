@@ -1,6 +1,6 @@
 # startCreateAwsNativeEbsVolumeSnapshotsJob
 
-StartCreateAwsNativeEbsVolumeSnapshotsJob starts on-demand snapshot jobs for a list of EBS volumes. Each volume id succeeds or fails independently, so the reply reports a job id for every volume a job was submitted for and an error for every volume it was not.
+Starts on-demand snapshots of EBS volumes. Each volume succeeds or fails on its own, so the reply has a job ID or an error per volume.
 
 ## Arguments
 

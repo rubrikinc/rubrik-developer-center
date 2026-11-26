@@ -1,6 +1,6 @@
 # checkCloudNativeTagRuleNameUniqueness
 
-Check if tag rule name is unique or not
+Returns whether a tag rule name is unused for the given object type.
 
 ## Arguments
 

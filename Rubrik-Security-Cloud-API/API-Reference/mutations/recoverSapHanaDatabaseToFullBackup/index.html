@@ -938,7 +938,7 @@
 
 
 <h1 id="recoversaphanadatabasetofullbackup">recoverSapHanaDatabaseToFullBackup</h1>
-<p>Recover SAP HANA database to the full backup Supported in v9.4+ Recover the SAP HANA database to the provided full backup.</p>
+<p>Recovers a SAP HANA database to a full backup. Returns the async request; track it with jobInfo (type SAP_HANA_DATABASE, requestId = the returned id, clusterUuid = the cluster's UUID).</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/RecoverSapHanaDatabaseToFullBackupInput/">RecoverSapHanaDatabaseToFullBackupInput</a>!</td>
-<td>Input for V1RecoverSapHanaDatabaseToFullBackup.</td>
+<td>The recovery configuration, including the full backup to recover to.</td>
 </tr>
 </tbody>
 </table>

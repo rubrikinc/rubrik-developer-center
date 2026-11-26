@@ -965,6 +965,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#awscloudaccountfeatureswithexoconfigs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AwsCloudAccountFeaturesWithExoConfigs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#awscustomermanagedexocomputeconfig" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1614,6 +1625,28 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#gpolabelpaths" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GpoLabelPaths
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gposettingschangedatares" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GpoSettingsChangeDataRes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#identitymetadata" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1768,6 +1801,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#queryrcvreadersownerencryptionkeyreply" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QueryRCVReadersOwnerEncryptionKeyReply
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#rbacobject" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1871,6 +1915,17 @@
     <span class="md-ellipsis">
       
         RoleTemplate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rsctag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RscTag
       
     </span>
   </a>
@@ -3389,6 +3444,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#awscloudaccountfeatureswithexoconfigs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AwsCloudAccountFeaturesWithExoConfigs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#awscustomermanagedexocomputeconfig" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4038,6 +4104,28 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#gpolabelpaths" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GpoLabelPaths
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gposettingschangedatares" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GpoSettingsChangeDataRes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#identitymetadata" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4192,6 +4280,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#queryrcvreadersownerencryptionkeyreply" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QueryRCVReadersOwnerEncryptionKeyReply
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#rbacobject" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4295,6 +4394,17 @@
     <span class="md-ellipsis">
       
         RoleTemplate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rsctag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RscTag
       
     </span>
   </a>
@@ -4683,14 +4793,15 @@
 <h1 id="graphql-api-deprecations">GraphQL API Deprecations</h1>
 <p>This document lists all deprecated fields, queries, mutations, and enum values in the Rubrik Security Cloud GraphQL API.</p>
 <h2 id="deprecated-fields">Deprecated Fields</h2>
-<p><em>Extracted from schema: 20261102.graphql</em></p>
-<p><strong>Total deprecated items: 366</strong></p>
+<p><em>Extracted from schema: 20261116.graphql</em></p>
+<p><strong>Total deprecated items: 367</strong></p>
 <h3 id="deprecated-query-fields">Deprecated Query Fields</h3>
 <ul>
 <li><strong><code>accountId</code></strong>: This endpoint is deprecated.</li>
 <li><strong><code>accountSettings</code></strong>: Use getAccountSettingValue or getAccountSettingValueWithDefault instead.</li>
 <li><strong><code>allAzureResourceGroups</code></strong>: Use allResourceGroupsFromAzure instead.</li>
 <li><strong><code>allAzureSubnets</code></strong>: Use allAzureCloudAccountSubnetsByRegion instead.</li>
+<li><strong><code>allCdpVmsInfos</code></strong>: Deprecated: API is not supported anymore.</li>
 <li><strong><code>allClusterWebCertsAndIpmis</code></strong>: Use clusterConnection instead.</li>
 <li><strong><code>allGcpCloudAccountProjectsForOauth</code></strong>: Please use gcpListAllProjectsForOauth instead.</li>
 <li><strong><code>allMissingClusters</code></strong>: Missing cluster management has been retired.</li>
@@ -4710,17 +4821,13 @@
 <li><strong><code>backupO365SharepointDrive</code></strong>: Use backupM365SharepointDrive instead.</li>
 <li><strong><code>backupO365Team</code></strong>: Use backupM365Team instead.</li>
 <li><strong><code>cancelTaskchain</code></strong>: Endpoint is no longer maintained</li>
-<li><strong><code>createAutomaticAwsTargetMapping</code></strong>: This mutation is deprecated.</li>
-<li><strong><code>createAutomaticAzureTargetMapping</code></strong>: This mutation is deprecated.</li>
-<li><strong><code>createAutomaticRcsTargetMapping</code></strong>: This mutation is deprecated. Please use createRcvLocationsFromTemplate.</li>
-<li><strong><code>createOnDemandMongoDatabaseBackup</code></strong>: Use createOnDemandMongoDatabaseBackupV2 instead.</li>
+<li><strong><code>createAutomaticAwsTargetMapping</code></strong>: This mutation is deprecated. Use createAwsTarget to create an AWS archival location on each Rubrik cluster.</li>
+<li><strong><code>createAutomaticAzureTargetMapping</code></strong>: This mutation is deprecated. Use createAzureTarget to create an Azure archival location on each Rubrik cluster.</li>
+<li><strong><code>createAutomaticRcsTargetMapping</code></strong>: This mutation is deprecated. Use createRcvLocationsFromTemplate to create Rubrik Cloud Vault Azure archival locations.</li>
 <li><strong><code>createRole</code></strong>: This endpoint is deprecated.</li>
-<li><strong><code>createWebhook</code></strong>: Use createWebhookV2 instead.</li>
 <li><strong><code>deleteCertificate</code></strong>: Deprecated. Use deleteGlobalCertificate instead.</li>
 <li><strong><code>deleteCloudWorkloadSnapshot</code></strong>: Use deleteUnmanagedSnapshots instead.</li>
 <li><strong><code>deleteSapHanaDbSnapshot</code></strong>: Please use deleteUnmanagedSnapshots mutation instead or use the RSC UI delete button from snapshots page</li>
-<li><strong><code>deleteWebhook</code></strong>: Use deleteWebhookV2 instead.</li>
-<li><strong><code>downloadAuditLogCsvAsync</code></strong>: Use downloadFile instead.</li>
 <li><strong><code>downloadReportCsvAsync</code></strong>: Use downloadFile instead.</li>
 <li><strong><code>downloadReportPdfAsync</code></strong>: Use downloadFile instead.</li>
 <li><strong><code>exportO365Mailbox</code></strong>: Use exportO365MailboxV2 instead.</li>
@@ -4733,17 +4840,14 @@
 <li><strong><code>seedInitialPolicies</code></strong>: Use seedEnabledPolicies instead.</li>
 <li><strong><code>setIpWhitelistEnabled</code></strong>: use <code>setIpWhitelistSetting</code> instead.</li>
 <li><strong><code>setMissingClusterStatus</code></strong>: Missing cluster management has been retired.</li>
-<li><strong><code>stopJobInstance</code></strong>: Use stopJobInstanceFromEventSeries instead.</li>
 <li><strong><code>testExistingWebhook</code></strong>: Use sendTestMessageToExistingWebhook instead.</li>
-<li><strong><code>testWebhook</code></strong>: Use sendTestMessageToWebhook instead.</li>
 <li><strong><code>updateAgentDeploymentSettingInBatch</code></strong>: Deprecated. Use updateAgentDeploymentSettingInBatchNew instead.</li>
-<li><strong><code>updateAutomaticAwsTargetMapping</code></strong>: This mutation is deprecated.</li>
-<li><strong><code>updateAutomaticAzureTargetMapping</code></strong>: This mutation is deprecated.</li>
+<li><strong><code>updateAutomaticAwsTargetMapping</code></strong>: This mutation is deprecated. Use updateAwsTarget to update each AWS archival location.</li>
+<li><strong><code>updateAutomaticAzureTargetMapping</code></strong>: This mutation is deprecated. Use updateAzureTarget to update each Azure archival location.</li>
 <li><strong><code>updateCertificate</code></strong>: Deprecated. Use updateGlobalCertificate instead.</li>
 <li><strong><code>updateIpWhitelist</code></strong>: use <code>setIpWhitelistSetting</code> to update the mode, or <code>update/add/deleteIpWhitelistEntries</code> to update entries instead.</li>
-<li><strong><code>updateManagedIdentities</code></strong>: Use updateManagedIdentitiesAsync instead.</li>
 <li><strong><code>updateMssqlLogShippingConfigurationV1</code></strong>: Use updateMssqlLogShippingConfiguration instead.</li>
-<li><strong><code>updateRcsAutomaticTargetMapping</code></strong>: This mutation is deprecated. Please use updateRcvLocationsFromTemplate.</li>
+<li><strong><code>updateRcsAutomaticTargetMapping</code></strong>: This mutation is deprecated. Use updateRcvTarget to update each Rubrik Cloud Vault Azure archival location.</li>
 <li><strong><code>updateRole</code></strong>: This endpoint is deprecated.</li>
 <li><strong><code>updateWebhook</code></strong>: Use updateWebhookV2 instead.</li>
 </ul>
@@ -4783,10 +4887,15 @@
 <h4 id="archivalspec">ArchivalSpec</h4>
 <ul>
 <li><strong><code>isComplianceImmutabilityEnabled</code></strong>: Compliance Retention Lock is no longer supported.</li>
+<li><strong><code>storageSetting</code></strong>: Use archivalGroup instead.</li>
 </ul>
 <h4 id="authorizedops">AuthorizedOps</h4>
 <ul>
 <li><strong><code>operations</code></strong>: Use authorizedOperations instead.</li>
+</ul>
+<h4 id="awscloudaccountfeatureswithexoconfigs">AwsCloudAccountFeaturesWithExoConfigs</h4>
+<ul>
+<li><strong><code>exocomputeConfigs</code></strong>: deprecated in favor of BYOK8s. Please use configs instead.</li>
 </ul>
 <h4 id="awscustomermanagedexocomputeconfig">AwsCustomerManagedExocomputeConfig</h4>
 <ul>
@@ -5062,6 +5171,14 @@
 <li><strong><code>ownerOrgName</code></strong>: This field has been deprecated in favor of ownerOrg field.</li>
 <li><strong><code>replicationSpec</code></strong>: Use replicationSpecsV2 instead.</li>
 </ul>
+<h4 id="gpolabelpaths">GpoLabelPaths</h4>
+<ul>
+<li><strong><code>label</code></strong>: Use policy_insights instead.</li>
+</ul>
+<h4 id="gposettingschangedatares">GpoSettingsChangeDataRes</h4>
+<ul>
+<li><strong><code>labelPaths</code></strong>: Use policy_insight_details instead.</li>
+</ul>
 <h4 id="identitymetadata">IdentityMetadata</h4>
 <ul>
 <li><strong><code>identityTags</code></strong>: This field is no longer populated. Use the principal summary\nquery instead.</li>
@@ -5126,6 +5243,10 @@
 <ul>
 <li><strong><code>attributesSummary</code></strong>: No longer populated or consumed by any caller.</li>
 </ul>
+<h4 id="queryrcvreadersownerencryptionkeyreply">QueryRCVReadersOwnerEncryptionKeyReply</h4>
+<ul>
+<li><strong><code>ownerEncryptionKeyDetails</code></strong>: Use ownerEncryptionKeyDetailsOptional; this field is only present when ownerExists is true.</li>
+</ul>
 <h4 id="rbacobject">RbacObject</h4>
 <ul>
 <li><strong><code>objectId</code></strong>: Deprecated: use managedId instead.</li>
@@ -5169,6 +5290,10 @@
 <h4 id="roletemplate">RoleTemplate</h4>
 <ul>
 <li><strong><code>permissions</code></strong>: Use explicitlyAssignedPermissions instead.</li>
+</ul>
+<h4 id="rsctag">RscTag</h4>
+<ul>
+<li><strong><code>name</code></strong>: This field is deprecated. Use value instead.</li>
 </ul>
 <h4 id="rubrikmanagedawstarget">RubrikManagedAwsTarget</h4>
 <ul>
@@ -5353,6 +5478,7 @@
 <li><strong><code>AZURE_DEVOPS_REPO_SIZE</code></strong>: This field is deprecated and no longer used.</li>
 <li><strong><code>CATEGORY_UNSPECIFIED</code></strong>: Use AUTHENTICATION_AND_SECRET_MANAGEMENT instead.</li>
 <li><strong><code>CLOUD_ACCOUNT_UPDATE</code></strong>: Use CLUSTER_PEER_TOKEN_GET_AND_SET instead. Removed 2027/09/28.</li>
+<li><strong><code>CLOUD_COST_BY_PROVIDER_TABLE</code></strong>: Use CLOUD_COST_TABLE.</li>
 <li><strong><code>CLOUD_DIRECT</code></strong>: Nothing returns this sync type; it will be removed in a future release.</li>
 <li><strong><code>CLUSTER_DISCONNECTED</code></strong>: This reason is no longer used.</li>
 <li><strong><code>COLDLINE_GCP</code></strong>: Use STANDARD_GCP instead.</li>

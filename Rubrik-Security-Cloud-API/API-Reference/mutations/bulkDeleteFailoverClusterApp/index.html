@@ -938,7 +938,7 @@
 
 
 <h1 id="bulkdeletefailoverclusterapp">bulkDeleteFailoverClusterApp</h1>
-<p>Delete failover cluster applications Supported in v5.3+ Delete failover cluster applications from Rubrik cluster.</p>
+<p>Deletes the given failover cluster apps from a Rubrik cluster. Existing snapshots are kept by default, set preserveSnapshots to false to delete them.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/BulkDeleteFailoverClusterAppInput/">BulkDeleteFailoverClusterAppInput</a>!</td>
-<td>Input for V1BulkDeleteFailoverClusterApp.</td>
+<td>IDs of the failover cluster apps and an optional preserveSnapshots flag.</td>
 </tr>
 </tbody>
 </table>

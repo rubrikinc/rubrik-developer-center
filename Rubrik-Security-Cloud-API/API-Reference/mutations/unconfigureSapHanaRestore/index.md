@@ -1,12 +1,12 @@
 # unconfigureSapHanaRestore
 
-Reset the configuration for system copy restore on target database Supported in v6.0+ Initiates a job to reset the configuration for the system copy restore on the specified target database. System copy restore in SAP HANA is done across different databases.
+Clears the system copy restore configuration that configureSapHanaRestore set on a target SAP HANA database. Returns the async request; track it with jobInfo (type SAP_HANA_DATABASE, requestId = the returned id, clusterUuid = the cluster's UUID).
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                         | Description                            |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------- |
-| input *(required)* | [UnconfigureSapHanaRestoreInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UnconfigureSapHanaRestoreInput/index.md)! | Input for V1UnconfigureSapHanaRestore. |
+| Argument           | Type                                                                                                                                                         | Description                                        |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------- |
+| input *(required)* | [UnconfigureSapHanaRestoreInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UnconfigureSapHanaRestoreInput/index.md)! | The target database ID and an optional audit note. |
 
 ## Returns
 

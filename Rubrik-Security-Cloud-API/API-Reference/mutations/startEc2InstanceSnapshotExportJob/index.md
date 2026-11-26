@@ -1,6 +1,6 @@
 # startEc2InstanceSnapshotExportJob
 
-StartEc2InstanceSnapshotExportJob starts an on-demand job that exports an EC2 instance snapshot into a new EC2 instance, optionally in a different AWS account and region.
+Starts a job that exports an EC2 instance snapshot to a new EC2 instance, optionally in another AWS account and region.
 
 ## Arguments
 

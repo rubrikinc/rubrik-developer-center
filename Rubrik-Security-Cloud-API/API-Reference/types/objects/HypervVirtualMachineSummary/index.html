@@ -994,6 +994,11 @@
 <td>UTC timestamp for when the Hyper-V virtual machine became protected by its current SLA Domain. Omitted if no SLA Domain has been assigned. The value resets every time the SLA Domain changes, including a reassignment to Unprotected.</td>
 </tr>
 <tr>
+<td>slaProtection</td>
+<td><a href="../SlaProtection/">SlaProtection</a></td>
+<td>How the Hyper-V virtual machine is protected, computed by the Rubrik cluster from the effective SLA Domain of the virtual machine, including an SLA Domain inherited from a parent object. Use this, not effectiveSlaDomainId or configuredSlaDomainId, to display the protection of the virtual machine.</td>
+</tr>
+<tr>
 <td>snappable</td>
 <td><a href="../CdmWorkload/">CdmWorkload</a></td>
 <td></td>

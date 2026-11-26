@@ -13,7 +13,7 @@ Get archival information for all objects with data archived to the specified loc
 | sortOrder          | [SortOrder](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/SortOrder/index.md)                                                     | Sorts the order of results.                                                                                                             |
 | sortBy             | [ArchivalPerObjectInfoSortByField](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ArchivalPerObjectInfoSortByField/index.md)       | Specifies the field by which the list of archival object info will be sorted.                                                           |
 | filter             | \[[ArchivalPerObjectInfoFilterInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/ArchivalPerObjectInfoFilterInput/index.md)!\] | Specifies how to filter the list of archival object info.                                                                               |
-| input *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                                            | Corresponds to ID of the target in Rubrik.                                                                                              |
+| input *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                                                            | ID of the archival location.                                                                                                            |
 
 ## Returns
 

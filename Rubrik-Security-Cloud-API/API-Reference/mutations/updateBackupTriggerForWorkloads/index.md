@@ -1,12 +1,12 @@
 # updateBackupTriggerForWorkloads
 
-Set the backup trigger type for the workloads Supported in v9.4+ Updates the backup trigger type for the workloads passed in the input.
+Sets how backups are triggered for workloads of one type on a Rubrik cluster running version 9.4 or later.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                     | Description                                   |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- |
-| input *(required)* | [UpdateBackupTriggerForWorkloadsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateBackupTriggerForWorkloadsInput/index.md)! | Input for V1UpdateBackupTriggerForSnappables. |
+| Argument           | Type                                                                                                                                                                     | Description                                                                                         |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| input *(required)* | [UpdateBackupTriggerForWorkloadsInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateBackupTriggerForWorkloadsInput/index.md)! | The cluster UUID, the backup trigger type and workload IDs, and an optional note for the audit log. |
 
 ## Returns
 

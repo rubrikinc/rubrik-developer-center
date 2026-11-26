@@ -1,6 +1,6 @@
 # uploadDatabaseSnapshotToBlobstore
 
-Start a job to upload a database snapshot to a target blobstore. The taskchain creates the target blobstore location (Azure container or storage account, S3 bucket and so on) first if it does not already exist. Only Azure SQL persistent snapshots can be uploaded to a target storage account.
+Starts a job that uploads a database snapshot to a storage target, such as an Azure storage container or an S3 bucket, creating the target first if needed. Only Azure SQL persistent snapshots can go to an Azure storage account.
 
 ## Arguments
 

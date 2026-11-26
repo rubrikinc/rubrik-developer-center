@@ -938,7 +938,7 @@
 
 
 <h1 id="createorgswitchsession">createOrgSwitchSession</h1>
-<p>CreateOrgSwitchSessionV2 creates a new auth token for a user switching between orgs. V2 version that consolidates resolver/DAL logic into the RPC handler.</p>
+<p>Creates a session token for the calling user in another organization they belong to, so they can switch to it.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/CreateOrgSwitchSessionInput/">CreateOrgSwitchSessionInput</a>!</td>
-<td>Input for creating an org switch session.</td>
+<td>ID of the organization to switch to.</td>
 </tr>
 </tbody>
 </table>

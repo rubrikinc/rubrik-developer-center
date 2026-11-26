@@ -1,12 +1,12 @@
 # checkCloudComputeConnectivityJobProgress
 
-Get details of the cloud compute connectivity check request Supported in v6.0+ Gets the details of the request that was triggered to check the cloud compute connectivity of an archival location.
+Returns the status of a cloud compute connectivity check started by triggerCloudComputeConnectivityCheck.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                                                 | Description                                                |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| input *(required)* | [GetCloudComputeConnectivityCheckRequestStatusInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetCloudComputeConnectivityCheckRequestStatusInput/index.md)! | Input for V1GetCloudComputeConnectivityCheckRequestStatus. |
+| Argument           | Type                                                                                                                                                                                                 | Description                                                         |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| input *(required)* | [GetCloudComputeConnectivityCheckRequestStatusInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetCloudComputeConnectivityCheckRequestStatusInput/index.md)! | ID of the request returned by triggerCloudComputeConnectivityCheck. |
 
 ## Returns
 

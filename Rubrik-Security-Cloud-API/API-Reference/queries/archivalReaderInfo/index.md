@@ -1,12 +1,12 @@
 # archivalReaderInfo
 
-GetArchivalReaderInfo returns information about the requested location that is required in the UI for the reader connection flow, the reader refresh, or the delete flow. The requested location can be an owner location or a reader location.
+Returns the details needed to connect, refresh, or delete a reader location for an archival location managed by Rubrik Security Cloud. The location can be an owner or a reader location.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                             | Description                                             |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------- |
-| input *(required)* | [GetArchivalReaderInfoReq](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetArchivalReaderInfoReq/index.md)! | Input for getting archival reader location information. |
+| Argument           | Type                                                                                                                                             | Description                  |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------- |
+| input *(required)* | [GetArchivalReaderInfoReq](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetArchivalReaderInfoReq/index.md)! | ID of the archival location. |
 
 ## Returns
 

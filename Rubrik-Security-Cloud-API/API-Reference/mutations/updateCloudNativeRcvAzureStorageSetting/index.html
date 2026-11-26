@@ -938,7 +938,7 @@
 
 
 <h1 id="updatecloudnativercvazurestoragesetting">updateCloudNativeRcvAzureStorageSetting</h1>
-<p>Updates an existing Rubrik Cloud Vault Azure storage settings for the archival of Azure cloud-native protected objects.</p>
+<p>Updates the name, redundancy, or tier of an existing Rubrik Cloud Vault Azure storage setting for archiving Azure cloud-native protected objects. Moving from the Backup tier to the Archive tier can require a Quorum Authorization policy.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/UpdateCloudNativeRcvAzureStorageSettingInput/">UpdateCloudNativeRcvAzureStorageSettingInput</a>!</td>
-<td>Request for updating an existing Rubrik Cloud Vault (RCV) Azure storage setting.</td>
+<td>ID and name of the storage setting, with optional redundancy, tier, and whether to also update child vaults.</td>
 </tr>
 </tbody>
 </table>

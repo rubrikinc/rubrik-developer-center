@@ -938,7 +938,7 @@
 
 
 <h1 id="cancelactivityseries">cancelActivitySeries</h1>
-<p>Cancel an activity series.</p>
+<p>Requests cancellation of a running activity series on its Rubrik cluster and marks it Canceling; follow it to its final status with activitySeries. Returns true if the request was sent and false on any failure, with no error detail, including when the series is not cancelable or does not exist.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/CancelActivitySeriesInput/">CancelActivitySeriesInput</a>!</td>
-<td>Input for canceling an activity series.</td>
+<td>activitySeriesId and the clusterUuid of the Rubrik cluster running it; both are required.</td>
 </tr>
 </tbody>
 </table>

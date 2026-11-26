@@ -1,0 +1,14 @@
+# DomainControllerOperationMasterRoles
+
+Supported in v9.1+ Different roles that a Domain Controller can have.
+
+## Values
+
+| Value                                                          | Description |
+| -------------------------------------------------------------- | ----------- |
+| DOMAIN_CONTROLLER_OPERATION_MASTER_ROLES_DOMAIN_NAMING_MASTER  |             |
+| DOMAIN_CONTROLLER_OPERATION_MASTER_ROLES_INFRASTRUCTURE_MASTER |             |
+| DOMAIN_CONTROLLER_OPERATION_MASTER_ROLES_PDC_EMULATOR          |             |
+| DOMAIN_CONTROLLER_OPERATION_MASTER_ROLES_RID_MASTER            |             |
+| DOMAIN_CONTROLLER_OPERATION_MASTER_ROLES_SCHEMA_MASTER         |             |
+| DOMAIN_CONTROLLER_OPERATION_MASTER_ROLES_UNKNOWN               |             |

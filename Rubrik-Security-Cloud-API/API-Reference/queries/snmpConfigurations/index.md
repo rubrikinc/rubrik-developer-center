@@ -1,12 +1,12 @@
 # snmpConfigurations
 
-Get SNMP configuration of the cluster Supported in v5.0+ Get SNMP configuration of the queried cluster.
+Returns the SNMP (Simple Network Management Protocol) configuration of one Rubrik cluster, version 5.0 or later.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                               | Description                             |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| input *(required)* | [GetSnmpConfigurationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetSnmpConfigurationInput/index.md)! | Input for InternalGetSnmpConfiguration. |
+| Argument           | Type                                                                                                                                               | Description                                                                                 |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| input *(required)* | [GetSnmpConfigurationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/GetSnmpConfigurationInput/index.md)! | clusterUuid routes the request; id is the Rubrik cluster ID, or "me" for that same cluster. |
 
 ## Returns
 

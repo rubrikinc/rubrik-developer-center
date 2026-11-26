@@ -4,11 +4,12 @@ Paginated list of HarmfulLifecyclePolicy objects. Each page of the results inclu
 
 ## Fields
 
-| Field    | Type                                                                                                                                                       | Description                                                                                                                      |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| edges    | \[[HarmfulLifecyclePolicyEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HarmfulLifecyclePolicyEdge/index.md)!\]! | List of HarmfulLifecyclePolicy objects with additional pagination information. Use `nodes` if per-object cursors are not needed. |
-| nodes    | \[[HarmfulLifecyclePolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HarmfulLifecyclePolicy/index.md)!\]!         | List of HarmfulLifecyclePolicy objects.                                                                                          |
-| pageInfo | [PageInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PageInfo/index.md)!                                          | General information about this result page.                                                                                      |
+| Field           | Type                                                                                                                                                       | Description                                                                                                                      |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| edges           | \[[HarmfulLifecyclePolicyEdge](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HarmfulLifecyclePolicyEdge/index.md)!\]! | List of HarmfulLifecyclePolicy objects with additional pagination information. Use `nodes` if per-object cursors are not needed. |
+| lastCheckedTime | [DateTime](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/DateTime/index.md)                                           | Time of the last successful lifecycle policy check for this account.                                                             |
+| nodes           | \[[HarmfulLifecyclePolicy](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/HarmfulLifecyclePolicy/index.md)!\]!         | List of HarmfulLifecyclePolicy objects.                                                                                          |
+| pageInfo        | [PageInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PageInfo/index.md)!                                          | General information about this result page.                                                                                      |
 
 ## Used By
 

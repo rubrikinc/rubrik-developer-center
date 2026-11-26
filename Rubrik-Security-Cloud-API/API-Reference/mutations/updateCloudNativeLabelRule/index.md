@@ -1,6 +1,6 @@
 # updateCloudNativeLabelRule
 
-Update cloud native label rule
+Updates a cloud native label rule.
 
 ## Arguments
 

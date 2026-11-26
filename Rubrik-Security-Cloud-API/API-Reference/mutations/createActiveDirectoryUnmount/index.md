@@ -1,6 +1,6 @@
 # createActiveDirectoryUnmount
 
-Remove a Live Mount of an Active Directory Domain Controller snapshot Supported in v9.0+ Initiates a job to remove a Live Mount of an Active Directory Domain Controller snapshot. Returns the job instance ID.
+Starts a job that removes a Live Mount of an Active Directory domain controller snapshot; track it with activeDirectoryAsyncRequestStatus.
 
 ## Arguments
 

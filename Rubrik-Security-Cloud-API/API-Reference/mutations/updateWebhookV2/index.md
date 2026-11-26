@@ -1,12 +1,12 @@
 # updateWebhookV2
 
-Update webhook configuration.
+Replaces a webhook's configuration with the full settings supplied, not only the changed fields; use updateWebhookStatus to change its status. Stored authentication changes only when updateAuthInfo is true, and the call fails if nothing changed.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                     | Description           |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
-| input *(required)* | [UpdateWebhookV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateWebhookV2Input/index.md)! | Update webhook input. |
+| Argument           | Type                                                                                                                                     | Description                                            |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| input *(required)* | [UpdateWebhookV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateWebhookV2Input/index.md)! | The webhook ID and its full replacement configuration. |
 
 ## Returns
 
@@ -25,7 +25,7 @@ mutation UpdateWebhookV2($input: UpdateWebhookV2Input!) {
   "input": {
     "id": 0,
     "payload": {
-      "providerType": "CUSTOM",
+      "providerType": "CROWDSTRIKE_NG_SIEM",
       "subscriptionType": {}
     }
   }

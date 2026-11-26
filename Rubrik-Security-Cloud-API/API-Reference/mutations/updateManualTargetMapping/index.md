@@ -4,9 +4,9 @@ Updates a manual target mapping scoped to the caller's account.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                         | Description                   |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------- |
-| input *(required)* | [UpdateManualTargetMappingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateManualTargetMappingInput/index.md)! | Update manual target mapping. |
+| Argument           | Type                                                                                                                                                         | Description                                                                                                      |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| input *(required)* | [UpdateManualTargetMappingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateManualTargetMappingInput/index.md)! | ID of the archival group, its new name (required, unique), and the archival location to Rubrik cluster mappings. |
 
 ## Returns
 

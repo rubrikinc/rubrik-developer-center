@@ -1,12 +1,12 @@
 # updateRecoveryScheduleV2
 
-Updates a recovery schedule for a recovery plan.
+Updates the recovery schedule of a recovery plan.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                       | Description                                                            |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| input *(required)* | [UpdateRecoveryScheduleV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateRecoveryScheduleV2Input/index.md)! | Updates the recovery schedule information linked to the recovery plan. |
+| Argument           | Type                                                                                                                                                       | Description                                                                                                                              |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| input *(required)* | [UpdateRecoveryScheduleV2Input](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateRecoveryScheduleV2Input/index.md)! | The recovery plan ID and the complete schedule. startRunTime and recoveryConfig are required even though the schema marks them optional. |
 
 ## Returns
 

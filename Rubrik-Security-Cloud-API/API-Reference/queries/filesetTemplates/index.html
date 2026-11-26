@@ -938,7 +938,7 @@
 
 
 <h1 id="filesettemplates">filesetTemplates</h1>
-<p>Get a summary of all fileset templates.</p>
+<p>Lists the fileset templates under a host root: Linux, Windows, NAS, or Exchange.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -972,7 +972,7 @@
 <tr>
 <td>sortBy</td>
 <td><a href="../../types/enums/HierarchySortByField/">HierarchySortByField</a></td>
-<td>Sort hierarchy objects according to the hierarchy field.</td>
+<td>Field to sort by; results are sorted only when sortOrder is also set.</td>
 </tr>
 <tr>
 <td>sortOrder</td>
@@ -982,12 +982,12 @@
 <tr>
 <td>filter</td>
 <td>[<a href="../../types/inputs/Filter/">Filter</a>!]</td>
-<td>Hierarchy object filter.</td>
+<td>Filters the results by object fields. Supported fields: NAME, NAME_EXACT_MATCH, NAME_PREFIX, IS_RELIC, IS_GHOST, IS_ARCHIVED, CLUSTER_ID, IS_REPLICATED, and FILESET_TEMPLATE_OS_TYPE (UnixLike, Linux, Windows, ANY, or NONE). Ghost objects and hidden replicas are excluded unless IS_GHOST or IS_REPLICATED is set.</td>
 </tr>
 <tr>
 <td>hostRoot <em>(required)</em></td>
 <td><a href="../../types/enums/HostRoot/">HostRoot</a>!</td>
-<td>Host root type.</td>
+<td>LINUX_HOST_ROOT, WINDOWS_HOST_ROOT, NAS_HOST_ROOT, or EXCHANGE_ROOT.</td>
 </tr>
 </tbody>
 </table>

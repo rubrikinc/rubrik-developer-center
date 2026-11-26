@@ -15,3 +15,4 @@ Row is a generic message type similar to SQL row.
 **Queries**
 
 - [query: reportData](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/reportData/index.md) *(via connection)*
+- [query: reportTableData](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/reportTableData/index.md) *(via connection)*

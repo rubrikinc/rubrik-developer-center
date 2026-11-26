@@ -1,6 +1,6 @@
 # awsNativeRoot
 
-Returns the root of the AWS Native hierarchy.
+Returns the top-level object for AWS workloads in Rubrik, from which AWS accounts and their workloads can be listed.
 
 ## Returns
 

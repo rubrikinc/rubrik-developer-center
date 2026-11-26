@@ -950,7 +950,7 @@
 <tr>
 <td>shouldEnsureDefaultApp</td>
 <td>Boolean</td>
-<td>Creates the default Rubrik customer app for the account before the OAuth session starts, if it does not exist yet.</td>
+<td>When true, idempotently provisions the DEFAULT Rubrik app before the OAuth session is created. Set by callers that need the app to exist (e.g. AAD-only Entra ID onboarding) but don't know whether it was already created.</td>
 </tr>
 <tr>
 <td>tenantDomainName</td>

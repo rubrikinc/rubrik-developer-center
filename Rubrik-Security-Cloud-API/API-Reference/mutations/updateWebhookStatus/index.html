@@ -938,7 +938,7 @@
 
 
 <h1 id="updatewebhookstatus">updateWebhookStatus</h1>
-<p>Update the webhook status.</p>
+<p>Enables or disables a webhook; AUTO_DISABLED is set only by the system and is rejected. Failures, including a provider type not available to the account, come back in errorInfo.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/UpdateWebhookStatusInput/">UpdateWebhookStatusInput</a>!</td>
-<td>Update webhook status input.</td>
+<td>The webhook ID and the new status, ENABLED or DISABLED.</td>
 </tr>
 </tbody>
 </table>

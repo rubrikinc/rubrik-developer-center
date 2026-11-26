@@ -1,6 +1,6 @@
 # scriptsForManualPermissionValidation
 
-GetScriptsForManualPermissionValidation returns the bash and powershell scripts for non-OAuth permissions validation.
+Returns the bash and PowerShell scripts that check permissions for accounts added without OAuth.
 
 ## Arguments
 

@@ -13,6 +13,10 @@ Paginated list of AwsNativeRegionHierarchyObject objects. Each page of the resul
 
 ## Used By
 
+**Queries**
+
+- [query: awsNativeRegions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/awsNativeRegions/index.md)
+
 **Referenced by**
 
 - [AwsNativeAccount.awsRegions](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsNativeAccount/index.md)

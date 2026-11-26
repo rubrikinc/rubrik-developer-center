@@ -1,6 +1,6 @@
 # createCrossAccountPair
 
-Create cross-account pair between service-consumer and service-provider accounts.
+Pairs a consumer and a provider Rubrik Security Cloud account using OAuth authorization.
 
 ## Arguments
 

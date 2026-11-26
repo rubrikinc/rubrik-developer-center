@@ -1,6 +1,6 @@
 # triggerExocomputeHealthCheck
 
-Initiates on-demand Exocompute health check.
+Starts an on-demand Exocompute health check; read the results with exocomputeHealthChecks.
 
 ## Arguments
 

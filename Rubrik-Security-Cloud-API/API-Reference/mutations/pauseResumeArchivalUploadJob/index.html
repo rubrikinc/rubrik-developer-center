@@ -938,7 +938,7 @@
 
 
 <h1 id="pauseresumearchivaluploadjob">pauseResumeArchivalUploadJob</h1>
-<p>Pauses or resumes an in-flight archival upload job on a CDM cluster.</p>
+<p>Pauses or resumes an in-progress archival upload job on a Rubrik cluster. The job is identified by its event series ID. The request is acknowledged right away and the job pauses at its next pausable point. Pausing must be enabled for the cluster; resuming is always allowed.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/PauseResumeArchivalUploadJobInput/">PauseResumeArchivalUploadJobInput</a>!</td>
-<td>Request for pausing or resuming an archival upload job.</td>
+<td>The Rubrik cluster UUID, the event series ID of the upload job, and whether to pause or resume.</td>
 </tr>
 </tbody>
 </table>

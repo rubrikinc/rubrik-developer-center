@@ -938,7 +938,7 @@
 
 
 <h1 id="updatesnmpconfig">updateSnmpConfig</h1>
-<p>Update SNMP configuration Supported in v5.0+ Update the SNMP configuration for a specified Rubrik cluster.</p>
+<p>Updates the SNMP (Simple Network Management Protocol) configuration of a Rubrik cluster, version 5.0 or later, and returns the result.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/UpdateSnmpConfigInput/">UpdateSnmpConfigInput</a>!</td>
-<td>Input for InternalUpdateSnmpConfig.</td>
+<td>clusterUuid routes the request; id is the Rubrik cluster ID or "me"; set the snmpConfigV* field that matches the cluster's software version.</td>
 </tr>
 </tbody>
 </table>

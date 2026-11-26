@@ -1,12 +1,12 @@
 # updateTapeTarget
 
-Update Tape archival location on a CDM cluster.
+Updates a tape archival location on a Rubrik cluster.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                       | Description                                   |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- |
-| input *(required)* | [UpdateTapeTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateTapeTargetInput/index.md)! | Request for updating an existing Tape target. |
+| Argument           | Type                                                                                                                                       | Description                                                                                                  |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| input *(required)* | [UpdateTapeTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/UpdateTapeTargetInput/index.md)! | ID of the tape location, and optionally a new name, QStar server host name and port, username, and password. |
 
 ## Returns
 

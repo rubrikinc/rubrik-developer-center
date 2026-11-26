@@ -1,12 +1,12 @@
 # downloadSapHanaSnapshotsForPointInTimeRecovery
 
-Download SAP HANA database snapshots from archive for a point in time recovery Supported in v8.0+ Downloads the most recent full snapshot and the log snapshots taken after the full snapshot, required for the point in time recovery of an SAP HANA database.
+Downloads from archive the latest full snapshot and later log snapshots a SAP HANA database needs to recover to a point in time. Returns the async request.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                                                   | Description                                                 |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
-| input *(required)* | [DownloadSapHanaSnapshotsForPointInTimeRecoveryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadSapHanaSnapshotsForPointInTimeRecoveryInput/index.md)! | Input for V1DownloadSapHanaSnapshotsForPointInTimeRecovery. |
+| Argument           | Type                                                                                                                                                                                                   | Description                                                       |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| input *(required)* | [DownloadSapHanaSnapshotsForPointInTimeRecoveryInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadSapHanaSnapshotsForPointInTimeRecoveryInput/index.md)! | The database ID, the point in time, and the archival location ID. |
 
 ## Returns
 

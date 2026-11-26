@@ -4,9 +4,9 @@ A single Rubrik cluster can be the replication target for multiple source Rubrik
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                     | Description                          |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
-| input *(required)* | [DisableReplicationPauseInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DisableReplicationPauseInput/index.md)! | Input for V1DisablePerLocationPause. |
+| Argument           | Type                                                                                                                                                     | Description                                                                                                                         |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| input *(required)* | [DisableReplicationPauseInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DisableReplicationPauseInput/index.md)! | The target Rubrik cluster UUID, the source cluster UUIDs to resume, and whether to skip snapshots taken before or during the pause. |
 
 ## Returns
 

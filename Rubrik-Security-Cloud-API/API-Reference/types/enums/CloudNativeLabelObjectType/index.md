@@ -4,9 +4,10 @@ Cloud-native object type for the label.
 
 ## Values
 
-| Value                  | Description             |
-| ---------------------- | ----------------------- |
-| GCP_BIGQUERY_DATASET   | GCP BigQuery Dataset.   |
-| GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance. |
-| GCP_DISK               | GCP Disk.               |
-| GCP_GCE_INSTANCE       | GCP GCE Instance.       |
+| Value                  | Description               |
+| ---------------------- | ------------------------- |
+| GCP_BIGQUERY_DATASET   | GCP BigQuery Dataset.     |
+| GCP_CLOUD_SQL_INSTANCE | GCP Cloud SQL Instance.   |
+| GCP_DISK               | GCP Disk.                 |
+| GCP_GCE_INSTANCE       | GCP GCE Instance.         |
+| GCP_GCS_BUCKET         | GCP Cloud Storage bucket. |

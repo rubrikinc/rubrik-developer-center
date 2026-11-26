@@ -1,6 +1,6 @@
 # deleteCloudNativeTagRule
 
-Delete cloud native tag rule.
+Deletes a cloud native tag rule.
 
 ## Arguments
 

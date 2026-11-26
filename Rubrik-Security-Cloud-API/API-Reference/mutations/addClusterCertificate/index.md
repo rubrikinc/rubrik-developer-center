@@ -1,6 +1,6 @@
 # addClusterCertificate
 
-Import a certificate Supported in v5.1+ Import a certificate.
+Imports a certificate into a Rubrik cluster. Requires Rubrik cluster version 5.1 or later.
 
 ## Arguments
 

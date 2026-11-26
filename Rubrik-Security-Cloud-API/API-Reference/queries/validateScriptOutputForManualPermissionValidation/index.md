@@ -1,6 +1,6 @@
 # validateScriptOutputForManualPermissionValidation
 
-ValidateScriptOutputForManualPermissionValidation validates the script output provided by the customer for the manual permission validation.
+Checks the output of the permission scripts from scriptsForManualPermissionValidation that you ran.
 
 ## Arguments
 

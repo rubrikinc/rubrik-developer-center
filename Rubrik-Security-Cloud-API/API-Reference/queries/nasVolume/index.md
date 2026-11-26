@@ -1,6 +1,6 @@
 # nasVolume
 
-A NAS Volume.
+Returns one NAS volume on a NAS system by its ID.
 
 ## Arguments
 

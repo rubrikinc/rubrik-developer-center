@@ -1,12 +1,13 @@
 # Interfaces
 
-218 types.
+224 types.
 
 [ActiveDirectoryDomainDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryDomainDescendantType/index.md)\
 [ActiveDirectoryDomainPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryDomainPhysicalChildType/index.md)\
 [ActiveDirectoryForestDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryForestDescendantType/index.md)\
 [ActiveDirectoryForestPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ActiveDirectoryForestPhysicalChildType/index.md)\
 [ArchivalEntity](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ArchivalEntity/index.md)\
+[ArchivalLocationKeyVaultAssignmentInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/ArchivalLocationKeyVaultAssignmentInfo/index.md)\
 [AwsExocomputeGetConfigurationResponse](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/AwsExocomputeGetConfigurationResponse/index.md)\
 [AwsNativeAccountDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/AwsNativeAccountDescendantType/index.md)\
 [AwsNativeAccountLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/AwsNativeAccountLogicalChildType/index.md)\
@@ -64,6 +65,7 @@
 [HypervServerLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/HypervServerLogicalChildType/index.md)\
 [HypervTopLevelDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/HypervTopLevelDescendantType/index.md)\
 [K8sClusterDescendant](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/K8sClusterDescendant/index.md)\
+[KeyVaultInfo](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/KeyVaultInfo/index.md)\
 [KosmosDiscoverableEntityType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/KosmosDiscoverableEntityType/index.md)\
 [KosmosHierarchyObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/KosmosHierarchyObjectType/index.md)\
 [KosmosLeafHierarchyObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/KosmosLeafHierarchyObjectType/index.md)\
@@ -206,8 +208,11 @@
 [VsphereFolderLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereFolderLogicalChildType/index.md)\
 [VsphereHostDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereHostDescendantType/index.md)\
 [VsphereHostPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereHostPhysicalChildType/index.md)\
+[VsphereNamespaceChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereNamespaceChildType/index.md)\
+[VsphereNamespaceDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereNamespaceDescendantType/index.md)\
 [VsphereResourcePoolDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereResourcePoolDescendantType/index.md)\
 [VsphereResourcePoolPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereResourcePoolPhysicalChildType/index.md)\
+[VsphereSupervisorChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereSupervisorChildType/index.md)\
 [VsphereSupervisorDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereSupervisorDescendantType/index.md)\
 [VsphereTagCategoryDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereTagCategoryDescendantType/index.md)\
 [VsphereTagCategoryTagChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereTagCategoryTagChildType/index.md)\
@@ -217,6 +222,7 @@
 [VsphereVcenterLibraryChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereVcenterLibraryChildType/index.md)\
 [VsphereVcenterLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereVcenterLogicalChildType/index.md)\
 [VsphereVcenterPhysicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereVcenterPhysicalChildType/index.md)\
+[VsphereVcenterSupervisorChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereVcenterSupervisorChildType/index.md)\
 [VsphereVcenterTagChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/VsphereVcenterTagChildType/index.md)\
 [WindowsClusterDescendantType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/WindowsClusterDescendantType/index.md)\
 [WindowsClusterLogicalChildType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/interfaces/WindowsClusterLogicalChildType/index.md)

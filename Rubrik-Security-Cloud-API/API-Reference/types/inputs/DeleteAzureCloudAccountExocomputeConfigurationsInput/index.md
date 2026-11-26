@@ -1,6 +1,6 @@
 # DeleteAzureCloudAccountExocomputeConfigurationsInput
 
-Input for deleting Exocompute configurations for an Azure Cloud Account.
+AzureExocomputeConfigsDeleteReq defines the request for deleting the exocompute configs specified by the exocompute_config_ids.
 
 ## Fields
 

@@ -938,7 +938,7 @@
 
 
 <h1 id="generatepreviewmessageforwebhooktemplate">generatePreviewMessageForWebhookTemplate</h1>
-<p>Generate a preview message for the webhook message template.</p>
+<p>Renders the supplied template text against sample data and returns the result, so a custom template can be checked before it is saved. Nothing is sent or stored, and rendering errors come back in errorInfo.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/GeneratePreviewMessageForWebhookTemplateInput/">GeneratePreviewMessageForWebhookTemplateInput</a>!</td>
-<td>Generate a preview message for the webhook message template input.</td>
+<td>templateData is the template text; msgType is the sample data to use: EVENT, AUDIT, or IDENTITY_ACTIVITY.</td>
 </tr>
 </tbody>
 </table>

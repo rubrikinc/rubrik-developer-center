@@ -1,6 +1,6 @@
 # restoreDomainControllerSnapshot
 
-Initiate Active Directory restore job Supported in v9.0+ Initiates a job to restore Active Directory snapshots to their corresponding Domain Controllers or alternate hosts. Returns the job instance ID.
+Starts a job that restores Active Directory snapshots to their domain controllers or to alternate hosts; track it with activeDirectoryAsyncRequestStatus.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # healthCheckErrorReport
 
-GetHealthCheckErrorReport returns the detailed failure information for health checks that can have multiple components succeed/fail independently. The failure information is returned in CSV format.
+Returns, as CSV, the failure details of a health check whose parts pass or fail independently.
 
 ## Arguments
 

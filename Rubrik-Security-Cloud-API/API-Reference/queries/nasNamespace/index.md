@@ -1,6 +1,6 @@
 # nasNamespace
 
-A NAS Namespace.
+Returns one NAS namespace, a grouping of volumes and shares on a NAS system, by its ID.
 
 ## Arguments
 

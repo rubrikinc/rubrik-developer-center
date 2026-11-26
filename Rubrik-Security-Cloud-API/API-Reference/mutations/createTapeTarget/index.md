@@ -1,12 +1,12 @@
 # createTapeTarget
 
-Creates Tape archival location on a CDM cluster.
+Creates a tape archival location on a Rubrik cluster.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                       | Description                             |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------- |
-| input *(required)* | [CreateTapeTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateTapeTargetInput/index.md)! | Request for creating a new Tape target. |
+| Argument           | Type                                                                                                                                       | Description                                   |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- |
+| input *(required)* | [CreateTapeTargetInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateTapeTargetInput/index.md)! | The Rubrik cluster and tape location details. |
 
 ## Returns
 

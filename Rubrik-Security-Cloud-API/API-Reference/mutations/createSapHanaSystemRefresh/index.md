@@ -1,12 +1,12 @@
 # createSapHanaSystemRefresh
 
-Refresh SAP HANA system metadata Supported in v5.3+ Initiates a job to refresh metadata of a SAP HANA system object. The GET /sap_hana/system/request/{id} endpoint can be used to monitor the progress of the job.
+Refreshes a SAP HANA system's metadata, such as its databases and hosts, from the Rubrik cluster. Returns the async request; track it with jobInfo (type SAP_HANA_SYSTEM, requestId = the returned id, clusterUuid = the cluster's UUID).
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                           | Description                             |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| input *(required)* | [CreateSapHanaSystemRefreshInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateSapHanaSystemRefreshInput/index.md)! | Input for V1CreateSapHanaSystemRefresh. |
+| Argument           | Type                                                                                                                                                           | Description    |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| input *(required)* | [CreateSapHanaSystemRefreshInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/CreateSapHanaSystemRefreshInput/index.md)! | The system ID. |
 
 ## Returns
 

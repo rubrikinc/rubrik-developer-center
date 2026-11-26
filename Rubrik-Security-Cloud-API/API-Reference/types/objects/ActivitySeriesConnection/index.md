@@ -19,4 +19,5 @@ Paginated list of ActivitySeries objects. Each page of the results includes at m
 
 **Referenced by**
 
+- [ActivitySeriesGroupBy.activitySeriesConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActivitySeriesGroupBy/index.md)
 - [Cluster.activitySeriesConnection](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Cluster/index.md)

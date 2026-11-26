@@ -19,6 +19,8 @@ query AllArchivalLocationForecasts($locationIds: [UUID!]!) {
   allArchivalLocationForecasts(locationIds: $locationIds) {
     confidence
     currentBytes
+    forecastedBytes
+    growthPct
     lastRefreshedAt
     locationId
     runwayWeeks
@@ -42,10 +44,10 @@ query AllArchivalLocationForecasts($locationIds: [UUID!]!) {
       {
         "confidence": "FORECAST_CONFIDENCE_HIGH",
         "currentBytes": 0.0,
+        "forecastedBytes": 0.0,
+        "growthPct": 0.0,
         "lastRefreshedAt": "2024-01-01T00:00:00.000Z",
         "locationId": "00000000-0000-0000-0000-000000000000",
-        "runwayWeeks": 0.0,
-        "weeklyGrowthPct": 0.0,
         "forecast": [
           {
             "timestamp": "example-string",

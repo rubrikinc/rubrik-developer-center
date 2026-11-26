@@ -1,6 +1,6 @@
 # restoreActiveDirectoryForestV2
 
-RestoreActiveDirectoryForestV2 initiates an Active Directory Forest Recovery job with simplified input.
+Starts an Active Directory forest recovery job and returns its ID; track it with activeDirectoryForestRestoreStatus.
 
 ## Arguments
 

@@ -1046,6 +1046,10 @@
 <td>GPO_SETTING_NAME_TICKET_VALIDATE_CLIENT</td>
 <td>Enforce Kerberos user logon restrictions (validate client) policy setting.</td>
 </tr>
+<tr>
+<td>GPO_SETTING_NAME_WSUS_INTRANET_UPDATE_URL</td>
+<td>Windows Update settings (Administrative Templates). The WSUS server URL (WUServer) the "Specify intranet Microsoft update service location" administrative template points Windows clients at. Stored only when the GPO's Computer section reports that policy as Enabled, as a string. Used to identify clients that download updates from a WSUS server over plain HTTP, which lets an on-path attacker forge update metadata.</td>
+</tr>
 </tbody>
 </table>
 

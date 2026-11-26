@@ -1,12 +1,12 @@
 # failoverClusterApp
 
-Get details of the given failover cluster app.
+Returns the details of a failover cluster app.
 
 ## Arguments
 
-| Argument         | Type                                                                                                      | Description                 |
-| ---------------- | --------------------------------------------------------------------------------------------------------- | --------------------------- |
-| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik UUID for the object. |
+| Argument         | Type                                                                                                      | Description                     |
+| ---------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| fid *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | ID of the failover cluster app. |
 
 ## Returns
 

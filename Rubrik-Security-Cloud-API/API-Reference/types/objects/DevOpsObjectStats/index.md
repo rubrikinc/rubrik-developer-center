@@ -13,3 +13,7 @@ Aggregated statistics for DevOps managed objects, as one entry per requested Obj
 **Queries**
 
 - [query: devOpsObjectStatsSummary](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/devOpsObjectStatsSummary/index.md)
+
+**Referenced by**
+
+- [AzureDevOpsProject.objectStats](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AzureDevOpsProject/index.md)

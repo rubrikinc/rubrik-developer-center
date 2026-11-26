@@ -28,6 +28,7 @@ query MssqlHostConfiguration($input: MssqlHostConfigInput!) {
     enableMssqlMultiNodeRestore
     enableVdi
     enableVdiDb
+    enableVmwareAcceleratedMssqlSnapshot
     fileRestoreReadParallelism
     fileRestoreWriteParallelism
     fileTransferParallelism

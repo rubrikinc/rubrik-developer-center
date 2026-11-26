@@ -30,13 +30,13 @@ A Cloud Direct managed hierarchy protected objects.
 
 ## Field Arguments
 
-| Field                  | Argument    | Type                                                                                                                                  | Description                                                                                                                             |
-| ---------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| numWorkloadDescendants | first       | Int                                                                                                                                   | Returns the first n elements from the list.                                                                                             |
-| numWorkloadDescendants | after       | String                                                                                                                                | An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.       |
-| numWorkloadDescendants | last        | Int                                                                                                                                   | Returns the last n elements from the list.                                                                                              |
-| numWorkloadDescendants | before      | String                                                                                                                                | An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results. |
-| numWorkloadDescendants | objectTypes | \[[ManagedObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ManagedObjectType/index.md)!\] | Types of objects to limit the results. If absent, all object types are returned.                                                        |
+| Field                  | Argument    | Type                                                                                                                                  | Description                                                                      |
+| ---------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| numWorkloadDescendants | first       | Int                                                                                                                                   | Returns the first n elements from the list.                                      |
+| numWorkloadDescendants | after       | String                                                                                                                                | Returns the elements in the list that occur after the specified cursor.          |
+| numWorkloadDescendants | last        | Int                                                                                                                                   | Returns the last n elements from the list.                                       |
+| numWorkloadDescendants | before      | String                                                                                                                                | Returns the elements in the list that occur before the specified cursor.         |
+| numWorkloadDescendants | objectTypes | \[[ManagedObjectType](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/ManagedObjectType/index.md)!\] | Types of objects to limit the results. If absent, all object types are returned. |
 
 ## Implemented By
 

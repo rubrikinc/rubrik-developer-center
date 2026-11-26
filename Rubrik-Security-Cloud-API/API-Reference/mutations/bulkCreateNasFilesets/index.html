@@ -938,7 +938,7 @@
 
 
 <h1 id="bulkcreatenasfilesets">bulkCreateNasFilesets</h1>
-<p>Create filesets in bulk for NAS shares Supported in v7.0+ Create primary filesets for a list of NAS shares.</p>
+<p>Creates filesets for a list of NAS shares from one fileset template.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/BulkCreateNasFilesetsInput/">BulkCreateNasFilesetsInput</a>!</td>
-<td>Input for V1BulkCreatePolarisNasFilesets.</td>
+<td>Input fields: bulkRequest, with nasShareIds, the filesetTemplate to apply, and options such as isPassthrough, isHardlinkSupportEnabled, and SnapMirror labels.</td>
 </tr>
 </tbody>
 </table>

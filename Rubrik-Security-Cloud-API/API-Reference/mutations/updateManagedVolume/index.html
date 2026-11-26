@@ -938,7 +938,7 @@
 
 
 <h1 id="updatemanagedvolume">updateManagedVolume</h1>
-<p>Mutation to update an existing Managed Volume.</p>
+<p>Changes a Managed Volume's name, SLA Domain, size (increase only), share access settings, or backup script settings, and returns the updated Managed Volume summary.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/UpdateManagedVolumeInput/">UpdateManagedVolumeInput</a>!</td>
-<td>Input for InternalUpdateManagedVolume.</td>
+<td>The Managed Volume ID, the properties to change, and an optional note for the audit log.</td>
 </tr>
 </tbody>
 </table>

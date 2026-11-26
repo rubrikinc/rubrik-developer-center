@@ -938,7 +938,7 @@
 
 
 <h1 id="creatercvprivateendpointapprovalrequest">createRcvPrivateEndpointApprovalRequest</h1>
-<p>CreateRCVPrivateEndpointApprovalRequest creates an approval request for an RCV private endpoint. Once the request is approved, the customer can start using their RCV archival location through the private endpoint.</p>
+<p>Registers a private endpoint that you created in your Azure subscription for a Rubrik Cloud Vault Azure location, and returns the storage account ID and request message to use for the private endpoint connection. After Rubrik approves the connection, the Rubrik cluster can reach the location through the private endpoint.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/CreateRcvPrivateEndpointApprovalRequestInput/">CreateRcvPrivateEndpointApprovalRequestInput</a>!</td>
-<td>Input for creating a private endpoint approval request for an RCV location.</td>
+<td>The Rubrik Cloud Vault location ID, the cloud provider ID of the private endpoint, and an optional name and description.</td>
 </tr>
 </tbody>
 </table>

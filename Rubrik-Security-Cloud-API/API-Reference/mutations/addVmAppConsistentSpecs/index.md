@@ -1,6 +1,6 @@
 # addVmAppConsistentSpecs
 
-Add Vm App consistent specs info
+Saves the application-consistency settings for Azure virtual machines, used to take application-consistent snapshots.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # createAwsExocomputeConfigs
 
-Create AWS Exocompute configs.
+Creates Exocompute configurations for AWS cloud accounts, which set where Rubrik runs compute for protection tasks.
 
 ## Arguments
 

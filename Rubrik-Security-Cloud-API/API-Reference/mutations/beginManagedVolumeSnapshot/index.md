@@ -1,12 +1,12 @@
 # beginManagedVolumeSnapshot
 
-Begin Managed Volume snapshot Supported in v7.0+ Opens the Managed Volume for writes. All data written to the Managed Volume until the next end-snapshot call will be part of this snapshot.
+Opens a Managed Volume for writes and starts a snapshot; everything written until endManagedVolumeSnapshot is called becomes part of it. Requires Rubrik CDM 7.0 or later.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                           | Description               |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| input *(required)* | [BeginManagedVolumeSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BeginManagedVolumeSnapshotInput/index.md)! | Input for V1OpenWritesV1. |
+| Argument           | Type                                                                                                                                                           | Description                                                                                                             |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| input *(required)* | [BeginManagedVolumeSnapshotInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BeginManagedVolumeSnapshotInput/index.md)! | The Managed Volume ID, optional snapshot settings, and an optional owner ID that later calls on this snapshot must use. |
 
 ## Returns
 

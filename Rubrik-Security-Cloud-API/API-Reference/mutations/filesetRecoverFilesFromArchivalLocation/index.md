@@ -1,6 +1,6 @@
 # filesetRecoverFilesFromArchivalLocation
 
-Initiate a job to restore files or folders Supported in v8.0+ Initiate a job to copy one or more file or folder in a fileset backup from specified archival location to the source host. Returns the job instance ID.
+Starts a job that restores files or folders from a fileset snapshot at an archival location to the source host; poll the returned request ID with filesetRequestStatus.
 
 ## Arguments
 

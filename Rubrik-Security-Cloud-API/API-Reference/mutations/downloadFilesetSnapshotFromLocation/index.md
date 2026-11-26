@@ -1,12 +1,12 @@
 # downloadFilesetSnapshotFromLocation
 
-Download a snapshot from a replication target Supported in v7.0+ Initiates a job to download a snapshot from the specified location when the snapshot does not exist locally. The specified location has to be a replication target connected to this Rubrik cluster. If an SLA Domain is not provided, the snapshot will be retained forever.
+Starts a job that downloads a fileset snapshot from a connected replication target when it is not on this Rubrik cluster. Without an SLA Domain the snapshot is kept forever.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                                             | Description                                      |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| input *(required)* | [DownloadFilesetSnapshotFromLocationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadFilesetSnapshotFromLocationInput/index.md)! | Input for V2DownloadFilesetSnapshotFromLocation. |
+| Argument           | Type                                                                                                                                                                             | Description                                                                                                                            |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| input *(required)* | [DownloadFilesetSnapshotFromLocationInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DownloadFilesetSnapshotFromLocationInput/index.md)! | Input fields: snapshotId, locationId of the replication target, and downloadConfig with an optional slaId and cloud rehydration speed. |
 
 ## Returns
 

@@ -927,7 +927,7 @@
 
 
 <h1 id="activityclassificationsource">ActivityClassificationSource</h1>
-<p>A source that contributed evidence to an activity's classification.</p>
+<p>One piece of evidence behind an activity's classification.</p>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -939,9 +939,19 @@
 </thead>
 <tbody>
 <tr>
+<td>evidenceId</td>
+<td>String</td>
+<td>The evidence id as stored: the RSC alert id for CrowdStrike and Microsoft Defender, the ingested event id for SailPoint and Workday, the file id for IoC and legitimate IP files.</td>
+</tr>
+<tr>
 <td>evidenceUrl</td>
 <td>String</td>
-<td>A link to the supporting evidence.</td>
+<td>A link to the evidence outside RSC. Empty when the evidence lives in RSC or no link is available.</td>
+</tr>
+<tr>
+<td>fileName</td>
+<td>String</td>
+<td>The uploaded file name, for IoC and legitimate IP sources only.</td>
 </tr>
 <tr>
 <td>source</td>

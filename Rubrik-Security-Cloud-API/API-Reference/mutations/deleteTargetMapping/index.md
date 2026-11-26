@@ -1,12 +1,12 @@
 # deleteTargetMapping
 
-Deletes mapping of a target.
+Deletes an archival group. Fails if an SLA Domain still uses the group. Deleting a cloud-native protection archival group also deletes its archival locations.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                             | Description                                   |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- |
-| input *(required)* | [DeleteTargetMappingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteTargetMappingInput/index.md)! | Request for deleting the mapping of a target. |
+| Argument           | Type                                                                                                                                             | Description                                                                                  |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| input *(required)* | [DeleteTargetMappingInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteTargetMappingInput/index.md)! | The ID of the archival group to delete, and whether to skip deleting cloud-native resources. |
 
 ## Returns
 

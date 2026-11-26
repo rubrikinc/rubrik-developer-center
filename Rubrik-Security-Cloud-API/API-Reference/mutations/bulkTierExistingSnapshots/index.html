@@ -938,7 +938,7 @@
 
 
 <h1 id="bulktierexistingsnapshots">bulkTierExistingSnapshots</h1>
-<p>Bulk tier existing snapshots to cold storage Supported in v6.0+ Schedules a job to tier existing snapshots of the specified objects to cold storage.</p>
+<p>Starts a job on a Rubrik cluster (version 6.0 or later) that tiers existing snapshots of the given objects to cold storage. When no archival location is given, snapshots of protected objects are tiered in the archival location of their SLA Domain, and snapshots of relics and unprotected objects are tiered in all archival locations. Returns the status of the asynchronous request.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/BulkTierExistingSnapshotsInput/">BulkTierExistingSnapshotsInput</a>!</td>
-<td>Input for V1BulkTierExistingSnapshots.</td>
+<td>The Rubrik cluster UUID and the object IDs to tier, with an optional archival location ID.</td>
 </tr>
 </tbody>
 </table>

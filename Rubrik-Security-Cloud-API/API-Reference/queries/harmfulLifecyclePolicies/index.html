@@ -938,7 +938,7 @@
 
 
 <h1 id="harmfullifecyclepolicies">harmfulLifecyclePolicies</h1>
-<p>Customer-managed lifecycle rules detected on datacenter archival locations that would tier or delete Rubrik-owned objects.</p>
+<p>Lists customer-managed lifecycle rules on AWS S3 and Azure archival locations that would tier or delete objects Rubrik wrote.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -972,7 +972,7 @@
 <tr>
 <td>filter</td>
 <td><a href="../../types/inputs/HarmfulLifecyclePolicyFilter/">HarmfulLifecyclePolicyFilter</a></td>
-<td>The filters restricting which lifecycle policies are returned.</td>
+<td>Archival location IDs and location types to include. An empty list includes all.</td>
 </tr>
 </tbody>
 </table>

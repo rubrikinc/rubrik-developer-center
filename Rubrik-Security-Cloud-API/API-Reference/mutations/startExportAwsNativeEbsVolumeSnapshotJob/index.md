@@ -1,6 +1,6 @@
 # startExportAwsNativeEbsVolumeSnapshotJob
 
-StartExportAwsNativeEbsVolumeSnapshotJob starts an on-demand job that exports an EBS volume snapshot into a new EBS volume, optionally replacing the volume attached to the source EC2 instance.
+Starts a job that exports an EBS volume snapshot to a new EBS volume, optionally replacing the volume attached to the source EC2 instance.
 
 ## Arguments
 

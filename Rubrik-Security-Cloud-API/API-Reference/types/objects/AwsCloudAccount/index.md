@@ -28,6 +28,7 @@ Details of the AWS account.
 
 - [AddAwsAuthenticationServerBasedCloudAccountReply.awsAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AddAwsAuthenticationServerBasedCloudAccountReply/index.md)
 - [AddAwsIamUserBasedCloudAccountReply.awsAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AddAwsIamUserBasedCloudAccountReply/index.md)
+- [AwsCloudAccountFeaturesWithExoConfigs.awsCloudAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsCloudAccountFeaturesWithExoConfigs/index.md)
 - [AwsCloudAccountWithFeatures.awsCloudAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsCloudAccountWithFeatures/index.md)
 - [AwsCloudAccountsMigrateInitiateReply.eligibleAwsAccounts](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsCloudAccountsMigrateInitiateReply/index.md)
 - [AwsExocomputeConfig.awsCloudAccount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AwsExocomputeConfig/index.md)

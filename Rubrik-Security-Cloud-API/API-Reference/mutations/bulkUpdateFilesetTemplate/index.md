@@ -1,12 +1,12 @@
 # bulkUpdateFilesetTemplate
 
-Modify fileset templates Supported in v5.0+ Modify the values of specified fileset templates.
+Changes the settings of the given fileset templates.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                         | Description                                  |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
-| input *(required)* | [BulkUpdateFilesetTemplateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkUpdateFilesetTemplateInput/index.md)! | Input for InternalBulkUpdateFilesetTemplate. |
+| Argument           | Type                                                                                                                                                         | Description                                                                             |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| input *(required)* | [BulkUpdateFilesetTemplateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkUpdateFilesetTemplateInput/index.md)! | Input fields: definitions, one entry per template with its ID and the values to change. |
 
 ## Returns
 

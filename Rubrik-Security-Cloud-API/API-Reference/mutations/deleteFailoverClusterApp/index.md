@@ -1,12 +1,12 @@
 # deleteFailoverClusterApp
 
-Delete a failover cluster app Supported in v5.2+ Delete a failover cluster app.
+Deletes a failover cluster app. Existing snapshots are kept by default, set preserveSnapshots to false to delete them.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                       | Description                           |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| input *(required)* | [DeleteFailoverClusterAppInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteFailoverClusterAppInput/index.md)! | Input for V1DeleteFailoverClusterApp. |
+| Argument           | Type                                                                                                                                                       | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| input *(required)* | [DeleteFailoverClusterAppInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/DeleteFailoverClusterAppInput/index.md)! | ID of the failover cluster app and an optional preserveSnapshots flag. |
 
 ## Returns
 

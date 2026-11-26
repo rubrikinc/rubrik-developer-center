@@ -1,6 +1,6 @@
 # startRestoreAwsNativeEc2InstanceSnapshotJob
 
-StartRestoreAwsNativeEc2InstanceSnapshotJob starts an in-place restore of an EC2 instance from one of its snapshots. A retrieval tier the caller leaves unset is read as the bulk tier.
+Starts an in-place restore of an EC2 instance from one of its snapshots. An unset retrieval tier means the bulk tier.
 
 ## Arguments
 

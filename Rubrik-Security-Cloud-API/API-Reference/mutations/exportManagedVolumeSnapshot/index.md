@@ -1,6 +1,6 @@
 # exportManagedVolumeSnapshot
 
-Create a request to export a snapshot Supported in v5.0+ Export a managed volume snapshot as a share.
+Starts a job that exports a Managed Volume snapshot as an NFS or SMB share and returns the job's request status. To also mount the export on a host, use exportSlaManagedVolumeSnapshot. Requires Rubrik CDM 5.0 or later.
 
 ## Arguments
 

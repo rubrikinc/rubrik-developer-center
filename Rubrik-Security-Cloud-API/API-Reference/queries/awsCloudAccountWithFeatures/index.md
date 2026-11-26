@@ -1,6 +1,6 @@
 # awsCloudAccountWithFeatures
 
-List of AWS cloud accounts and the features for each account, classified by ID.
+Returns one AWS cloud account added to Rubrik, by ID, with its features.
 
 ## Arguments
 

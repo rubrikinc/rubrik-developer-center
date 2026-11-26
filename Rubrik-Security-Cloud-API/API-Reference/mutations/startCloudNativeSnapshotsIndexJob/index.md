@@ -1,6 +1,6 @@
 # startCloudNativeSnapshotsIndexJob
 
-Create index of cloudnative snapshots
+Starts jobs that index the files in the given cloud native snapshots, so they can be searched. Returns a job ID per snapshot.
 
 ## Arguments
 

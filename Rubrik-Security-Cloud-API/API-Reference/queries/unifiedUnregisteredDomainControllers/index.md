@@ -1,6 +1,6 @@
 # unifiedUnregisteredDomainControllers
 
-Lists auto-discovered AD domain controllers without RBS, deduplicated across all Rubrik clusters in the account.
+Lists Active Directory domain controllers discovered on Rubrik clusters that do not have the Rubrik Backup Service installed, deduplicated across clusters.
 
 ## Arguments
 

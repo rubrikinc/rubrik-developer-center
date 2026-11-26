@@ -1,6 +1,6 @@
 # exocomputeHealthChecks
 
-ExocomputeHealthChecks returns the health checks for the Exocompute configuration.
+Returns the health check results for an Exocompute configuration.
 
 ## Arguments
 

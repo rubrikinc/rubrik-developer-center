@@ -4,9 +4,9 @@ Get cloud account details for a given cloud account ID.
 
 ## Arguments
 
-| Argument                    | Type                                                                                                      | Description                                      |
-| --------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| cloudAccountId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Corresponds to Cloud Account Id in Rubrik tables |
+| Argument                    | Type                                                                                                      | Description                     |
+| --------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| cloudAccountId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)! | Rubrik ID of the cloud account. |
 
 ## Returns
 

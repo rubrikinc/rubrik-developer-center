@@ -29,6 +29,7 @@ Reply to Create on-demand job request.
 - [mutation: manageProtectionForLinkedObjects](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/manageProtectionForLinkedObjects/index.md)
 - [mutation: refreshK8sCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/refreshK8sCluster/index.md)
 - [mutation: refreshO365Org](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/refreshO365Org/index.md)
+- [mutation: restoreActiveDirectoryForest](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/restoreActiveDirectoryForest/index.md)
 - [mutation: restoreK8sNamespace](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/restoreK8sNamespace/index.md)
 - [mutation: restoreO365FullTeams](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/restoreO365FullTeams/index.md)
 - [mutation: restoreO365Mailbox](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/restoreO365Mailbox/index.md)

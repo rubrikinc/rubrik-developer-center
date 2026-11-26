@@ -938,7 +938,7 @@
 
 
 <h1 id="updatenasshares">updateNasShares</h1>
-<p>Bulk update multiple NAS shares Supported in v7.0+ Updates fields like changelist of multiple NAS shares.</p>
+<p>Turns change tracking on or off for several NAS shares: Isilon changelist, NetApp SnapDiff, or Nutanix Changed File Tracking. Returns nothing; use bulkUpdateNasShares for other share properties.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/UpdateNasSharesInput/">UpdateNasSharesInput</a>!</td>
-<td>Input for V1UpdateNasShares.</td>
+<td>NAS share IDs and, for each, the Isilon, NetApp SnapDiff, or Nutanix change-tracking settings to apply.</td>
 </tr>
 </tbody>
 </table>

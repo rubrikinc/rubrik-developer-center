@@ -1,6 +1,6 @@
 # clusterCertificates
 
-Get all certificates Supported in v5.1+ Get all certificates.
+Lists the certificates stored on a Rubrik cluster.
 
 ## Arguments
 

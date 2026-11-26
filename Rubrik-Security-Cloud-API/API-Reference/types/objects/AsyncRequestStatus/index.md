@@ -20,6 +20,7 @@ Supported in v5.0+
 
 **Queries**
 
+- [query: activeDirectoryAsyncRequestStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/activeDirectoryAsyncRequestStatus/index.md)
 - [query: checkCloudComputeConnectivityJobProgress](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/checkCloudComputeConnectivityJobProgress/index.md)
 - [query: db2DatabaseJobStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/db2DatabaseJobStatus/index.md)
 - [query: filesetRequestStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/queries/filesetRequestStatus/index.md)
@@ -47,6 +48,7 @@ Supported in v5.0+
 - [mutation: bulkRecoverSapHanaDatabases](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkRecoverSapHanaDatabases/index.md)
 - [mutation: bulkTierExistingSnapshots](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkTierExistingSnapshots/index.md)
 - [mutation: bulkUpdateSystemConfig](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/bulkUpdateSystemConfig/index.md)
+- [mutation: configureLogExport](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/configureLogExport/index.md)
 - [mutation: configureSapHanaRestore](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/configureSapHanaRestore/index.md)
 - [mutation: createActiveDirectoryDownloadFilesJob](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createActiveDirectoryDownloadFilesJob/index.md)
 - [mutation: createActiveDirectoryLiveMount](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createActiveDirectoryLiveMount/index.md)
@@ -65,7 +67,6 @@ Supported in v5.0+
 - [mutation: createNutanixCluster](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createNutanixCluster/index.md)
 - [mutation: createOnDemandDb2Backup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandDb2Backup/index.md)
 - [mutation: createOnDemandExchangeBackup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandExchangeBackup/index.md)
-- [mutation: createOnDemandMongoDatabaseBackup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandMongoDatabaseBackup/index.md)
 - [mutation: createOnDemandMongoDatabaseBackupV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandMongoDatabaseBackupV2/index.md)
 - [mutation: createOnDemandMssqlBackup](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandMssqlBackup/index.md)
 - [mutation: createOnDemandMysqldbInstanceSnapshot](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/mutations/createOnDemandMysqldbInstanceSnapshot/index.md)
@@ -259,6 +260,7 @@ Supported in v5.0+
 
 **Referenced by**
 
+- [ActiveDirectoryForestRestoreStatus.status](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ActiveDirectoryForestRestoreStatus/index.md)
 - [AddDb2InstanceReply.asyncRequestStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AddDb2InstanceReply/index.md)
 - [AddManagedVolumeReply.asyncRequestStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AddManagedVolumeReply/index.md)
 - [AddMongoSourceReply.asyncRequestStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/AddMongoSourceReply/index.md)
@@ -288,5 +290,4 @@ Supported in v5.0+
 - [PatchSapHanaSystemReply.asyncRequestStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PatchSapHanaSystemReply/index.md)
 - [PitRestoreMysqldbInstanceResponse.asyncRequestStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PitRestoreMysqldbInstanceResponse/index.md)
 - [PitRestorePostgresDbClusterResponse.asyncRequestStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/PitRestorePostgresDbClusterResponse/index.md)
-- [RegisterNasSystemReply.nasDiscoverJobStatus](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/RegisterNasSystemReply/index.md)
-- *…and 4 more*
+- *…and 6 more*

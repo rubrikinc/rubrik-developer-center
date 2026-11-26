@@ -14,4 +14,5 @@ MetadataV2 is a new version of generic Metadata type and will deprecate the old 
 **Referenced by**
 
 - [CellData.metadataV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/CellData/index.md)
+- [ChartDataResult.metadata](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/ChartDataResult/index.md)
 - [Row.metadataV2](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/objects/Row/index.md)

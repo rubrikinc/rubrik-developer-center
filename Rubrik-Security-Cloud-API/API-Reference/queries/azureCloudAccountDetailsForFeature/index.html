@@ -938,7 +938,7 @@
 
 
 <h1 id="azurecloudaccountdetailsforfeature">azureCloudAccountDetailsForFeature</h1>
-<p>Retrieves the cloud account details from azure customer feature ID.</p>
+<p>Returns the Azure cloud account linked to a Rubrik Azure feature ID: the subscription ID, tenant domain, Azure cloud type, and permission groups. SAP HANA systems on Azure carry this ID as azureFeatureId.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>featureId <em>(required)</em></td>
 <td><a href="../../types/scalars/UUID/">UUID</a>!</td>
-<td>Azure customer feature ID.</td>
+<td>Rubrik ID of the Azure feature, as set in a SAP HANA system's azureFeatureId.</td>
 </tr>
 </tbody>
 </table>

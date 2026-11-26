@@ -1,12 +1,12 @@
 # bulkDeleteFilesetTemplate
 
-Delete fileset templates Supported in v5.0+ Deletes specfied fileset templates. Detaches and retains all associated filesets as independent filesets with the existing values.
+Deletes the given fileset templates and every fileset created from them. By default (preserveSnapshots true) the existing snapshots are kept as relics, set preserveSnapshots to false to delete them as well.
 
 ## Arguments
 
-| Argument           | Type                                                                                                                                                         | Description                                  |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
-| input *(required)* | [BulkDeleteFilesetTemplateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkDeleteFilesetTemplateInput/index.md)! | Input for InternalBulkDeleteFilesetTemplate. |
+| Argument           | Type                                                                                                                                                         | Description                                                          |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| input *(required)* | [BulkDeleteFilesetTemplateInput](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/inputs/BulkDeleteFilesetTemplateInput/index.md)! | IDs of the fileset templates and an optional preserveSnapshots flag. |
 
 ## Returns
 

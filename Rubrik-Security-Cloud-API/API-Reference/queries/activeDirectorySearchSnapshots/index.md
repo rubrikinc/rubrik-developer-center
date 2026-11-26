@@ -1,6 +1,6 @@
 # activeDirectorySearchSnapshots
 
-Search across a range of snapshots of a domain controller for Active Directory objects Supported in v9.1+ Return the Active Directory objects matching the search criteria.
+Searches the snapshots of a domain controller taken in a date range for Active Directory objects that match the search string.
 
 ## Arguments
 

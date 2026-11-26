@@ -938,7 +938,7 @@
 
 
 <h1 id="rcvazureblimigrationdetails">rcvAzureBliMigrationDetails</h1>
-<p>ListRCVAzureBLIMigrationDetails lists blob immutability migration details of RCV Azure locations.</p>
+<p>Lists Rubrik Cloud Vault Azure locations that do not yet use blob-level immutability, with each location's migration status, Rubrik cluster, storage usage, and any reason migration is unavailable.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -972,17 +972,17 @@
 <tr>
 <td>BliMigrationDetailsFilter</td>
 <td><a href="../../types/inputs/RcvBliMigrationFilter/">RcvBliMigrationFilter</a></td>
-<td>Filters for listing BLI migration details for RCV Azure BLI migration details.</td>
+<td>Filters locations by migration status and other fields.</td>
 </tr>
 <tr>
 <td>sortBy</td>
 <td><a href="../../types/enums/RcvBliMigrationDetailsSortByField/">RcvBliMigrationDetailsSortByField</a></td>
-<td>Sort by field for BLI migration details.</td>
+<td>Field to sort the results by.</td>
 </tr>
 <tr>
 <td>sortOrder</td>
 <td><a href="../../types/enums/SortOrder/">SortOrder</a></td>
-<td>Sort order (ASC/DESC) for BLI migration details.</td>
+<td>Sort order (ascending or descending).</td>
 </tr>
 </tbody>
 </table>

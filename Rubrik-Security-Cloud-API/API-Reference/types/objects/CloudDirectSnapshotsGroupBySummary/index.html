@@ -898,6 +898,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#field-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Field Arguments
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -941,6 +952,43 @@
 <td>groupByInfo</td>
 <td><a href="../TimeRangeWithUnit/">TimeRangeWithUnit</a>!</td>
 <td>Information on the grouped snapshots.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="field-arguments">Field Arguments</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Argument</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cloudDirectSnapshots</td>
+<td>first</td>
+<td>Int</td>
+<td>Returns the first n elements from the list.</td>
+</tr>
+<tr>
+<td>cloudDirectSnapshots</td>
+<td>after</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's endCursor field. Pass this value verbatim to retrieve the next page of results.</td>
+</tr>
+<tr>
+<td>cloudDirectSnapshots</td>
+<td>last</td>
+<td>Int</td>
+<td>Returns the last n elements from the list.</td>
+</tr>
+<tr>
+<td>cloudDirectSnapshots</td>
+<td>before</td>
+<td>String</td>
+<td>An opaque cursor returned from a previous query's startCursor field. Pass this value verbatim to retrieve the previous page of results.</td>
 </tr>
 </tbody>
 </table>

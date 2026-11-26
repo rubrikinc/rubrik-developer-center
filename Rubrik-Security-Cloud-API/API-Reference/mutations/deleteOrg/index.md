@@ -1,6 +1,6 @@
 # deleteOrg
 
-Delete an organization.
+Deletes the given tenant organization and returns true on success.
 
 ## Arguments
 

@@ -1,6 +1,6 @@
 # completeAzureDevOpsOauth
 
-Completes the Azure DevOps OAuth flow by saving the authorization code in the in-memory session store.
+Completes the Azure DevOps OAuth sign-in by passing Rubrik the authorization code.
 
 ## Arguments
 

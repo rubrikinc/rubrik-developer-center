@@ -1,13 +1,14 @@
 # allS3BucketsDetailsFromAws
 
-ListS3BucketsDetails lists all the s3 bucket details across regions.
+Lists the S3 buckets in an AWS account, across all regions or one, with their details.
 
 ## Arguments
 
 | Argument                        | Type                                                                                                                         | Description                                                  |
 | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                    | Rubrik FID of the AWS Native account.                        |
+| awsAccountRubrikId *(required)* | [UUID](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/scalars/UUID/index.md)!                    | Rubrik ID of the AWS account.                                |
 | region                          | [AwsNativeRegion](https://developer.rubrik.com/Rubrik-Security-Cloud-API/API-Reference/types/enums/AwsNativeRegion/index.md) | Region to restrict the listing to. All regions when omitted. |
+| includeTags                     | Boolean                                                                                                                      | Whether to also return the AWS tags of each bucket.          |
 
 ## Returns
 
@@ -40,7 +41,13 @@ query AllS3BucketsDetailsFromAws($awsAccountRubrikId: UUID!) {
         "arn": "example-string",
         "name": "example-string",
         "region": "example-string",
-        "regionEnum": "AF_SOUTH_1"
+        "regionEnum": "AF_SOUTH_1",
+        "tags": [
+          {
+            "key": "example-string",
+            "value": "example-string"
+          }
+        ]
       }
     ]
   }

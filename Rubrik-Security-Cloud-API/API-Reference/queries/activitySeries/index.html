@@ -938,7 +938,7 @@
 
 
 <h1 id="activityseries">activitySeries</h1>
-<p>Retrieve an activity series.</p>
+<p>Returns one activity series, a job's run history such as a backup or recovery with its latest status and progress, by ID. Returns an error if the series does not exist or the caller cannot view it.</p>
 <h2 id="arguments">Arguments</h2>
 <table>
 <thead>
@@ -952,7 +952,7 @@
 <tr>
 <td>input <em>(required)</em></td>
 <td><a href="../../types/inputs/ActivitySeriesInput/">ActivitySeriesInput</a>!</td>
-<td>Input for retrieving an activity series.</td>
+<td>Identifies the activity series: activitySeriesId is required, and clusterUuid is optional and defaults to Rubrik Security Cloud, which owns series that do not come from a Rubrik cluster.</td>
 </tr>
 </tbody>
 </table>
