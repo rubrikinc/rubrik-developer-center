@@ -241,26 +241,28 @@ def type_to_str(t) -> str:
     return t.name
 
 
-def compute_canonical_names(schema) -> dict[str, str]:
+def compute_file_names(schema) -> dict[str, str]:
     """
-    On case-insensitive filesystems (macOS), two type names that differ only
-    in capitalisation would collide as filenames.  Return a mapping of
-    type_name -> canonical_name so that non-canonical types resolve to the
-    page that was actually written.
+    Return a map of type_name -> page file name (without ".md").
 
-    The canonical name for each collision group is the first one in
-    case-insensitive alphabetical order.
+    Two type names that differ only in capitalisation (for example
+    NutanixVMNicSpec and NutanixVmNicSpec) are different types, but they
+    would share one file on a case-insensitive filesystem (macOS) and the
+    second page would overwrite the first.  Every type still gets its own
+    page: in each collision group the first name in (lowercase, name) order
+    keeps its own name, and each later name gets a numeric suffix
+    ("NutanixVmNicSpec-2").  The order is deterministic, so file names stay
+    the same from one run to the next.
     """
     skip = BUILTIN_SCALARS | {"Query", "Mutation", "Subscription"}
-    seen: dict[str, str] = {}   # lower_name -> canonical_name
-    result: dict[str, str] = {}  # type_name -> canonical_name (identity if no conflict)
-    for name in sorted(schema.type_map.keys(), key=str.lower):
+    used: dict[str, int] = {}    # lower_name -> number of names seen
+    result: dict[str, str] = {}  # type_name -> file name (identity if no collision)
+    for name in sorted(schema.type_map.keys(), key=lambda n: (n.lower(), n)):
         if name.startswith("__") or name in skip:
             continue
         key = name.lower()
-        if key not in seen:
-            seen[key] = name
-        result[name] = seen[key]
+        used[key] = used.get(key, 0) + 1
+        result[name] = name if used[key] == 1 else f"{name}-{used[key]}"
     return result
 
 
@@ -278,8 +280,8 @@ def type_link(t, from_section: str, schema, canonical = None) -> str:
     """
     Return a Markdown snippet for a type, with a relative link when the type
     has its own page.  from_section examples: 'queries', 'types/objects'.
-    canonical: optional map from compute_canonical_names() to handle
-               case-insensitive filename collisions.
+    canonical: optional map from compute_file_names() that gives each type
+               a file name that is unique on case-insensitive filesystems.
     """
     if isinstance(t, GraphQLNonNull):
         return type_link(t.of_type, from_section, schema, canonical) + "!"
@@ -294,7 +296,7 @@ def type_link(t, from_section: str, schema, canonical = None) -> str:
     if named is None:
         return name
 
-    # Resolve to canonical name (handles case-insensitive filesystem collisions)
+    # Resolve to the page file name (unique on case-insensitive filesystems)
     file_name = canonical[name] if canonical and name in canonical else name
 
     cat = get_category(named)
@@ -1092,12 +1094,7 @@ def build_search_index(schema, comments: dict[str, str], canonical: dict) -> lis
             if isinstance(t, cls) and not n.startswith("__") and n not in skip_names
         )
         for name in names:
-            # Only canonical names get their own page (see generate_type_page
-            # call site) — non-canonical case-insensitive collisions redirect
-            # to the canonical file, so index only what's actually linkable.
-            if canonical.get(name, name) != name:
-                continue
-            add(name, kind, name, f"types/{cat}/{name}/")
+            add(name, kind, name, f"types/{cat}/{canonical.get(name, name)}/")
 
     return entries
 
@@ -1171,13 +1168,13 @@ def main() -> int:
     print("🔗 Building reverse type index...")
     reverse_index = build_reverse_index(schema)
 
-    print("🔤 Computing canonical type names...")
-    canonical = compute_canonical_names(schema)
-    conflicts = {n: c for n, c in canonical.items() if n != c}
-    if conflicts:
-        print(f"   ⚠️  {len(conflicts)} case-insensitive filename collision(s) detected:")
-        for n, c in conflicts.items():
-            print(f"      {n!r} → resolves to {c!r}")
+    print("🔤 Computing page file names...")
+    canonical = compute_file_names(schema)
+    renamed = {n: f for n, f in canonical.items() if n != f}
+    if renamed:
+        print(f"   {len(renamed)} type name(s) differ only in case from another type; suffixed file names:")
+        for n, f in renamed.items():
+            print(f"      {n!r} → {f}.md")
 
     output_dir = Path(args.output)
     schema_name = schema_path.stem  # e.g. "20260105"
@@ -1250,12 +1247,11 @@ def main() -> int:
             n for n, t in schema.type_map.items()
             if isinstance(t, cls) and not n.startswith("__") and n not in skip_names
         )
-        # Only write pages for canonical names (skip non-canonical collisions)
-        names = [n for n in all_names if canonical.get(n, n) == n]
+        names = all_names
         if not names:
             continue
         write_pages_file(cat_dir, label, dry)
-        # Category index — list all names but link to canonical file
+        # Category index — each name links to its own page file
         idx_lines = [f"# {label}", "", f"{len(all_names)} types.", ""]
         for name in all_names:
             file_name = canonical.get(name, name)
@@ -1266,7 +1262,7 @@ def main() -> int:
             if i % 200 == 0:
                 print(f"   {i}/{len(names)}")
             page = generate_type_page(name, schema.type_map[name], schema, comments, canonical, reverse_index)
-            w(cat_dir / f"{name}.md", page)
+            w(cat_dir / f"{canonical.get(name, name)}.md", page)
 
     # ── Search index ─────────────────────────────────────────────────────────
     # Lightweight (name/kind/description/url only) so the browser can fetch it
